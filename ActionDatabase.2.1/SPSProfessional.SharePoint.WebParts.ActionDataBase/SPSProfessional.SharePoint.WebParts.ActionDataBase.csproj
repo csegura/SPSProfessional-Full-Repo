@@ -1,0 +1,225 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{13F522FA-A4FE-410F-B06E-7555964B4506}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SPSProfessional.SharePoint.WebParts.ActionDataBase</RootNamespace>
+    <AssemblyName>SPSProfessional.SharePoint.WebParts.ActionDataBase</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>spsprofessional.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>http://localhost/SPSProParts.SharePoint.WebParts.ActionDataBase/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="SPSProfessional.SharePoint.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SPSProfessional.SharePoint.Framework\SPSProfessional.SharePoint.Framework\bin\Release\SPSProfessional.SharePoint.Framework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActionDataBase.cs" />
+    <Compile Include="ActionEditor.cs">
+    </Compile>
+    <None Include="ActionEditorConfig\_SPSActionEditConfig.cs" />
+    <Compile Include="ActionEditorFormControl.cs" />
+    <Compile Include="ActionFilterQueryString.cs" />
+    <Compile Include="ActionFilterValues.cs" />
+    <Compile Include="ActionEditorToolBarControl.cs" />
+    <Compile Include="ActionGrid.cs" />
+    <Compile Include="ActionGridConfig\SPSActionGridConfig.cs" />
+    <Compile Include="ActionEditorFormMode.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SPSGridView.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ActionEditorConfig\ActionEditConfig.xsx">
+      <DependentUpon>ActionEditConfig.xsd</DependentUpon>
+    </None>
+    <None Include="ActionGrid.webpart" />
+    <None Include="ActionEditor.webpart" />
+    <None Include="ActionFilterQueryString.webpart" />
+    <None Include="ActionEditor.cd" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="app.config" />
+    <None Include="ActionEditorTest.webpart" />
+    <None Include="cseg.snk" />
+    <None Include="SampleDataBase\instnwnd.sql" />
+    <None Include="SampleDataBase\instpubs.sql" />
+    <None Include="spsprofessional.snk" />
+    <None Include="_Build\buildcab.msbuild" />
+    <None Include="_Build\xenocode.postbuild" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="makecab_var.ddf" />
+    <None Include="ActionEditorConfig\GenActionEditConfig.bat">
+    </None>
+    <None Include="ActionGridConfig\GenActionGridConfig.bat">
+    </None>
+    <None Include="ActionEditorConfig\ActionEditConfig.xsd">
+      <SubType>
+      </SubType>
+    </None>
+    <None Include="ActionGridConfig\ActionGridConfig.xsd">
+      <SubType>
+      </SubType>
+    </None>
+    <None Include="ActionGridConfig\ActionGridConfig.xsx">
+      <DependentUpon>ActionGridConfig.xsd</DependentUpon>
+    </None>
+    <Compile Include="ActionDataBaseOperation.cs" />
+    <Compile Include="ActionDataBaseSelect.cs" />
+    <Compile Include="ActionEditorConfig\SPSActionEditConfig.cs" />
+    <Compile Include="ActionEditorControl.cs" />
+    <Compile Include="ActionEditorFormValues.cs" />
+    <Compile Include="ActionEditorEditorPart.cs" />
+    <Compile Include="ActionFunctions.cs" />
+    <Compile Include="Controls\ActionLookupQueryControl.cs" />
+    <Compile Include="Controls\ActionPickerDialog.cs" />
+    <Compile Include="ActionEditorTest.cs" />
+    <Compile Include="ActionEditorTestEditorPart.cs" />
+    <Compile Include="FormControls\ActionEditorFormControlBase.cs" />
+    <Compile Include="FormControls\ActionEditorFormValidatorBase.cs" />
+    <Compile Include="FormControls\FormControlCheckBox.cs" />
+    <Compile Include="FormControls\FormControlDropDown.cs" />
+    <Compile Include="FormControls\FormControlListBox.cs" />
+    <Compile Include="FormControls\FormControlPicker.cs" />
+    <Compile Include="FormControls\FormControlDate.cs" />
+    <Compile Include="FormControls\FormControlDateTime.cs" />
+    <Compile Include="FormControls\FormControlFactory.cs" />
+    <Compile Include="FormControls\FormControlLookup.cs" />
+    <Compile Include="FormControls\FormControlMemo.cs" />
+    <Compile Include="FormControls\FormControlText.cs" />
+    <Compile Include="FormControls\FormValidatorCompare.cs" />
+    <Compile Include="FormControls\FormValidatorFactory.cs" />
+    <Compile Include="FormControls\FormValidatorRange.cs" />
+    <Compile Include="FormControls\FormValidatorRegExp.cs" />
+    <Compile Include="FormControls\FormValidatorRequired.cs" />
+    <Compile Include="FormControls\IActionFormControl.cs" />
+    <Compile Include="Relations\ActionEntity.cs" />
+    <Compile Include="ActionGridEditorPart.cs" />
+    <None Include="_Build\BuildCab.Bat" />
+    <Compile Include="Controls\ActionEntityDropdownControl.cs" />
+    <Compile Include="Controls\ActionEntityPickerControl.cs" />
+    <Compile Include="ActionFilterQueryStringEditorPart.cs" />
+    <Compile Include="Relations\ActionEntityDataBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="manifest_cab.xml" />
+    <Content Include="ActionEditorConfig\ActionEditConfig.xml">
+    </Content>
+    <Content Include="manifest_wsp.xml" />
+    <Content Include="SampleDataBase\NORTHWND.LDF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>NORTHWND.MDF</DependentUpon>
+    </Content>
+    <Content Include="SampleDataBase\NORTHWND.MDF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SampleDataBase\PUBS.MDF">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SampleDataBase\PUBS_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>PUBS.MDF</DependentUpon>
+    </Content>
+    <Content Include="SampleDataBase\ReadMe_SQL2000SampleDbScripts.htm" />
+    <Content Include="spsprofessionallogo.gif" />
+    <Content Include="_Build\replace.vbs" />
+    <Content Include="XML\Editor_Customers.xml" />
+    <Content Include="XML\Editor_Orders.xml" />
+    <Content Include="XML\Editor_Orders2.xml" />
+    <Content Include="XML\Grid_Customers.xml" />
+    <Content Include="XML\samplegridview2.xml" />
+    <Content Include="XML\samplegridview.xml" />
+    <Content Include="ActionGridConfig\ActionGridConfig.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ActionToolBarConfig\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

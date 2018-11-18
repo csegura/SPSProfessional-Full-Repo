@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="SPSProfessional.SharePoint.WebParts.RollUp.RollUpTree, SPSProfessional.SharePoint.WebParts.RollUp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7" />
+      <importErrorMessage>Error loading webpart</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">SPSRollUpTree WebPart</property>
+        <property name="Description" type="string">SPSProfessional - RollUp Tree WebPart - (c) www.spsprofessional.com</property>
+        <property name="CatalogIconImageUrl" type="string">_WPR_\spsprofessionallogo.gif</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

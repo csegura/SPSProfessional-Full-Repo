@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+    Id="SPSProfessional.Actions.PicLib.ClearSelections"
+    RegistrationType="List"
+    RegistrationId="109"
+    GroupId="ActionsMenu"
+    Location="Microsoft.SharePoint.StandardMenu"
+    Title="$Resources:SPSProfessional.Actions.CopyPaste,ClearSelectedMenuActionText"    
+    ImageUrl="{SiteUrl}/_layouts/images/spspro_pic_clear.png"
+    Description="$Resources:SPSProfessional.Actions.CopyPaste,ClearSelectedMenuActionDescription">
+    <UrlAction Url="javascript:ClearSelections();" />
+  </CustomAction>
+   <CustomAction
+    Id="SPSProfessional.Actions.Copy"
+    RegistrationType="List"
+    RegistrationId="109"
+    GroupId="ActionsMenu"
+    Location="Microsoft.SharePoint.StandardMenu"
+    Title="$Resources:SPSProfessional.Actions.CopyPaste,CopyImageMenuActionText"
+    Rights="AddListItems"
+    ImageUrl="{SiteUrl}/_layouts/images/spspro_pic_copy.png"
+    Description="$Resources:SPSProfessional.Actions.CopyPaste,CopyImageMenuActionDescription">
+    <UrlAction Url="javascript:SPSProfessionalActionCopy('{SiteUrl}');" />
+  </CustomAction>
+  <CustomAction
+	  Id="SPSProfessional.Actions.Cut"
+    RegistrationType="List"
+    RegistrationId="109"
+		GroupId="ActionsMenu"
+    Location="Microsoft.SharePoint.StandardMenu"
+		Title="$Resources:SPSProfessional.Actions.CopyPaste,CutImageMenuActionText"
+    Rights="DeleteListItems"
+		ImageUrl="{SiteUrl}/_layouts/images/spspro_pic_cut.png"
+		Description="$Resources:SPSProfessional.Actions.CopyPaste,CutImageMenuActionDescription">
+    <UrlAction Url="javascript:SPSProfessionalActionCut('{SiteUrl}');" />
+  </CustomAction>
+  
+  <CustomAction
+    Id="SPSProfessional.Actions.PicPasteAction"
+    RegistrationType="List"
+    RegistrationId="109"
+    GroupId="ActionsMenu"
+    Rights="AddListItems"
+    Location="Microsoft.SharePoint.StandardMenu"
+    ControlAssembly="SPSProfessional.Actions.CopyPaste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7"
+    ControlClass="SPSProfessional.Actions.CopyPaste.PastePic">
+  </CustomAction>  
+
+</Elements>

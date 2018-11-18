@@ -1,0 +1,17 @@
+.OPTION EXPLICIT     
+.Set CabinetNameTemplate=xSOLUTIONx.xDEPLOYx 
+.set DiskDirectoryTemplate=CDROM 
+.Set CompressionType=MSZIP
+.Set UniqueFiles="ON"
+.Set Cabinet=on
+.Set DiskDirectory1=_Build
+manifest_xDEPLOYx.xml manifest.xml
+
+xDIRxSPSProfessional.SharePoint.WebParts.ActionDataBase.dll SPSProfessional.SharePoint.WebParts.ActionDataBase.dll
+
+ActionGrid.webpart ActionGrid.webpart
+ActionEditor.webpart ActionEditor.webpart
+ActionEditorTEST.webpart ActionEditorTEST.webpart
+ActionFilterQueryString.webpart ActionFilterQueryString.webpart
+
+spsprofessionallogo.gif spsprofessionallogo.gif

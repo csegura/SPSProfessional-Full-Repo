@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<WebPartManifest xmlns="http://schemas.microsoft.com/WebPart/v2/Manifest">
+  <Assemblies>
+    <Assembly DeploymentTarget="GlobalAssemblyCache" 
+              FileName="SPSProfessional.SharePoint.WebParts.RollUp.dll">
+      <ClassResources>
+        <ClassResource Location="wpresources" FileName="spsprofessionallogo.gif"/>
+      </ClassResources>
+      <SafeControls>
+        <SafeControl
+         Assembly="SPSProfessional.SharePoint.Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7"
+         Namespace="SPSProfessional.SharePoint.Framework"
+         TypeName="*"
+        />
+        <SafeControl
+          Assembly="SPSProfessional.SharePoint.WebParts.RollUp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7"
+          Namespace="SPSProfessional.SharePoint.WebParts.RollUp"
+          TypeName="*"
+        />
+        <!--
+        <SafeControl
+        Assembly="SPSProfessional.SharePoint.WebParts.REPLACETHIS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7"
+        Namespace="SPSProfessional.SharePoint.WebParts.REPLACETHIS.Controls"
+        TypeName="*"
+        />
+        -->
+      </SafeControls>
+    </Assembly>
+    <Assembly DeploymentTarget="GlobalAssemblyCache" FileName="SPSProfessional.SharePoint.Framework.dll" />
+  </Assemblies>
+  <DwpFiles>
+    <DwpFile FileName="RollUp.webpart" />
+    <DwpFile FileName="RollUp3.webpart" />
+    <DwpFile FileName="RollUpChart.webpart" />
+    <DwpFile FileName="RollUpCalendar.webpart" />
+    <DwpFile FileName="RollUpTree.webpart" />
+  </DwpFiles>
+  <TemplateFiles>
+    <TemplateFile Location="LAYOUTS\FusionCharts\FCF_Area2D.swf" />
+    <TemplateFile Location="LAYOUTS\FusionCharts\FCF_Bar2D.swf" />
+    <TemplateFile Location="LAYOUTS\FusionCharts\FCF_Column2D.swf" />
+    <TemplateFile Location="LAYOUTS\FusionCharts\FCF_Column3D.swf" />
+    <TemplateFile Location="LAYOUTS\FusionCharts\FCF_Line.swf" />
+    <TemplateFile Location="LAYOUTS\FusionCharts\FCF_MSColumn3D.swf" />
+    <TemplateFile Location="LAYOUTS\FusionCharts\FCF_MSColumn3DLineDY.swf" />
+    <TemplateFile Location="LAYOUTS\FusionCharts\FCF_Pie3D.swf	" />
+    <TemplateFile Location="LAYOUTS\FusionCharts\FCF_StackedColumn3D.swf" />
+    <TemplateFile Location="LAYOUTS\FusionCharts\FusionCharts.js" />
+    <TemplateFile Location="LAYOUTS\SPSRollUp\SPSCalendar.css" />
+    <TemplateFile Location="LAYOUTS\SPSRollUp\SPSRollUp.css" />
+  </TemplateFiles>
+</WebPartManifest>

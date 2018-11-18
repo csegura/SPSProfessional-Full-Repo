@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C569F779-5E8A-422D-92FC-681D823184A6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SPSProfessional.SharePoint.WebParts.RollUp</RootNamespace>
+    <AssemblyName>SPSProfessional.SharePoint.WebParts.RollUp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>spsprofessional.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'x64|AnyCPU' ">
+    <OutputPath>bin\x64\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'x64|x64' ">
+    <OutputPath>bin\x64\x64\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="SPSProfessional.SharePoint.Framework, Version=2.1.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Framework21\SPSProfessional.SharePoint.Framework\bin\Release\SPSProfessional.SharePoint.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CamlPreprocessor.cs" />
+    <None Include="Resources\SPSProfessional.SharePoint.WebParts.RollUp.es-ES.Designer.cs">
+      <DependentUpon>SPSProfessional.SharePoint.WebParts.RollUp.es-ES.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </None>
+    <None Include="Resources\SPSProfessional.SharePoint.WebParts.RollUp.en-US.Designer.cs">
+      <DependentUpon>SPSProfessional.SharePoint.WebParts.RollUp.en-US.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </None>
+    <None Include="Resources\SPSProfessional.SharePoint.WebParts.RollUp.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPSProfessional.SharePoint.WebParts.RollUp.resx</DependentUpon>
+    </None>
+    <Compile Include="Engine\ISPSCrawler.cs" />
+    <Compile Include="ListInfo\ListCollector.cs" />
+    <Compile Include="ListInfo\ListInfo.cs" />
+    <Compile Include="ListInfo\SPSProfessional_ListInfo.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FieldInfo\FieldCollector.cs" />
+    <Compile Include="FieldInfo\FieldInfo.cs" />
+    <Compile Include="FieldInfo\SPSProfessional_FieldInfo.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RollUpEditorPart.cs" />
+    <Compile Include="RollUp.cs" />
+    <Compile Include="RollUpBase3.cs" />
+    <Compile Include="Engine\SPSCrawler.cs" />
+    <Compile Include="Engine\SPSCrawlerException.cs" />
+    <Compile Include="Engine\SPSDataCollector.cs" />
+    <Compile Include="Engine\SPSDataCollectorException.cs" />
+    <Compile Include="Engine\SPSResources.cs" />
+    <Compile Include="Engine\SPSRollUpData.cs" />
+    <Compile Include="Engine\SPSRollUpOptions.cs" />
+    <Compile Include="RollUpEditorPartBase.cs" />
+    <Compile Include="RollUpEditors.cs" />
+    <Compile Include="RollUpTreeEditorPart.cs" />
+    <Compile Include="RollUpTree.cs" />
+    <Compile Include="RollUpCalendarEditorPart.cs" />
+    <Compile Include="RollUpCalendar.cs" />
+    <None Include="_RollUpBase.cs" />
+    <Compile Include="RollUpChartEditorPart.cs" />
+    <Compile Include="RollUpChart.cs" />
+    <None Include="_RollUpEditorPart.cs" />
+    <None Include="_RollUp.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="SPSListEdit.cs" />
+    <Compile Include="SPSRollUpEngine.cs" />
+    <None Include="XsltProcessor\SPSXsltExtension.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RollUp.webpart" />
+    <None Include="makecab_var.ddf" />
+    <None Include="_build\BuildCab.Bat" />
+    <None Include="_build\xenocode.postbuild" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ListInfo\SPSProfessional_ListInfo.aspx" />
+    <Content Include="FieldInfo\SPSProfessional_FieldInfo.aspx" />
+    <Content Include="FusionCharts\FCF_Area2D.swf" />
+    <Content Include="FusionCharts\FCF_Bar2D.swf" />
+    <Content Include="FusionCharts\FCF_Column2D.swf" />
+    <Content Include="FusionCharts\FCF_Column3D.swf" />
+    <Content Include="FusionCharts\FCF_Line.swf" />
+    <Content Include="FusionCharts\FCF_MSColumn3D.swf" />
+    <Content Include="FusionCharts\FCF_MSColumn3DLineDY.swf" />
+    <Content Include="FusionCharts\FCF_Pie2D.swf" />
+    <Content Include="FusionCharts\FCF_Pie3D.swf" />
+    <Content Include="FusionCharts\FCF_StackedColumn3D.swf" />
+    <Content Include="FusionCharts\FusionCharts.js" />
+    <Content Include="Images\spsprofessionallogo.gif" />
+    <Content Include="Layouts\Colors.css" />
+    <Content Include="Layouts\SPSCalendar.css" />
+    <Content Include="Layouts\SPSRollUp.css" />
+    <Content Include="manifest_cab.xml" />
+    <Content Include="manifest_wsp.xml" />
+    <None Include="SPSListEdit.webpart" />
+    <None Include="RollUpTree.webpart" />
+    <None Include="RollUpCalendar.webpart" />
+    <None Include="RollUpChart.webpart" />
+    <None Include="spsprofessional.snk" />
+    <None Include="Working\SPSMenus.js" />
+    <Content Include="Working\2DChart.xslt" />
+    <Content Include="Working\Anuncios.xslt" />
+    <Content Include="Working\Calendar.xslt" />
+    <Content Include="Working\ChartMS_v1.xslt" />
+    <Content Include="Working\ChartMS_v2.xslt" />
+    <Content Include="Working\Combo1.xslt" />
+    <Content Include="Working\Copy of ChartMS.xslt" />
+    <Content Include="Working\Distinct.xslt" />
+    <Content Include="Working\GenericOrderPageTableSelected.xslt" />
+    <Content Include="Working\GenericOrderPageTable.xslt" />
+    <Content Include="Working\GenericPageTableCMOrderN.xslt" />
+    <Content Include="Working\LastFiles.xslt" />
+    <Content Include="Working\Pictures.xslt" />
+    <Content Include="Working\PieChart3D.xslt" />
+    <Content Include="Working\SPSCalendarWithIsoDates.xslt" />
+    <Content Include="Working\SPSCalendar_Tasks.xslt" />
+    <Content Include="Working\SPS_View.xslt" />
+    <Content Include="Working\TaskCamp.xslt" />
+    <Content Include="Working\TasksDueDate.xslt" />
+    <Content Include="Working\TestGroup.xslt" />
+    <Content Include="Working\TestMSChart.xml" />
+    <Content Include="Working\TwoLevel1.xslt" />
+    <Content Include="Working\ViewWithToolBar.xslt" />
+    <Content Include="Working\XMLTree.xml" />
+    <Content Include="XSL_SAMPLES\Copy of GenericPagedTableCMOrderN.xslt" />
+    <Content Include="XSL_SAMPLES\Sample.xslt" />
+    <Content Include="XSL_SAMPLES\Sample_MonthYear.xslt" />
+    <Content Include="XSL_SAMPLES\GenericPagedTableCMOrderN.xslt" />
+    <Content Include="XSL_SAMPLES\GenericPagedTableCMOrder.xslt" />
+    <Content Include="XSL_SAMPLES\GenericPagedTableCM.xslt" />
+    <Content Include="Working\GenericPageTable.xslt" />
+    <Content Include="Working\GenericTable.xslt" />
+    <Content Include="_build\replace.vbs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="_RollUp3.webpart" />
+    <None Include="Resources\SPSProfessional.SharePoint.WebParts.RollUp.es-ES.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SPSProfessional.SharePoint.WebParts.RollUp.es-ES.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\SPSProfessional.SharePoint.WebParts.RollUp.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SPSProfessional.SharePoint.WebParts.RollUp.en-US.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\SPSProfessional.SharePoint.WebParts.RollUp.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SPSProfessional.SharePoint.WebParts.RollUp.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_build\buildcab.msbuild" />
+    <None Include="_build\Copy of BuildCab.Bat" />
+    <None Include="_layouts\dialog.master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

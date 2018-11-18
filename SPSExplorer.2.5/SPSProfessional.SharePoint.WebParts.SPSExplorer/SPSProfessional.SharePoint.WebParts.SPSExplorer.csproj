@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E62C9C19-F216-458B-9B0E-1E50A4906A94}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SPSProfessional.SharePoint.WebParts.SPSExplorer</RootNamespace>
+    <AssemblyName>SPSProfessional.SharePoint.WebParts.SPSExplorer</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>spsprofessional.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="SPSProfessional.SharePoint.Framework, Version=2.1.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Framework21\SPSProfessional.SharePoint.Framework\bin\Release\SPSProfessional.SharePoint.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Shared\BreadCrumbControl.cs" />
+    <Compile Include="Shared\SPSListView.cs" />
+    <Compile Include="Shared\FolderExplorerControl.cs" />
+    <Compile Include="Shared\FollowViewControl.cs" />
+    <None Include="Resources\SPSProfessional.SharePoint.WebParts.SPSExplorer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPSProfessional.SharePoint.WebParts.SPSExplorer.resx</DependentUpon>
+    </None>
+    <None Include="Resources\SPSProfessional.SharePoint.WebParts.SPSExplorer.en-US.Designer.cs">
+      <DependentUpon>SPSProfessional.SharePoint.WebParts.SPSExplorer.en-US.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </None>
+    <None Include="Resources\SPSProfessional.SharePoint.WebParts.SPSExplorer.es-ES.Designer.cs">
+      <DependentUpon>SPSProfessional.SharePoint.WebParts.SPSExplorer.es-ES.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </None>
+    <Compile Include="SPSDocumentExplorer.cs" />
+    <Compile Include="SPSDocumentExplorerEditorPart.cs" />
+    <Compile Include="SPSListExplorer.cs" />
+    <Compile Include="SPSListExplorerEditorPart.cs" />
+    <None Include="Shared\SPSToolBar.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SPSResources.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SPSListExplorer.webpart" />
+    <None Include="SPSDocumentExplorer.webpart" />
+    <None Include="spsprofessional.snk" />
+    <None Include="makecab_var.ddf" />
+    <None Include="_build\BuildCab.Bat" />
+    <None Include="_build\xenocode.postbuild" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\spsprofessionalactions.gif" />
+    <Content Include="Images\spsprofessionallogo.gif" />
+    <Content Include="manifest_cab.xml" />
+    <Content Include="manifest_wsp.xml" />
+    <Content Include="_build\replace.vbs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPSProfessional.SharePoint.WebParts.SPSExplorer.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SPSProfessional.SharePoint.WebParts.SPSExplorer.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPSProfessional.SharePoint.WebParts.SPSExplorer.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SPSProfessional.SharePoint.WebParts.SPSExplorer.en-US.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPSProfessional.SharePoint.WebParts.SPSExplorer.es-ES.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SPSProfessional.SharePoint.WebParts.SPSExplorer.es-ES.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_build\buildcab.msbuild" />
+    <None Include="_build\Copy of BuildCab.Bat" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>echo on
+cd "$(ProjectDir)"
+cscript _build\replace.vbs "$(ProjectDir)makecab_var.ddf" "$(ProjectDir)makecab.ddf" "xDIRx" "$(OutDir)" "xDEPLOYx" "cab"</PreBuildEvent>
+    <PostBuildEvent>echo on
+cd "$(ProjectDir)"
+makecab.exe /F makecab.ddf
+cd _Builder
+stsadm.exe -o addwppack -filename _build\$(TargetName).cab -globalinstall -force
+iisapp /a "SharePoint - 80" /r</PostBuildEvent>
+  </PropertyGroup>
+</Project>

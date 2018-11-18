@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SPSActionGridConfig>
+  <DataBase ConnectionString="Data Source=SRVDATOS;Initial Catalog=Northwind;User ID=sa;Password=sa" />
+  <Grid Name="Test" Sortable="true" Pageable="true" PageSize="10" />
+  <Query SelectCommand="SELECT [OrderID], [OrderDate], [ShipName], [ShipAddress] FROM [Orders] WHERE [CustomerID]='{0}'" />
+  <Filter Expression="" >
+    <Param Name="CustomerID" Type="String" Default="0" />
+  </Filter>
+  <Columns>
+    <DataField Name="OrderID" Header="ID" />
+    <DataField Name="OrderDate" Header="Order Date" />
+    <DataField Name="ShipName" Header="Ship Name" />
+    <DataField Name="ShipAddress" Header="Ship Address" />
+  </Columns>
+</SPSActionGridConfig>

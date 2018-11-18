@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SPSActionGridConfig>
+  <DataBase ConnectionString="Data Source=SRVDATOS;Initial Catalog=Northwind;User ID=sa;Password=sa" />
+  <Grid Name="Test" Sortable="true" Pageable="true" PageSize="10" />
+  <Query SelectCommand="SELECT [CustomerID], [CompanyName], [ContactName], [Fax] FROM [Customers]" />
+  <Filter Expression="CompanyName LIKE '%{0}%'" >
+    <Param Name="Company" Type="String" Default="" />
+  </Filter>
+  <Columns>
+    <DataField Name="CustomerID" Header="ID">
+      <ContextMenu Fields="CustomerID" Format="test.aspx?ID={0}" >
+        <MenuItem Name="Test" Image="" Url="" />
+        <MenuItem Name="Test1" Image="" Url="" />
+      </ContextMenu>
+    </DataField>
+    <DataField Name="CompanyName" Header="Company Name" />
+    <DataField Name="ContactName" Header="Contact Name" />
+    <DataField Name="FAX" Header="FAX" />
+  </Columns>
+</SPSActionGridConfig>
+<!-- Ejemplo del webpart 1 -->
+
+<?xml version="1.0" encoding="utf-8" ?>
+<SPSActionGridConfig>
+  <DataBase ConnectionString="Data Source=SRVDATOS;Initial Catalog=Northwind;User ID=sa;Password=sa" />
+  <Grid Name="TestA" Sortable="true" Pageable="true" PageSize="10" />
+  <Query SelectCommand="SELECT [CustomerID], [CompanyName], [ContactName], [Fax] FROM [Customers]" />
+  <Columns>
+    <DataField Name="CustomerID" Header="Customer">
+      <ContextMenu Fields="CustomerID" Format="">
+        <ContextMenuItem Name="Test" Image="" Url="Send" />
+        <ContextMenuItem Name="Ver" Image="" Url="ver.asxp?{0}" />
+      </ContextMenu>
+    </DataField>
+    <DataField Name="CompanyName" Header="Company Name" />
+    <DataField Name="ContactName" Header="Contact Name" />
+    <DataField Name="FAX" Header="FAX" />
+  </Columns>
+</SPSActionGridConfig>
+
+<!-- Ejemplo del 2 webpart -->
+
+<?xml version="1.0" encoding="utf-8" ?>
+<SPSActionGridConfig>
+  <DataBase ConnectionString="Data Source=SRVDATOS;Initial Catalog=Northwind;User ID=sa;Password=sa" />
+  <Grid Name="Details" Sortable="true" Pageable="true" PageSize="5" />
+  <Query SelectCommand="SELECT [OrderID], [OrderDate], [ShipName], [ShipAddress] FROM [Orders] WHERE [CustomerID]=@CustomerID" />
+  <Filter Expression="" >
+    <Param Name="CustomerID" Type="String" Default="ALFKI" />
+  </Filter>
+  <Columns>
+    <DataField Name="OrderID" Header="Order" />
+    <DataField Name="OrderDate" Header="Order Date" />
+    <DataField Name="ShipName" Header="Ship Name" />
+    <DataField Name="ShipAddress" Header="Ship Address" />
+  </Columns>
+</SPSActionGridConfig>
+
+<?xml version="1.0" encoding="utf-8" ?>
+<SPSActionGridConfig>
+  <DataBase ConnectionString="Data Source=SRVDATOS;Initial Catalog=Northwind;User ID=sa;Password=sa" />
+  <Grid Name="Details" Sortable="true" Pageable="true" PageSize="5" />
+  <Query SelectCommand="SELECT [OrderID], [OrderDate], [ShipName], [CompanyName] FROM Orders INNER JOIN Shippers ON Orders.ShipVia = Shippers.ShipperID WHERE [CustomerID]=@CustomerID" />
+  <Filter Expression="" >
+    <Param Name="CustomerID" Type="String" Default="ALFKI" />
+  </Filter>
+  <Columns>
+    <DataField Name="OrderID" Header="Order" Format="##.###" />
+    <DataField Name="OrderDate" Format="{0:dd/MM/yyyy}" Header="Order Date" />
+    <DataField Name="ShipName" Header="Ship Name" />    
+    <DataField Name="CompanyName" Header="Ship Company" />
+  </Columns>
+</SPSActionGridConfig>

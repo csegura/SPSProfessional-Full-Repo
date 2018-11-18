@@ -1,0 +1,159 @@
+
+Command line error.
+
+
+Usage:
+           stsadm.exe -o <operation> [<parameters>]
+           stsadm.exe -help [<operation>]
+
+Operations:
+
+
+           activatefeature
+           addalternatedomain
+           addcontentdb
+           addpath
+           addpermissionpolicy
+           addsolution
+           addtemplate
+           adduser
+           addwppack
+           addzoneurl
+           authentication
+           backup
+           backuphistory
+           binddrservice
+           blockedfilelist
+           canceldeployment
+           changepermissionpolicy
+           copyappbincontent
+           createadminvs
+           creategroup
+           createsite
+           createsiteinnewdb
+           createweb
+           databaserepair
+           deactivatefeature
+           deleteadminvs
+           deletealternatedomain
+           deleteconfigdb
+           deletecontentdb
+           deletegroup
+           deletepath
+           deletepermissionpolicy
+           deletesite
+           deletesolution
+           deletetemplate
+           deleteuser
+           deleteweb
+           deletewppack
+           deletezoneurl
+           deploysolution
+           deploywppack
+           disablessc
+           displaysolution
+           email
+           enablessc
+           enumallwebs
+           enumalternatedomains
+           enumcontentdbs
+           enumdeployments
+           enumgroups
+           enumroles
+           enumservices
+           enumsites
+           enumsolutions
+           enumsubwebs
+           enumtemplates
+           enumusers
+           enumwppacks
+           enumzoneurls
+           execadmsvcjobs
+           export
+           extendvs
+           extendvsinwebfarm
+           forcedeletelist
+           getadminport
+           getproperty
+           getsitelock
+           getsiteuseraccountdirectorypath
+           geturlzone
+           grantiis7permission
+           import
+           installfeature
+           listlogginglevels
+           localupgradestatus
+           managepermissionpolicylevel
+           mergecontentdbs
+           migrateuser
+           preupgradecheck
+           provisionservice
+           refreshdms
+           refreshsitedms
+           registerwsswriter
+           removedrservice
+           removesolutiondeploymentlock
+           renameserver
+           renamesite
+           renameweb
+           restore
+           retractsolution
+           retractwppack
+           scanforfeatures
+           setadminport
+           setapppassword
+           setconfigdb
+           setlogginglevel
+           setproperty
+           setsitelock
+           setsiteuseraccountdirectorypath
+           setworkflowconfig
+           siteowner
+           spsearch
+           spsearchdiacriticsensitive
+           syncsolution
+           trimauditlog
+           unextendvs
+           uninstallfeature
+           unregisterwsswriter
+           updateaccountpassword
+           updatealerttemplates
+           updatefarmcredentials
+           upgrade
+           upgradesolution
+           upgradetargetwebapplication
+           userrole
+
+Examples:
+stsadm.exe -o addpath -url http://server/sites -type wildcardinclusion
+stsadm.exe -o adduser 
+           -url http://server/site 
+           -userlogin DOMAIN\name
+           -useremail someone@example.com
+           -role reader
+           -username "Your Name"
+           -siteadmin
+stsadm.exe -o backup -url http://server/site -filename backup.dat -overwrite
+stsadm.exe -o backup -directory c:\backup -backupmethod full
+stsadm.exe -o createsite -url http://server/site 
+           -ownerlogin DOMAIN\name
+           -owneremail someone@example.com 
+stsadm.exe -o createweb -url http://server/site/web
+stsadm.exe -o deletesite -url http://server/site
+stsadm.exe -o deleteweb -url http://server/site/web
+stsadm.exe -o enumsites -url http://server
+stsadm.exe -o enumsubwebs -url http://server/site/web
+stsadm.exe -o enumusers -url http://server/site/web
+stsadm.exe -o extendvs -url http://server:80
+           -ownerlogin DOMAIN\name
+           -owneremail someone@example.com
+stsadm.exe -o renameweb -url http://server/site/web1 -newname web2
+stsadm.exe -o restore -url http://server/site -filename backup.dat
+stsadm.exe -o restore -directory c:\backup -restoremethod overwrite
+stsadm.exe -o setconfigdb -databaseserver server 
+stsadm.exe -o unextendvs -url http://server
+
+For information about other operations and parameters, 
+use "stsadm.exe -help" or "stsadm.exe -help <operation>"
+
+

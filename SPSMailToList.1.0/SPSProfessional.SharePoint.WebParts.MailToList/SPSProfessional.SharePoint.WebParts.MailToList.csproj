@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C525B4F8-D89B-498F-BB11-3025CCC4C770}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SPSProfessional.SharePoint.WebParts.MailToList</RootNamespace>
+    <AssemblyName>SPSProfessional.SharePoint.WebParts.MailToList</AssemblyName>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>spsprofessional.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MailBee.NET, Version=5.0.2.133, Culture=neutral, PublicKeyToken=cd85b70fb26f9fc1, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="SPSProfessional.SharePoint.Framework, Version=2.8.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SPSFramework.2.8\SPSProfessional.SharePoint.Framework\bin\Release\SPSProfessional.SharePoint.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FetchMail.cs" />
+    <None Include="FetchMailJob.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\SPSProfessional.SharePoint.WebParts.MailToList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPSProfessional.SharePoint.WebParts.MailToList.resx</DependentUpon>
+    </None>
+    <Compile Include="Resources\SPSResources.cs" />
+    <Compile Include="SPSMailToList.cs" />
+    <Compile Include="SPSMailToListEditorPart.cs" />
+    <None Include="Resources\SPSProfessional.SharePoint.WebParts.MailToList.en-US.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPSProfessional.SharePoint.WebParts.MailToList.en-US.resx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="makecab.ddf" />
+    <None Include="makecab_var.ddf" />
+    <None Include="SPSMailToList.webpart" />
+    <None Include="spsprofessional.snk" />
+    <None Include="_build\BuildCab.Bat" />
+    <None Include="_build\buildcab.msbuild" />
+    <None Include="_build\xenocode.postbuild" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dll\MailBee.NET.dll" />
+    <Content Include="Dll\MailBee.NET.xml" />
+    <Content Include="Images\spsprofessionalactions.gif" />
+    <Content Include="Images\spsprofessionallogo.gif" />
+    <Content Include="manifest_cab.xml" />
+    <Content Include="manifest_wsp.xml" />
+    <Content Include="SPSProfessional_MailToList\feature.xml" />
+    <Content Include="SPSProfessional_MailToList\SPSMailStore\AllItems.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="SPSProfessional_MailToList\SPSMailStore\DispForm.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="SPSProfessional_MailToList\SPSMailStore\EditForm.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="SPSProfessional_MailToList\SPSMailStore\NewForm.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="SPSProfessional_MailToList\SPSMailStore\schema.xml" />
+    <Content Include="SPSProfessional_MailToList\SPSMailToList_Elements.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\SPSProfessional.SharePoint.WebParts.MailToList.en-US.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SPSProfessional.SharePoint.WebParts.MailToList.en-US.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SPSProfessional.SharePoint.WebParts.MailToList.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SPSProfessional.SharePoint.WebParts.MailToList.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

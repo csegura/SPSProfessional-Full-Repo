@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Feature 
+  Id="028C00AE-AAAA-4b7e-A67F-B8CF21289439"
+	Title="SPSProfessional Cut/Copy/Paste"
+	Description="Cut, Copy and Paste documents in document libraries."
+	Version="1.0.0.0"
+ 	Scope="Web"
+	ImageUrl="spsprofessional_actions.gif"
+  xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="SPSProfessional_Actions_CopyPaste.xml" />
+   
+  </ElementManifests>
+</Feature>
+

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+    Id="SPSProfessional.Actions.Copy"
+	  RegistrationType="List"
+	  RegistrationId="101"
+	  Location="EditControlBlock"
+	  Sequence="1010"
+	  Title="$Resources:SPSProfessional.Actions.CopyPaste,CopyContextMenuText"
+	  ImageUrl="{SiteUrl}/_layouts/images/spspro_copy.gif"
+	  Description="$Resources:SPSProfessional.Actions.CopyPaste,CopyContextMenuDescription">
+    <UrlAction Url="javascript:SPSProfessionalActionCopy('{SiteUrl}','{ItemUrl}');" />
+  </CustomAction>
+  <CustomAction
+	  Id="SPSProfessional.Actions.Cut"
+		RegistrationType="List"
+		RegistrationId="101"
+		Location="EditControlBlock"
+		Sequence="1011"
+		Title="$Resources:SPSProfessional.Actions.CopyPaste,CutContextMenuText"
+		ImageUrl="{SiteUrl}/_layouts/images/spspro_cut.gif"
+		Description="$Resources:SPSProfessional.Actions.CopyPaste,CutContextMenuDescription">
+    <UrlAction Url="javascript:SPSProfessionalActionCut('{SiteUrl}','{ItemUrl}');" />
+  </CustomAction>
+  <CustomAction
+    Id="SPSProfessional.Actions.PasteAction"
+    RegistrationType="List"
+    RegistrationId="101"
+    GroupId="ActionsMenu"
+    Location="Microsoft.SharePoint.StandardMenu"
+    ControlAssembly="SPSProfessional.Actions.CopyPaste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7"
+    ControlClass="SPSProfessional.Actions.CopyPaste.Paste">
+  </CustomAction>  
+</Elements>

@@ -1,0 +1,1100 @@
+﻿
+/* 
+SPSCal Colors
+
+Ivory
+Beige
+Wheat
+Tan
+Khaki
+Silver
+Gray
+Charcoal
+NavyBlue
+RoyalBlue
+MediumBlue
+Azure
+Cyan
+Aquamarine
+Teal
+ForestGreen
+Olive
+Chartreuse
+Lime
+Golden
+Goldenrod
+Coral
+Salmon
+HotPink
+Fuchsia
+Puce
+Mauve
+Lavender
+Plum
+Indigo
+Maroon
+Crimson
+*/
+
+/* Ivory */
+
+.SPSCal_Ivory
+{
+background-color:#FFFFF0;
+border-color:#FFFFF0;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+
+.SPSCal_Ivory a:link,
+.SPSCal_Ivory a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+.SPSCal_Ivorysel
+{
+background-color:white;
+border-color:#FFFFF0;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+
+/* Beige */
+
+.SPSCal_Beige
+{
+background-color:#F5F5DC;
+border-color:#F5F5DC;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Beige a:link,
+.SPSCal_Beige a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+.SPSCal_Beigesel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Wheat */
+
+.SPSCal_Wheat
+{
+background-color:#F5DEB3;
+border-color:#F5DEB3;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Beige a:link,
+.SPSCal_Beige a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+
+.SPSCal_Wheatsel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Tan */
+
+.SPSCal_Tan
+{
+background-color:#D2B48C;
+border-color:#D2B48C;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Tan a:link,
+.SPSCal_Tan a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+.SPSCal_Tansel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}        	
+
+/* Khaki */
+
+.SPSCal_Khaki
+{
+background-color:#C3B091;
+border-color:#C3B091;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Khaki a:link,
+.SPSCal_Khaki a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+.SPSCal_Khakisel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+ 
+/* Silver */
+
+.SPSCal_Silver
+{
+background-color:#C0C0C0;
+border-color:#C0C0C0;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Silver a:link,
+.SPSCal_Silver a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+.SPSCal_Silversel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}	           	
+
+
+
+/* Gray */
+
+.SPSCal_Gray
+{
+background-color:#808080;
+border-color:#808080;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Gray a:link,
+.SPSCal_Gray a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+.SPSCal_Graysel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+} 
+
+/* Charcoal */
+
+.SPSCal_Charcoal
+{
+background-color:#464646;
+border-color:#464646;
+color:White;
+text-align:center;
+text-overflow:ellipsis;
+}
+
+.SPSCal_Charcoal a:link,
+.SPSCal_Charcoal a:visited
+{
+	color:White;
+	font-weight:lighter;
+}
+
+.SPSCal_Charcoalsel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+}
+	           	
+/* NavyBlue */
+
+.SPSCal_NavyBlue
+{
+background-color:#000080;
+border-color:#000080;
+color:White;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_NavyBlue a:link,
+.SPSCal_NavyBlue a:visited
+{
+	color:White;
+	font-weight:lighter;
+}
+
+.SPSCal_NavyBluesel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* RoyalBlue */
+
+.SPSCal_RoyalBlue
+{
+background-color:#084C9E;
+border-color:#084C9E;
+color:White;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_RoyalBlue a:link,
+.SPSCal_RoyalBlue a:visited
+{
+	color:White;
+	font-weight:lighter;
+}
+
+.SPSCal_RoyalBluesel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+	           	
+
+/* MediumBlue */
+
+.SPSCal_MediumBlue
+{
+background-color:#0000CD;
+border-color:#0000CD;
+color:White;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+
+.SPSCal_MediumBlue a:link,
+.SPSCal_MediumBlue a:visited
+{
+	color:White;
+	font-weight:lighter;
+}
+
+.SPSCal_MediumBluesel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+
+/* Azure */
+
+.SPSCal_Azure
+{
+background-color:#007FFF;
+border-color:#007FFF;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Azure a:link,
+.SPSCal_Azure a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+.SPSCal_Azuresel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}	           	
+
+
+/* Cyan */
+
+.SPSCal_Cyan
+{
+background-color:#00FFFF;
+border-color:#00FFFF;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Cyan a:link,
+.SPSCal_Cyan a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+.SPSCal_Cyansel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+ 
+/* Aquamarine */
+
+.SPSCal_Aquamarine
+{
+background-color:#7FFFD4;
+border-color:#7FFFD4;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Aquamarine a:link,
+.SPSCal_Aquamarine a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+
+.SPSCal_Aquamarinesel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}	           	
+
+
+/* Teal */
+
+.SPSCal_Teal
+{
+background-color:#008080;
+border-color:#008080;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Teal a:link,
+.SPSCal_Teal a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+.SPSCal_Tealsel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+} 
+
+
+/* ForestGreen */
+
+.SPSCal_ForestGreen
+{
+background-color:#228B22;
+border-color:#228B22;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_ForestGreen a:link,
+.SPSCal_ForestGreen a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+.SPSCal_ForestGreensel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}	           	
+
+/* Olive */
+
+.SPSCal_Olive
+{
+background-color:#808000;
+border-color:#808000;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Olive a:link,
+.SPSCal_Olive a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+.SPSCal_Olivesel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+ 
+/* Chartreuse */
+
+.SPSCal_Chartreuse
+{
+background-color:#7FFF00;
+border-color:#7FFF00;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Chartreuse a:link,
+.SPSCal_Chartreuse a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+.SPSCal_Chartreusesel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}	           	
+
+/* Lime */
+
+.SPSCal_Lime
+{
+background-color:#BFFF00;
+border-color:#BFFF00;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Lime a:link,
+.SPSCal_Lime a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+.SPSCal_Limesel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Golden */
+
+.SPSCal_Golden
+{
+background-color:#FFD700;
+border-color:#FFD700;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Golden a:link,
+.SPSCal_Golden a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+.SPSCal_Goldensel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}        	
+
+
+/* Goldenrod */
+
+.SPSCal_Goldenrod
+{
+background-color:#DAA520;
+border-color:#DAA520;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Goldenrod a:link,
+.SPSCal_Goldenrod a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+
+.SPSCal_Goldenrodsel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+
+/* Coral */
+
+.SPSCal_Coral
+{
+background-color:#FF7F50;
+border-color:#FF7F50;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Coral a:link,
+.SPSCal_Coral a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+.SPSCal_Coralsel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}       	
+
+/* Salmon */
+
+.SPSCal_Salmon
+{
+background-color:#FA8072;
+border-color:#FA8072;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Salmon a:link,
+.SPSCal_Salmon a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+.SPSCal_Salmonsel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+ 
+
+/* HotPink */
+
+.SPSCal_HotPink
+{
+background-color:#FC0FC0;
+border-color:#FC0FC0;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_HotPink a:link,
+.SPSCal_HotPink a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+.SPSCal_HotPinksel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}           	
+
+/* Fuchsia */
+
+.SPSCal_Fuchsia
+{
+background-color:#FF77FF;
+border-color:#FF77FF;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Fuchsia a:link,
+.SPSCal_Fuchsia a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+.SPSCal_Fuchsiasel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Puce */
+
+.SPSCal_Puce
+{
+background-color:#CC8899;
+border-color:#CC8899;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Puce a:link,
+.SPSCal_Puce a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+
+.SPSCal_Pucesel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}	           	
+
+/* Mauve */
+
+.SPSCal_Mauve
+{
+background-color:#E0B0FF;
+border-color:#E0B0FF;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Mauve a:link,
+.SPSCal_Mauve a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+.SPSCal_Mauvesel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Lavender */
+
+.SPSCal_Lavender
+{
+background-color:#B57EDC;
+border-color:#B57EDC;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Lavender a:link,
+.SPSCal_Lavender a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+.SPSCal_Lavendersel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}	           	
+
+/* Plum */
+
+.SPSCal_Plum
+{
+background-color:#843179;
+border-color:#843179;
+color:Black;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Plum a:link,
+.SPSCal_Plum a:visited
+{
+	color:Black;
+	font-weight:lighter;
+}
+
+.SPSCal_Plumsel
+{
+background-color:white;
+color:Black;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+ 
+
+/* Indigo */
+
+.SPSCal_Indigo
+{
+background-color:#4B0082;
+border-color:#4B0082;
+color:White;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Indigo a:link,
+.SPSCal_Indigo a:visited
+{
+	color:White;
+	font-weight:lighter;
+}
+
+.SPSCal_Indigosel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}          	
+
+/* Maroon */
+
+.SPSCal_Maroon
+{
+background-color:#800000;
+border-color:#800000;
+color:White;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Maroon a:link,
+.SPSCal_Maroon a:visited
+{
+	color:White;
+	font-weight:lighter;
+}
+
+
+.SPSCal_Maroonsel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Crimson */
+
+.SPSCal_Crimson
+{
+background-color:#DC143C;
+border-color:#DC143C;
+color:White;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Maroon a:link,
+.SPSCal_Maroon a:visited
+{
+	color:White;
+	font-weight:lighter;
+}
+
+.SPSCal_Crimsonsel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}  

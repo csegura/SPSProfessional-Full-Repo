@@ -1,0 +1,38 @@
+.OPTION EXPLICIT     
+.Set CabinetNameTemplate=xSOLUTIONx.xDEPLOYx 
+.set DiskDirectoryTemplate=CDROM 
+.Set CompressionType=MSZIP
+.Set UniqueFiles="ON"
+.Set Cabinet=on
+.Set DiskDirectory1=_Build
+
+; Manifest
+manifest_xDEPLOYx.xml manifest.xml
+
+; Binary files
+xDIRxSPSProfessional.SharePoint.Events.SiteCreation.dll SPSProfessional.SharePoint.Events.SiteCreation.dll
+
+; Webparts
+; SPSWebPart.webpart SPSWebPart.webpart
+
+; Images
+Images\spsprofessionallogo.gif		spsprofessionallogo.gif
+Images\spsprofessionalactions.gif	IMAGES\spsprofessionalactions.gif
+
+; Other resources
+; Feature
+.Set DestinationDir="SPSProfessional_SiteCreation\"
+SPSProfessional_SiteCreation\feature.xml						
+SPSProfessional_SiteCreation\SPSProfessional_SiteCreation.xml   
+
+; Pages
+.Set DestinationDir="LAYOUTS\"
+PAGES\SPSProfessional_SiteCreation.aspx
+PAGES\SPSProfessional_SiteCreationAdd.aspx
+PAGES\SPSProfessional_SiteCreationEdit.aspx
+
+; Resources
+.Set DestinationDir="SPSProfessional_SiteCreation\Resources"
+Resources\SPSProfessional.SharePoint.Events.SiteCreation.en-US.resx 
+Resources\SPSProfessional.SharePoint.Events.SiteCreation.es-ES.resx 
+Resources\SPSProfessional.SharePoint.Events.SiteCreation.resx 

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0"?>
+<Solution SolutionId="{DA6B520B-B904-49DD-B53D-49A7B541CD29}"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <Assemblies>
+    <Assembly DeploymentTarget="GlobalAssemblyCache"
+              Location="SPSProfessional.SharePoint.CM.Tasks.dll">
+      <ClassResources>
+        <ClassResource Location="spsprofessionallogo.gif"/>
+      </ClassResources>
+      <SafeControls>
+        <SafeControl
+          Assembly="SPSProfessional.SharePoint.CM.Tasks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7"
+          Namespace="SPSProfessional.SharePoint.CM.Tasks"
+          TypeName="*" 
+          Safe="True"
+        />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+
+    <!--
+  <RootFiles>
+    <RootFile Location="Resources\SPSProfessional.SharePoint.WebParts.MailToList.resx" />
+    <RootFile Location="Resources\SPSProfessional.SharePoint.WebParts.MailToList.en-US.resx" />
+  </RootFiles>
+  -->
+  
+    <!--
+  <Resources>
+    <Resource Location="SPSProfessional_MailToList\SPSMailStore\AllItems.aspx" />
+    <Resource Location="SPSProfessional_MailToList\SPSMailStore\DispForm.aspx" />
+    <Resource Location="SPSProfessional_MailToList\SPSMailStore\EditForm.aspx" />
+    <Resource Location="SPSProfessional_MailToList\SPSMailStore\NewForm.aspx" />
+    <Resource Location="SPSProfessional_MailToList\SPSMailStore\schema.xml" />
+  </Resources>
+  -->
+    
+    
+  <FeatureManifests>
+    <FeatureManifest Location="SPSProfessional_CMTasks\feature.xml" />
+  </FeatureManifests>
+
+  <TemplateFiles>
+    <TemplateFile Location="IMAGES\spsprofessionalactions.gif"/>
+    <TemplateFile Location="LAYOUTS\SPSProfessional_Tasks.aspx"/>
+  </TemplateFiles>
+  
+  <CodeAccessSecurity>
+    <PolicyItem>
+      <PermissionSet class="NamedPermissionSet" version="1" Description="Permission set for spsProParts components">
+        <IPermission class="AspNetHostingPermission" version="1" Level="Minimal" />
+        <IPermission class="SecurityPermission" version="1" Unrestricted="True" />
+        <IPermission class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+        <IPermission class="System.Security.Permissions.RegistryPermission" version="1" Unrestricted="True" />        
+        <IPermission class="Microsoft.SharePoint.Security.SharePointPermission, Microsoft.SharePoint.Security, version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" version="1" Unrestricted="True" />
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="True" />
+        <IPermission class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+        <IPermission class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+        <IPermission class="System.Data.SqlClient.SqlClientPermission, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" AllowBlankPassword="True" />
+        <IPermission class="System.Net.DnsPermission, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+        </PermissionSet>
+      <Assemblies>
+        <Assembly Name="SPSProfessional.SharePoint.WebParts.MailToList"/>
+        <!-- <Assembly Name="MailBee.NET"/> -->
+      </Assemblies>
+    </PolicyItem>
+  </CodeAccessSecurity>
+
+</Solution>

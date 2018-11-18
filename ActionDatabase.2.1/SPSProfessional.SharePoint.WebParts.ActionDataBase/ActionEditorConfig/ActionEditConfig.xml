@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SPSActionEditConfig>
+  <DataBase ConnectionString="Data Source=SRVDATOS;Initial Catalog=Northwind;User ID=sa;Password=sa">
+    <Table Name="Customers">
+      <IdentityColumn Name="columna" Type="OleDbType" />
+      <IdentityColumn Name="Columna" Type="OleDbType" />  
+    </Table>
+  </DataBase>
+  <ActionToolBars>
+    <ActionToolBar Name="View">
+      <Option Name="Edit" ImageUrl="/_layouts/images/edit.gif" Action="Edit" />
+      <Option Name="Back" ImageUrl="/_layouts/images/back.gif" Action="Back" />
+      <Option Name="Delete" ImageUrl="/_layouts/images/delete.gif" Action="Delete" />
+      <Option Name="New" ImageUrl="/_layouts/images/newrole.gif" Action="Create" />
+      <Option Name="Test" NavigateUrl="default.aspx" />
+    </ActionToolBar>
+    <ActionToolBar Name="Edit">
+      <Option Name="Update" ImageUrl="/_layouts/images/save.gif" Action="Back" />
+      <Option Name="Back" ImageUrl="/_layouts/images/back.gif" Action="View" />
+      <Option Name="Delete" ImageUrl="/_layouts/images/delete.gif" Action="Delete" />
+    </ActionToolBar>
+  </ActionToolBars>
+  <Fields>
+    <!-- 
+    -->
+    <Field Name="CompanyName" 
+           Title="Company" 
+           Control="TextBox"
+           Type="string" 
+           Required="false"            
+           DefaultValue="x00" 
+           DisplayFormat="x##"  
+           New="Enable" 
+           Edit="Enable"
+           View="Enable">
+      <TextBox Columns="440" MaxLenght="440" RightToLeft="true" />
+      <Memo Columns="440" Rows="410" MaxLength="4200" RichText="false"/>
+      <Lookup  TextField="CompanyName" ValueField="CustomerID" Table="TabelName" DisplayFormat="Opcional"/>
+      <Picker TextField="CompanyName" ValueField="CustomerID" ValueTextField="" Table="TabelName" DisplayFormat="Opcional" />
+      <ListItem Multiple="true">
+        <Item Text="value" Value="value" Selected="true"/>
+        <Item Text="value" Value="value" Selected="false"/>
+      </ListItem>
+      <Validators>
+        <Validator Type="Range" DataType="integer" MaxValue="xx" MinValue="xxx" ErrorMessage="xx" />
+        <Validator Type="RegEx" Expression="xxx" ErrorMessage="xx" />
+        <Validator Type="Compare" Operation="xxx" Value="xx" ErrorMessage="xx" />
+      </Validators>
+    </Field>
+    <Field Name="ContactName" Title="Contact" Description="" Type="TextBox" Required="false" Validator="" DefaultValue="" New="true" Edit="true" />
+    <Field Name="ContactTitle" Title="Title" Type="TextBox" Required="false" Validator="" DefaultValue="" New="true" Edit="true" />
+    <Field Name="Address" Title="Address" Type="TextBox" Required="false" Validator="" DefaultValue="" New="true" Edit="true" />
+    <Field Name="City" Title="City" Type="TextBox" Required="false" Validator="" DefaultValue="" New="true" Edit="true" />
+    <Field Name="Region" Title="Region" Type="memo" Required="false" Validator="" DefaultValue="" New="true" Edit="true" />
+    <Field Name="PostalCode" Title="Postal Code" Type="TextBox" Required="false" Validator="" DefaultValue="" New="true" Edit="true" />
+    <Field Name="Country" Title="Country" Type="TextBox" Required="false" Validator="" DefaultValue="" New="true" Edit="true" />
+    <Field Name="Phone" Title="Phone" Type="TextBox" Required="false" Validator="" DefaultValue="" New="true" Edit="true" />
+    <Field Name="Fax" Title="Fax" Type="TextBox" Required="false" Validator="" DefaultValue="" New="true" Edit="true" />
+  </Fields>
+  <Errors>
+    <Error Match="expre" Message="Mensaje de error" Color="#ff0000" />
+    <Error Match="expre" Message="Mensaje de error" Color="#ff0000" />
+  </Errors>
+</SPSActionEditConfig>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature Id="C509490D-0EAC-46E5-971B-F90093F9D182" 
+    Title="SPSProfessional List Administrative Tools"
+    Description="Toolset to administrate lists."
+    Version="1.0.0.0"
+    Scope="Site"
+    ImageUrl="spsprofessionalactions.gif"
+    ReceiverAssembly="SPSProfessional.SharePoint.Admin.ListTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7"
+    ReceiverClass="SPSProfessional.SharePoint.Admin.ListTools.AdminListFeatureReceiver"
+	  Hidden="FALSE"
+    xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ElementManifests>
+		<ElementManifest Location="SPS_AdminFormFields.xml" />
+		<ElementManifest Location="SPS_AdminViews.xml" />
+		<ElementManifest Location="SPS_CopyList.xml" />
+	</ElementManifests>
+</Feature>

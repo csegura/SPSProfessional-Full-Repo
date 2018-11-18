@@ -1,0 +1,37 @@
+﻿<?xml version="1.0"?>
+<Solution SolutionId="{20D41F8A-6B58-4DE2-8035-92E783627732}"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <Assemblies>
+    <Assembly DeploymentTarget="GlobalAssemblyCache" 
+              Location="SPSProfessional.SharePoint.Configuration.dll">
+      <ClassResources>
+        <ClassResource Location="spsprofessionallogo.gif"/>
+      </ClassResources>
+      <SafeControls>
+        <SafeControl
+          Assembly="SPSProfessional.SharePoint.Configuration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7"
+          Namespace="SPSProfessional.SharePoint.Configuration"
+          TypeName="*"
+        />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+
+  <Resources>
+    <Resource Location="SPSProfessional_ConfigurationManager\ConfigurationManagerList\AllItems.aspx" />
+    <Resource Location="SPSProfessional_ConfigurationManager\ConfigurationManagerList\DispForm.aspx" />
+    <Resource Location="SPSProfessional_ConfigurationManager\ConfigurationManagerList\EditForm.aspx" />
+    <Resource Location="SPSProfessional_ConfigurationManager\ConfigurationManagerList\NewForm.aspx" />
+    <Resource Location="SPSProfessional_ConfigurationManager\ConfigurationManagerList\schema.xml" />
+  </Resources>
+  
+  <FeatureManifests>
+    <FeatureManifest Location="SPSProfessional_ConfigurationManager\feature.xml" />
+  </FeatureManifests>
+
+  <TemplateFiles>
+    <TemplateFile Location="IMAGES\spsprofessionalactions.gif"/>
+  </TemplateFiles>  
+
+</Solution>

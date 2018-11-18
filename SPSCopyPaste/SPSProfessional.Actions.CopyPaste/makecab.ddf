@@ -1,0 +1,41 @@
+﻿.OPTION EXPLICIT     
+.Set CabinetNameTemplate=SPSProfessional.Actions.CopyPaste.2.8b.wsp
+.set DiskDirectoryTemplate=CDROM 
+.Set CompressionType=MSZIP
+.Set UniqueFiles="ON"
+.Set Cabinet=on
+.Set DiskDirectory1=_build
+
+; manifest
+manifest_wsp.xml manifest.xml
+
+; binary
+_build\SPSProfessional.Actions.CopyPaste.dll SPSProfessional.Actions.CopyPaste.dll
+
+; images
+spsprofessional.gif										spsprofessional.gif
+SPSProfessional_CopyPaste\spspro_copy.gif				IMAGES\spspro_copy.gif
+SPSProfessional_CopyPaste\spspro_cut.gif				IMAGES\spspro_cut.gif
+SPSProfessional_CopyPaste\spspro_paste.png				IMAGES\spspro_paste.png
+SPSProfessional_CopyPaste\spsprofessional_actions.gif	IMAGES\spsprofessional_actions.gif
+
+SPSProfessional_CopyPaste_Pic\spspro_pic_copy.png			IMAGES\spspro_pic_copy.png
+;SPSProfessional_CopyPaste_Pic\spspro_paste.png				IMAGES\spspro_paste.png
+SPSProfessional_CopyPaste_Pic\spspro_pic_cut.png			IMAGES\spspro_pic_cut.png
+SPSProfessional_CopyPaste_Pic\spspro_pic_clear.png			IMAGES\spspro_pic_clear.png
+;SPSProfessional_CopyPaste_Pic\spsprofessional_actions.gif	IMAGES\spsprofessional_actions.gif
+
+; feature
+SPSProfessional_CopyPaste\feature.xml								SPSProfessional_CopyPaste\feature.xml
+SPSProfessional_CopyPaste\SPSProfessional_Actions_CopyPaste.xml		SPSProfessional_CopyPaste\SPSProfessional_Actions_CopyPaste.xml
+
+SPSProfessional_CopyPaste_WS\feature.xml								SPSProfessional_CopyPaste_WS\feature.xml
+SPSProfessional_CopyPaste_WS\SPSProfessional_Actions_CopyPaste_WS.xml	SPSProfessional_CopyPaste_WS\SPSProfessional_Actions_CopyPaste_WS.xml
+
+SPSProfessional_CopyPaste_Pic\feature.xml							SPSProfessional_CopyPaste_Pic\feature.xml
+SPSProfessional_CopyPaste_Pic\SPSProfessional_Actions_CopyPaste.xml SPSProfessional_CopyPaste_Pic\SPSProfessional_Actions_CopyPaste.xml
+
+; resources
+Resources\SPSProfessional.Actions.CopyPaste.resx					RESOURCES\SPSProfessional.Actions.CopyPaste.resx
+Resources\SPSProfessional.Actions.CopyPaste.en-US.resx				RESOURCES\SPSProfessional.Actions.CopyPaste.en-US.resx
+Resources\SPSProfessional.Actions.CopyPaste.es-ES.resx				RESOURCES\SPSProfessional.Actions.CopyPaste.es-ES.resx

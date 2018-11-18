@@ -1,0 +1,67 @@
+﻿<SPSActionEditConfig>
+  <DataBase ConnectionString="Data Source=SRVDATOS;Initial Catalog=Northwind;User ID=sa;Password=sa;">
+    <Table Name="Orders">
+      <IdentityColumn Name="OrderID" Type="Int" />
+    </Table>
+  </DataBase>
+  <ActionToolBars>
+    <ActionToolBar Name="View">
+      <Option Name="Edit" ImageUrl="/_layouts/images/edit.gif" Action="Edit" />
+      <Option Name="Delete" ImageUrl="/_layouts/images/delete.gif" Action="Delete" />
+      <Option Name="New" ImageUrl="/_layouts/images/newrole.gif" Action="New" />
+    </ActionToolBar>
+    <ActionToolBar Name="Edit">
+      <Option Name="Update" ImageUrl="/_layouts/images/save.gif" Action="Update" />
+      <Option Name="Back" ImageUrl="/_layouts/images/back.gif" Action="Back" />
+      <Option Name="Delete" ImageUrl="/_layouts/images/delete.gif" Action="Delete" />
+    </ActionToolBar>
+    <ActionToolBar Name="New">
+      <Option Name="Save New" ImageUrl="/_layouts/images/save.gif" Action="Create" />
+      <Option Name="Back" ImageUrl="/_layouts/images/back.gif" Action="Back" />
+    </ActionToolBar>
+  </ActionToolBars>
+  <Fields>
+    <Field Name="OrderID" Title="OrderID" Type="Int" Control="TextBox" Required="true" DefaultValue="" DisplayFormat="" New="disabled" Edit="disabled" View="enabled">
+      <TextBox Columns="20" RightToLeft="true" />
+    </Field>
+    <Field Name="CustomerID" Title="CustomerID" Type="NChar" Control="Lookup" Required="true" DefaultValue="" DisplayFormat="" New="enabled" Edit="enabled" View="enabled">
+      <TextBox Columns="5" MaxLength="5" />
+      <Lookup TextField="CompanyName" ValueField="CustomerID" Table="Customers" />
+    </Field>
+    <Field Name="EmployeeID" Title="EmployeeID" Type="Int" Control="Lookup" Required="true" DefaultValue="" DisplayFormat="" New="enabled" Edit="enabled" View="enabled">
+      <TextBox Columns="20" RightToLeft="true" />
+      <Lookup TextField="LastName" ValueField="EmployeeID" Table="Employees" />
+    </Field>
+    <Field Name="OrderDate" Title="OrderDate" Type="DateTime" Control="Date" Required="true" DefaultValue="" DisplayFormat="{0:d}" New="enabled" Edit="enabled" View="enabled" />
+    <Field Name="RequiredDate" Title="RequiredDate" Type="DateTime" Control="Date" Required="true" DefaultValue="" DisplayFormat="{0:d}" New="enabled" Edit="enabled" View="enabled" />
+    <Field Name="ShippedDate" Title="ShippedDate" Type="DateTime" Control="Date" Required="true" DefaultValue="" DisplayFormat="{0:d}" New="enabled" Edit="enabled" View="enabled" />
+    <Field Name="ShipVia" Title="ShipVia" Type="Int" Control="Lookup" Required="true" DefaultValue="" DisplayFormat="" New="enabled" Edit="enabled" View="enabled">
+      <TextBox Columns="20" RightToLeft="true" />
+      <Lookup TextField="CompanyName" ValueField="ShipperID" Table="Shippers" />
+    </Field>
+    <Field Name="Freight" Title="Freight" Type="Money" Control="TextBox" Required="true" DefaultValue="" DisplayFormat="" New="enabled" Edit="enabled" View="enabled">
+      <TextBox Columns="20" RightToLeft="true" />
+      <Validators>
+        <Validator Type="Range" DataType="decimal" MaxValue="10000" MinValue="0" ErrorMessage="Number between 0 - 10000" />
+      </Validators>
+    </Field>
+    <Field Name="ShipName" Title="ShipName" Type="NVarChar" Control="TextBox" Required="true" DefaultValue="" DisplayFormat="" New="enabled" Edit="enabled" View="enabled">
+      <TextBox Columns="40" MaxLength="40" />
+    </Field>
+    <Field Name="ShipAddress" Title="ShipAddress" Type="NVarChar" Control="TextBox" Required="true" DefaultValue="" DisplayFormat="" New="enabled" Edit="enabled" View="enabled">
+      <TextBox Columns="40" MaxLength="60" />
+    </Field>
+    <Field Name="ShipCity" Title="ShipCity" Type="NVarChar" Control="TextBox" Required="true" DefaultValue="" DisplayFormat="" New="enabled" Edit="enabled" View="enabled">
+      <TextBox Columns="15" MaxLength="15" />
+    </Field>
+    <Field Name="ShipRegion" Title="ShipRegion" Type="NVarChar" Control="TextBox" Required="true" DefaultValue="" DisplayFormat="" New="enabled" Edit="enabled" View="enabled">
+      <TextBox Columns="15" MaxLength="15" />
+    </Field>
+    <Field Name="ShipPostalCode" Title="ShipPostalCode" Type="NVarChar" Control="TextBox" Required="true" DefaultValue="" DisplayFormat="" New="enabled" Edit="enabled" View="enabled">
+      <TextBox Columns="10" MaxLength="10" />
+    </Field>
+    <Field Name="ShipCountry" Title="ShipCountry" Type="NVarChar" Control="TextBox" Required="true" DefaultValue="" DisplayFormat="" New="enabled" Edit="enabled" View="enabled">
+      <TextBox Columns="15" MaxLength="15" />
+    </Field>
+  </Fields>
+</SPSActionEditConfig>

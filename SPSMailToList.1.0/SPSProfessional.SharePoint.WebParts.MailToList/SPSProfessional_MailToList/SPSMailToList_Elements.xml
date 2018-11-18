@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListTemplate
+    Name="SPSMailStore"
+    DisplayName="SPSProfessional Mail Store"    
+    Type="15001"
+    Description="List to store mail messages."
+    BaseType="0"
+    Category="Custom Lists"
+    OnQuickLaunch="FALSE"
+    SecurityBits="11" />
+</Elements>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SPSActionGridConfig>
+  <DataBase ConnectionString="" />
+  <Grid Name="" Sortable="true" Pageable="true" PageSize="10" />
+  <Query SelectCommand="" />
+  <Filter Expression="" >
+    <Param Name="" Type="" Default="" />
+    <Param Name="" Type="" Default="" />
+  </Filter>
+  <ToolBar>
+    <Button Name="" NavigateUrl="" ImageUrl="" />
+    <Button Name="" NavigateUrl="" ImageUrl="" />
+  </ToolBar>
+  <Columns>
+    <DataField Name="" Header="" Format="" SortExpression="">
+      <ContextMenu Fields="" Format="">
+        <ContextMenuItem Name="" Image="" Url=""  />
+        <ContextMenuItem Name="" Image="" Url=""  />
+      </ContextMenu>
+    </DataField>
+    <DataField Name="" Header="" />
+    <DataField Name="" Header="" Format="" SortExpression="" />
+  </Columns>
+</SPSActionGridConfig>

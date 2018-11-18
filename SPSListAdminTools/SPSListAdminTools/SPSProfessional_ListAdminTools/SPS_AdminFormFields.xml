@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+	  Id="SPSProfessional_AdminFormFields"
+	  RegistrationType="List"
+	  RegistrationId="100"
+	  GroupId="GeneralSettings"
+	  Location="Microsoft.SharePoint.ListEdit"
+	  Sequence="2000"
+	  Title="(SPS) Admin Form Fields" >
+    <UrlAction Url="~site/_layouts/SPSProfessional_AdminFormFields.aspx?List={ListId}"/>
+  </CustomAction>
+  <CustomAction
+   Id="SPSProfessional_AdminFormFields"
+   RegistrationType="List"
+   RegistrationId="103"
+   GroupId="GeneralSettings"
+   Location="Microsoft.SharePoint.ListEdit"
+   Sequence="2000"
+   Title="(SPS) Admin Form Fields" >
+    <UrlAction Url="~site/_layouts/SPSProfessional_AdminFormFields.aspx?List={ListId}"/>
+  </CustomAction>
+  <CustomAction
+   Id="SPSProfessional_AdminFormFields"
+   RegistrationType="List"
+   RegistrationId="102"
+   GroupId="GeneralSettings"
+   Location="Microsoft.SharePoint.ListEdit"
+   Sequence="2000"
+   Title="(SPS) Admin Form Fields" >
+    <UrlAction Url="~site/_layouts/SPSProfessional_AdminFormFields.aspx?List={ListId}"/>
+  </CustomAction>
+  <CustomAction
+   Id="SPSProfessional_AdminFormFields"
+   RegistrationType="List"
+   RegistrationId="104"
+   GroupId="GeneralSettings"
+   Location="Microsoft.SharePoint.ListEdit"
+   Sequence="2000"
+   Title="(SPS) Admin Form Fields" >
+    <UrlAction Url="~site/_layouts/SPSProfessional_AdminFormFields.aspx?List={ListId}"/>
+  </CustomAction>
+  <CustomAction
+     Id="SPSProfessional_AdminFormFields"
+     RegistrationType="List"
+     RegistrationId="105"
+     GroupId="GeneralSettings"
+     Location="Microsoft.SharePoint.ListEdit"
+     Sequence="2000"
+     Title="(SPS) Admin Form Fields" >
+    <UrlAction Url="~site/_layouts/SPSProfessional_AdminFormFields.aspx?List={ListId}"/>
+  </CustomAction>
+  <CustomAction
+   Id="SPSProfessional_AdminFormFields"
+   RegistrationType="List"
+   RegistrationId="106"
+   GroupId="GeneralSettings"
+   Location="Microsoft.SharePoint.ListEdit"
+   Sequence="2000"
+   Title="(SPS) Admin Form Fields" >
+    <UrlAction Url="~site/_layouts/SPSProfessional_AdminFormFields.aspx?List={ListId}"/>
+  </CustomAction>
+  <CustomAction
+   Id="SPSProfessional_AdminFormFields"
+   RegistrationType="List"
+   RegistrationId="107"
+   GroupId="GeneralSettings"
+   Location="Microsoft.SharePoint.ListEdit"
+   Sequence="2000"
+   Title="(SPS) Admin Form Fields" >
+    <UrlAction Url="~site/_layouts/SPSProfessional_AdminFormFields.aspx?List={ListId}"/>
+  </CustomAction>
+  <CustomAction
+  Id="SPSProfessional_AdminFormFields"
+  RegistrationType="List"
+  RegistrationId="108"
+  GroupId="GeneralSettings"
+  Location="Microsoft.SharePoint.ListEdit"
+  Sequence="2000"
+  Title="(SPS) Admin Form Fields" >
+    <UrlAction Url="~site/_layouts/SPSProfessional_AdminFormFields.aspx?List={ListId}"/>
+  </CustomAction>
+  <CustomAction
+   Id="SPSProfessional_AdminFormFields"
+   RegistrationType="List"
+   RegistrationId="150"
+   GroupId="GeneralSettings"
+   Location="Microsoft.SharePoint.ListEdit"
+   Sequence="2000"
+   Title="(SPS) Admin Form Fields" >
+    <UrlAction Url="~site/_layouts/SPSProfessional_AdminFormFields.aspx?List={ListId}"/>
+  </CustomAction>
+  <CustomAction
+	  Id="SPSProfessional_AdminFormFields"
+	  RegistrationType="List"
+	  RegistrationId="1100"
+	  GroupId="GeneralSettings"
+	  Location="Microsoft.SharePoint.ListEdit"
+	  Sequence="2000"
+	  Title="(SPS) Admin Form Fields" >
+    <UrlAction Url="~site/_layouts/SPSProfessional_AdminFormFields.aspx?List={ListId}"/>
+  </CustomAction>
+ </Elements>

@@ -1,0 +1,12 @@
+﻿<Feature
+  Id="B98DEAD2-2BFA-4445-A542-E0C0EBFC8D76"
+	Title="SPSProfessional Cut/Copy/Paste (No Security)"
+	Description="Cut, Copy and Paste documents in document libraries (No Security)."
+	Version="1.0.0.0"
+ 	Scope="Web"
+	ImageUrl="spsprofessional_actions.gif"
+  xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="SPSProfessional_Actions_CopyPaste_WS.xml" />
+  </ElementManifests>
+</Feature>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Feature 
+  Id="11B24ADE-3AC1-4774-A5C6-412C627545DA"
+	Title="SPSProfessional Cut/Copy/Paste Pictures"
+	Description="Cut, Copy and Paste images in picture libraries."
+	Version="1.0.0.0"
+ 	Scope="Web"
+	ImageUrl="spsprofessional_actions.gif"
+  xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="SPSProfessional_Actions_CopyPaste.xml" />
+  </ElementManifests>
+</Feature>

@@ -1,0 +1,17 @@
+﻿.OPTION EXPLICIT     
+.Set CabinetNameTemplate=SPSProfessional.SharePoint.WebParts.ActionDataBase.2.0.wsp 
+.set DiskDirectoryTemplate=CDROM 
+.Set CompressionType=MSZIP
+.Set UniqueFiles="ON"
+.Set Cabinet=on
+.Set DiskDirectory1=_Build
+manifest_wsp.xml manifest.xml
+
+_build\SPSProfessional.SharePoint.WebParts.ActionDataBase.dll SPSProfessional.SharePoint.WebParts.ActionDataBase.dll
+
+ActionGrid.webpart ActionGrid.webpart
+ActionEditor.webpart ActionEditor.webpart
+ActionEditorTEST.webpart ActionEditorTEST.webpart
+ActionFilterQueryString.webpart ActionFilterQueryString.webpart
+
+spsprofessionallogo.gif spsprofessionallogo.gif

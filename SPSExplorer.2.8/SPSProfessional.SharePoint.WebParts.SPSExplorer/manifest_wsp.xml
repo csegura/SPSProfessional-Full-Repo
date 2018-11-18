@@ -1,0 +1,52 @@
+﻿<?xml version="1.0"?>
+<Solution SolutionId="{8A297689-7031-444C-B1E9-D52FF62EB20D}"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <Assemblies>
+    <Assembly DeploymentTarget="GlobalAssemblyCache" 
+              Location="SPSProfessional.SharePoint.WebParts.SPSExplorer.dll">
+      <ClassResources>
+        <ClassResource Location="spsprofessionallogo.gif"/>
+      </ClassResources>
+      <SafeControls>       
+        <SafeControl
+          Assembly="SPSProfessional.SharePoint.WebParts.SPSExplorer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7"
+          Namespace="SPSProfessional.SharePoint.WebParts.SPSExplorer"
+          TypeName="*"
+        />
+      </SafeControls>
+    </Assembly>   
+  </Assemblies>
+
+  <DwpFiles>
+    <DwpFile Location="SPSDocumentExplorer.webpart" />
+    <DwpFile Location="SPSListExplorer.webpart" />
+  </DwpFiles>
+
+  <RootFiles>
+    <RootFile Location="Resources\SPSProfessional.SharePoint.WebParts.SPSExplorer.resx" />
+    <RootFile Location="Resources\SPSProfessional.SharePoint.WebParts.SPSExplorer.en-US.resx" />
+    <RootFile Location="Resources\SPSProfessional.SharePoint.WebParts.SPSExplorer.es-ES.resx" />
+  </RootFiles>
+  
+  <!--<CodeAccessSecurity>
+    <PolicyItem>
+      <PermissionSet class="NamedPermissionSet" version="1" Description="Permission set for spsProParts components">
+        <IPermission class="AspNetHostingPermission" version="1" Level="Minimal" />
+        <IPermission class="SecurityPermission" version="1" Unrestricted="True" />
+        <IPermission class="System.Security.Permissions.ReflectionPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+        <IPermission class="System.Security.Permissions.RegistryPermission" version="1" Unrestricted="True" />        
+        <IPermission class="Microsoft.SharePoint.Security.SharePointPermission, Microsoft.SharePoint.Security, version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" version="1" Unrestricted="True" />
+        <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="True" />
+        <IPermission class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+        <IPermission class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+        <IPermission class="System.Data.SqlClient.SqlClientPermission, System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" AllowBlankPassword="True" />
+        <IPermission class="System.Net.DnsPermission, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+        </PermissionSet>
+      <Assemblies>
+        <Assembly Name="SPSProfessional.SharePoint.WebParts.SPSExplorer"/>
+      </Assemblies>
+    </PolicyItem>
+  </CodeAccessSecurity>-->
+
+</Solution>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  
+
+  <PropertyGroup>
+    <MSBuildCommunityTasksPath>c:\dev\bin\MSBuildCommunity\Build</MSBuildCommunityTasksPath>
+    <XenoCode>&quot;C:\dev\bin\xenocode\postbuild 2007 professional\xbuild.exe&quot;</XenoCode>
+    <XenoCodeArgs>xenocode.postbuild /m xenocode.xcmap /o .</XenoCodeArgs>
+    <StsAdm>&quot;C:\Program Files\Common Files\Microsoft Shared\web server extensions\12\BIN\stsadm.exe&quot;</StsAdm>
+    <Project>SPSProfessional.SharePoint.Configuration</Project>
+    <Solution>$(Project).1.0</Solution>
+    <Build>Release</Build>
+    <UploadDir>\\192.168.110.226\c$\SPSProfessional\App_Data\files</UploadDir>
+    <MsgSeparator>______________________________________________________________</MsgSeparator>
+  </PropertyGroup>
+
+  <Import Project="$(MSBuildCommunityTasksPath)\MSBuild.Community.Tasks.Targets"/>
+
+  <Target Name="Clean">
+    <Message Importance="normal" Text="-> CLEAN OLD FILES $(MsgSeparator)" />
+    <Exec Command="@del *.cab > nul" />
+    <Exec Command="@del *.dll > nul" />
+    <Exec Command="@del *.wsp > nul" />
+    <Exec Command="@del *.xcmap > nul" />
+  </Target>
+  
+  <Target Name="Compile" DependsOnTargets="Clean">    
+    <Message Importance="high" Text="-> COMPILE STAGE $(Build) $(MsgSeparator)" />
+    <MSBuild Projects="..\$(Project).csproj" 
+             Targets="Clean;Rebuild" 
+             Properties="Configuration=$(Build);PostBuildEvent=" RebaseOutputs="false"/>    
+  </Target>
+
+  <Target Name="XenoCode" DependsOnTargets="Compile" Condition="$(Build) == 'Release'">
+    <Message Importance="high" Text="-> OFFUSCATE $(MsgSeparator)" />
+    <Exec Command="$(XenoCode) $(XenoCodeArgs)" />    
+  </Target>
+
+  <Target Name="CopyDebugDll" DependsOnTargets="Compile" Condition="$(Build) == 'Debug'">
+    <Message Importance="high" Text="-> GET DEBUG DLL $(MsgSeparator)" />
+    <Copy SourceFiles="..\bin\debug\$(Project).dll" DestinationFolder="." />
+  </Target>
+
+  <Target Name="PrepairPackage" DependsOnTargets="CopyDebugDll;XenoCode" >
+    <Copy SourceFiles="..\makecab_var.ddf" DestinationFiles="..\makecab.ddf" />
+    <FileUpdate Files="..\makecab.ddf" Regex="xSOLUTIONx" ReplacementText="$(Solution)"/>
+    <FileUpdate Files="..\makecab.ddf" Regex="xDIRx" ReplacementText="bin\$(Build)\"/>    
+    <FileUpdate Files="..\makecab.ddf" Regex="xDEPLOYx" ReplacementText="wsp"/>
+    <Message Importance="high" Text="-> SOLUTION NAME $(Solution)" />
+  </Target>
+
+  <Target Name="Package" DependsOnTargets="PrepairPackage" >
+    <Message Importance="high" Text="-> PACKAGE $(MsgSeparator)" />
+    <Exec Command="makecab.exe /F makecab.ddf" WorkingDirectory="..\" />
+  </Target>
+
+  <Target Name="Remove">
+    <Message Importance="high" Text="-> CLEAN SOLUTION $(MsgSeparator)" />
+	<CallTarget Targets="Deactivate"   />
+    <Exec Command="$(StsAdm) -o deletewppack -name $(Solution).cab" IgnoreExitCode="true" />
+    <Exec Command="$(StsAdm) -o retractsolution -name $(Solution).wsp  -immediate -allcontenturls" IgnoreExitCode="true"/>   
+    <Exec Command="$(StsAdm) -o execadmsvcjobs" IgnoreExitCode="true"/>   
+    <Exec Command="$(StsAdm) -o deletesolution -name $(Solution).wsp -override" IgnoreExitCode="true"/>   
+  </Target>
+
+  <Target Name="Deploy" DependsOnTargets="Remove;Package">
+    <CallTarget Targets="DeploySolution" />
+  </Target>
+
+  <Target Name="DeployNoRemove" DependsOnTargets="Package">
+    <CallTarget Targets="DeploySolution" />
+  </Target>
+
+  <Target Name="DeploySolution">
+    <Message Importance="high" Text="-> DEPLOY SOLUTION $(MsgSeparator)" />
+    <Exec Command="$(StsAdm) -o addsolution -filename $(Solution).wsp" />
+    <Exec Command="$(StsAdm) -o deploysolution -name $(Solution).wsp -local -allowgacdeployment -allcontenturls -allowCasPolicies" />
+    <CallTarget Targets="Activate" /> 
+ </Target>
+  
+  <Target Name="Upload">
+    <Message Importance="high" Text="-> UPLOAD SOLUTION $(Solution).wsp $(MsgSeparator)" />
+    <Copy SourceFiles="$(Solution).wsp" DestinationFolder="$(UploadDir)"  />
+  </Target>
+  
+  
+   <Target Name="Activate">
+    <Message Importance="high" Text="-> ACTIVATE FEATURE $(MsgSeparator)" />
+    <Exec Command="$(StsAdm) –o activatefeature –name SPSProfessional_ConfigurationManager -url http://localhost" />
+  </Target>
+  
+   <Target Name="Deactivate">
+    <Message Importance="high" Text="-> DEACTIVATE FEATURE $(MsgSeparator)" />
+    <Exec Command="$(StsAdm) –o deactivatefeature –name SPSProfessional_ConfigurationManager -url http://localhost"  IgnoreExitCode="true"/>
+  </Target>
+</Project>

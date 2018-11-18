@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Feature  
+    Id="{51EF9BB6-2E39-41BD-BA8A-1D3385D1627A}"
+    Title="SPSProfessional Mail To List"
+    Description="Add a list to store mail messages."
+    Version="12.0.0.0"
+    DefaultResourceFile="core"
+    Scope="Web" 
+    Hidden="False"
+    ImageUrl="spsprofessionalactions.gif"
+    xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="SPSMailToList_Elements.xml" />
+  </ElementManifests>
+</Feature>
+
+

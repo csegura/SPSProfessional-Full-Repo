@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SPSActionGridConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DataBase">
+          <xs:complexType>
+            <xs:attribute name="ConnectionString" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Grid">
+          <xs:complexType>
+            <xs:attribute name="Name" type="xs:string" use="required" />
+            <xs:attribute name="Sortable" type="xs:boolean" use="required" />
+            <xs:attribute name="Pageable" type="xs:boolean" use="required" />
+            <xs:attribute name="PageSize" type="xs:unsignedByte" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Query">
+          <xs:complexType>
+            <xs:attribute name="SelectCommand" type="xs:string" use="required" />
+            <xs:attribute name="Cache" type="xs:boolean" use="optional" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" maxOccurs="1" name="Filter">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="Param">
+                <xs:complexType>
+                  <xs:attribute name="Name" type="xs:string" use="required" />
+                  <xs:attribute name="Type" type="xs:string" use="required" />
+                  <xs:attribute name="Default" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Expression" type="xs:string" use="optional" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Columns" minOccurs="1" maxOccurs="1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="1" maxOccurs="unbounded" name="DataField">
+                <xs:complexType>
+                  <xs:sequence minOccurs="0">
+                    <xs:element name="ContextMenu">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="ContextMenuItem">
+                            <xs:complexType>
+                              <xs:attribute name="Name" type="xs:string" use="required" />
+                              <xs:attribute name="Image" type="xs:string" use="required" />
+                              <xs:attribute name="Url" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="Fields" type="xs:string" use="required" />
+                        <xs:attribute name="Format" type="xs:string" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="Name" type="xs:string" use="required" />
+                  <xs:attribute name="Header" type="xs:string" use="required" />
+                  <xs:attribute name="Format" type="xs:string" use="optional" />
+                  <xs:attribute name="IsHtml" type="xs:boolean" use="optional" />
+                  <xs:attribute name="Select" type="xs:boolean" use="optional" />
+                  <xs:attribute name="SortExpression" type="xs:string" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="FilterTypeCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Boolean" />
+      <xs:enumeration value="Char" />
+      <xs:enumeration value="DateTime" />
+      <xs:enumeration value="DBNull" />
+      <xs:enumeration value="Decimal" />
+      <xs:enumeration value="Double" />
+      <xs:enumeration value="Empty" />
+      <xs:enumeration value="Int16" />
+      <xs:enumeration value="Int32" />
+      <xs:enumeration value="Int64" />
+      <xs:enumeration value="Single" />
+      <xs:enumeration value="String" />
+      <xs:enumeration value="UInt16" />
+      <xs:enumeration value="UInt32" />
+      <xs:enumeration value="UInt64" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

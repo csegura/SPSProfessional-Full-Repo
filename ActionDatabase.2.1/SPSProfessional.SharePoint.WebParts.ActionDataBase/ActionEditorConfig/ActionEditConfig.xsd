@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SPSActionEditConfig">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DataBase">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Table">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="IdentityColumn">
+                      <xs:complexType>
+                        <xs:attribute name="Name" type="xs:string" use="required" />
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="Name" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="ConnectionString" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ActionToolBars">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="ActionToolBar">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="Option">
+                      <xs:complexType>
+                        <xs:attribute name="Name" type="xs:string" use="required" />
+                        <xs:attribute name="ImageUrl" type="xs:string" use="optional" />
+                        <xs:attribute name="Action" type="xs:string" use="optional" />
+                        <xs:attribute name="NavigateUrl" type="xs:string" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="Name" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Fields">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="Field">
+                <xs:complexType>
+                  <xs:sequence minOccurs="0">
+                    <xs:element name="TextBox">
+                      <xs:complexType>
+                        <xs:attribute name="Columns" type="xs:unsignedShort" use="required" />
+                        <xs:attribute name="MaxLenght" type="xs:unsignedShort" use="required" />
+                        <xs:attribute name="RightToLeft" type="xs:boolean" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Memo">
+                      <xs:complexType>
+                        <xs:attribute name="Columns" type="xs:unsignedShort" use="required" />
+                        <xs:attribute name="Rows" type="xs:unsignedShort" use="required" />
+                        <xs:attribute name="MaxLength" type="xs:unsignedShort" use="required" />
+                        <xs:attribute name="RichText" type="xs:string" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Lookup">
+                      <xs:complexType>
+                        <xs:attribute name="TextField" type="xs:string" use="required" />
+                        <xs:attribute name="ValueField" type="xs:string" use="required" />
+                        <xs:attribute name="Table" type="xs:string" use="required" />
+                        <xs:attribute name="DisplayFormat" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ListItems">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Item" minOccurs="1" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:attribute name="Text" type="xs:string" use="required" />
+                              <xs:attribute name="Value" type="xs:string" use="required" />
+                              <xs:attribute name="Selected" type="xs:boolean" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="Multiple" type="xs:boolean" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Validators">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="Validator">
+                            <xs:complexType>
+                              <xs:attribute name="Type" type="xs:string" use="required" />
+                              <xs:attribute name="DataType" type="xs:string" use="optional" />
+                              <xs:attribute name="MaxValue" type="xs:string" use="optional" />
+                              <xs:attribute name="MinValue" type="xs:string" use="optional" />
+                              <xs:attribute name="ErrorMessage" type="xs:string" use="required" />
+                              <xs:attribute name="Expression" type="xs:string" use="optional" />
+                              <xs:attribute name="Operation" type="xs:string" use="optional" />
+                              <xs:attribute name="Value" type="xs:string" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="Name" type="xs:string" use="required" />
+                  <xs:attribute name="Title" type="xs:string" use="required" />
+                  <xs:attribute name="Control" type="xs:string" use="optional" />
+                  <xs:attribute name="Type" type="xs:string" use="required" />
+                  <xs:attribute name="Required" type="xs:boolean" use="required" />
+                  <xs:attribute name="DefaultValue" type="xs:string" use="required" />
+                  <xs:attribute name="DisplayFormat" type="xs:string" use="optional" />
+                  <xs:attribute name="New" type="xs:string" use="required" />
+                  <xs:attribute name="Edit" type="xs:string" use="required" />
+                  <xs:attribute name="View" type="xs:string" use="optional" />
+                  <xs:attribute name="Description" type="xs:string" use="optional" />
+                  <xs:attribute name="Validator" type="xs:string" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Errors">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name ="Error">
+                <xs:complexType>
+                  <xs:attribute name="Match" type="xs:string" use="required" />
+                  <xs:attribute name="Message" type="xs:string" use="required" />
+                  <xs:attribute name="Color" type="xs:string" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

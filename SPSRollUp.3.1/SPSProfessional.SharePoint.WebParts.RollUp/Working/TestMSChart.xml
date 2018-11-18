@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Rows>
+  <Row>
+    <_RowNumber>0</_RowNumber>
+    <Title>Asia</Title>
+    <Columna2>300</Columna2>
+    <Columna3>Nuts</Columna3>
+  </Row>
+  <Row>
+    <_RowNumber>1</_RowNumber>
+    <Title>North America</Title>
+    <Columna2>200</Columna2>
+    <Columna3>Nuts</Columna3>
+  </Row>
+  <Row>
+    <_RowNumber>2</_RowNumber>
+    <Title>South America</Title>
+    <Columna2>300</Columna2>
+    <Columna3>Bolts</Columna3>
+  </Row>
+  <Row>
+    <_RowNumber>3</_RowNumber>
+    <Title>North America</Title>
+    <Columna2>300</Columna2>
+    <Columna3>Washers</Columna3>
+  </Row>
+  <Row>
+    <_RowNumber>4</_RowNumber>
+    <Title>Europe</Title>
+    <Columna2>300</Columna2>
+    <Columna3>Nuts</Columna3>
+  </Row>
+  <Row>
+    <_RowNumber>5</_RowNumber>
+    <Title>Europe</Title>
+    <Columna2>300</Columna2>
+    <Columna3>Bolts</Columna3>
+  </Row>
+  <Row>
+    <_RowNumber>6</_RowNumber>
+    <Title>Asia</Title>
+    <Columna2>300</Columna2>
+    <Columna3>Washers</Columna3>
+  </Row>
+  <Row>
+    <_RowNumber>7</_RowNumber>
+    <Title>Asia</Title>
+    <Columna2>300</Columna2>
+    <Columna3>Bolts</Columna3>
+  </Row>
+  <Row>
+    <_RowNumber>8</_RowNumber>
+    <Title>Asia</Title>
+    <Columna2>300</Columna2>
+    <Columna3>Nuts</Columna3>
+  </Row>
+  <Row>
+    <_RowNumber>9</_RowNumber>
+    <Title>Europe</Title>
+    <Columna2>300</Columna2>
+    <Columna3>Bolts</Columna3>
+  </Row>
+  <Row>
+    <_RowNumber>2</_RowNumber>
+    <Title>South America1</Title>
+    <Columna2>300</Columna2>
+    <Columna3>Bolts</Columna3>
+  </Row>
+</Rows>
+

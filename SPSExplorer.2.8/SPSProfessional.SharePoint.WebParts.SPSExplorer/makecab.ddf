@@ -1,0 +1,26 @@
+﻿.OPTION EXPLICIT     
+.Set CabinetNameTemplate=SPSProfessional.SharePoint.WebParts.SPSExplorer.2.9.wsp 
+.set DiskDirectoryTemplate=CDROM 
+.Set CompressionType=MSZIP
+.Set UniqueFiles="ON"
+.Set Cabinet=on
+.Set DiskDirectory1=_Build
+
+; Manifest
+manifest_wsp.xml manifest.xml
+
+; Binary files
+_build\SPSProfessional.SharePoint.WebParts.SPSExplorer.dll	SPSProfessional.SharePoint.WebParts.SPSExplorer.dll
+
+; Webparts
+SPSDocumentExplorer.webpart									SPSDocumentExplorer.webpart 
+SPSListExplorer.webpart										SPSListExplorer.webpart
+
+; Images
+Images\spsprofessionallogo.gif								spsprofessionallogo.gif
+
+; Resources
+; Resources
+Resources\SPSProfessional.SharePoint.WebParts.SPSExplorer.resx				Resources\SPSProfessional.SharePoint.WebParts.SPSExplorer.resx
+Resources\SPSProfessional.SharePoint.WebParts.SPSExplorer.en-US.resx		Resources\SPSProfessional.SharePoint.WebParts.SPSExplorer.en-US.resx
+Resources\SPSProfessional.SharePoint.WebParts.SPSExplorer.es-ES.resx		Resources\SPSProfessional.SharePoint.WebParts.SPSExplorer.es-ES.resx

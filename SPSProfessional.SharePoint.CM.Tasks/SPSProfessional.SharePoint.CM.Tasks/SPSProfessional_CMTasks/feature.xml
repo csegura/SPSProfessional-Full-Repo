@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Feature  
+    Id="{FCA975F3-6342-4BFE-8B6C-77D9E9A61008}"
+    Title="SPSProfessional Tasks Context Menu"
+    Description="Add new optiosn to tasks context menu "
+    Version="1.0.0.0"
+    Scope="Web" 
+    Hidden="False"
+    ImageUrl="spsprofessionalactions.gif"
+    xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="SPSCMTasks_Elements.xml" />
+  </ElementManifests>
+</Feature>
+
+

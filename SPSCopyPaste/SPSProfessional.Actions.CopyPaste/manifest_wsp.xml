@@ -1,0 +1,45 @@
+﻿<?xml version="1.0"?>
+<Solution SolutionId="{3927A5FE-AAAA-4877-8FA8-C9C5AED02602}"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <Assemblies>
+    <Assembly DeploymentTarget="GlobalAssemblyCache"
+              Location="SPSProfessional.Actions.CopyPaste.dll">
+      <SafeControls>
+        <SafeControl
+           Assembly="SPSProfessional.Actions.CopyPaste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7"
+           Namespace="SPSProfessional.Actions.CopyPaste"
+           TypeName="*"
+           Safe="True" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+
+  <FeatureManifests>
+    <FeatureManifest Location="SPSProfessional_CopyPaste\Feature.xml"/>
+    <FeatureManifest Location="SPSProfessional_CopyPaste_Pic\Feature.xml"/>
+    <FeatureManifest Location="SPSProfessional_CopyPaste_WS\Feature.xml"/>
+  </FeatureManifests>
+
+  <RootFiles>
+    <RootFile Location="Resources\SPSProfessional.Actions.CopyPaste.resx" />
+    <RootFile Location="Resources\SPSProfessional.Actions.CopyPaste.en-US.resx" />
+    <RootFile Location="Resources\SPSProfessional.Actions.CopyPaste.es-ES.resx" />
+  </RootFiles>
+  
+  <!--<Resources>
+    <Resource Location="" />
+  </Resources>-->
+
+  <TemplateFiles>
+    <TemplateFile Location="IMAGES\spspro_copy.gif" />
+    <!--<TemplateFile Location="IMAGES\spspro_paste.gif" />-->
+    <TemplateFile Location="IMAGES\spspro_cut.gif" />
+    <TemplateFile Location="IMAGES\spspro_pic_copy.png" />
+    <TemplateFile Location="IMAGES\spspro_paste.png" />
+    <TemplateFile Location="IMAGES\spspro_pic_cut.png" />
+    <TemplateFile Location="IMAGES\spspro_pic_clear.png" />
+    <TemplateFile Location="IMAGES\SPSProfessional_actions.gif" />
+  </TemplateFiles>
+
+</Solution>

@@ -1,0 +1,1887 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FxCopProject Version="1.36" Name="Framework 2.1">
+ <ProjectOptions>
+  <SharedProject>True</SharedProject>
+  <Stylesheet Apply="False">c:\dev\bin\fxcop\Xml\FxCopReport.xsl</Stylesheet>
+  <SaveMessages>
+   <Project Status="Active" NewOnly="False" />
+   <Report Status="Active" NewOnly="False" />
+  </SaveMessages>
+  <ProjectFile Compress="True" DefaultTargetCheck="True" DefaultRuleCheck="True" SaveByRuleGroup="" Deterministic="True" />
+  <EnableMultithreadedLoad>True</EnableMultithreadedLoad>
+  <EnableMultithreadedAnalysis>True</EnableMultithreadedAnalysis>
+  <SourceLookup>True</SourceLookup>
+  <AnalysisExceptionsThreshold>10</AnalysisExceptionsThreshold>
+  <RuleExceptionsThreshold>1</RuleExceptionsThreshold>
+  <Spelling Locale="en-US" />
+  <OverrideRuleVisibilities>False</OverrideRuleVisibilities>
+  <CustomDictionaries SearchFxCopDir="True" SearchUserProfile="True" SearchProjectDir="True" />
+  <SearchGlobalAssemblyCache>False</SearchGlobalAssemblyCache>
+  <DeadlockDetectionTimeout>120</DeadlockDetectionTimeout>
+  <IgnoreGeneratedCode>False</IgnoreGeneratedCode>
+  <TargetFrameworkVersion>2.0</TargetFrameworkVersion>
+ </ProjectOptions>
+ <Targets>
+  <Target Name="$(ProjectDir)/../SPSProfessional.SharePoint.Framework/bin/Debug/SPSProfessional.SharePoint.Framework.dll" Analyze="True" AnalyzeAllChildren="True" />
+ </Targets>
+ <Rules>
+  <RuleFiles>
+   <RuleFile Name="$(FxCopDir)\Rules\DesignRules.dll" Enabled="True" AllRulesEnabled="False">
+    <Rule Name="AbstractTypesShouldNotHaveConstructors" Enabled="True" />
+    <Rule Name="AssembliesShouldHaveValidStrongNames" Enabled="True" />
+    <Rule Name="AvoidEmptyInterfaces" Enabled="True" />
+    <Rule Name="AvoidExcessiveParametersOnGenericTypes" Enabled="True" />
+    <Rule Name="AvoidOutParameters" Enabled="True" />
+    <Rule Name="CollectionsShouldImplementGenericInterface" Enabled="True" />
+    <Rule Name="ConsiderPassingBaseTypesAsParameters" Enabled="True" />
+    <Rule Name="DeclareEventHandlersCorrectly" Enabled="True" />
+    <Rule Name="DeclareTypesInNamespaces" Enabled="True" />
+    <Rule Name="DefaultParametersShouldNotBeUsed" Enabled="True" />
+    <Rule Name="DefineAccessorsForAttributeArguments" Enabled="True" />
+    <Rule Name="DoNotCatchGeneralExceptionTypes" Enabled="True" />
+    <Rule Name="DoNotDeclareProtectedMembersInSealedTypes" Enabled="True" />
+    <Rule Name="DoNotDeclareStaticMembersOnGenericTypes" Enabled="True" />
+    <Rule Name="DoNotDeclareVirtualMembersInSealedTypes" Enabled="True" />
+    <Rule Name="DoNotDeclareVisibleInstanceFields" Enabled="True" />
+    <Rule Name="DoNotExposeGenericLists" Enabled="True" />
+    <Rule Name="DoNotHideBaseClassMethods" Enabled="True" />
+    <Rule Name="DoNotNestGenericTypesInMemberSignatures" Enabled="True" />
+    <Rule Name="DoNotOverloadOperatorEqualsOnReferenceTypes" Enabled="True" />
+    <Rule Name="DoNotPassTypesByReference" Enabled="True" />
+    <Rule Name="DoNotRaiseExceptionsInUnexpectedLocations" Enabled="True" />
+    <Rule Name="EnumeratorsShouldBeStronglyTyped" Enabled="True" />
+    <Rule Name="EnumsShouldHaveZeroValue" Enabled="True" />
+    <Rule Name="EnumStorageShouldBeInt32" Enabled="True" />
+    <Rule Name="ExceptionsShouldBePublic" Enabled="True" />
+    <Rule Name="GenericMethodsShouldProvideTypeParameter" Enabled="True" />
+    <Rule Name="ICollectionImplementationsHaveStronglyTypedMembers" Enabled="True" />
+    <Rule Name="ImplementIDisposableCorrectly" Enabled="True" />
+    <Rule Name="ImplementStandardExceptionConstructors" Enabled="True" />
+    <Rule Name="IndexersShouldNotBeMultidimensional" Enabled="True" />
+    <Rule Name="InterfaceMethodsShouldBeCallableByChildTypes" Enabled="True" />
+    <Rule Name="ListsAreStronglyTyped" Enabled="True" />
+    <Rule Name="MarkAssembliesWithAssemblyVersion" Enabled="True" />
+    <Rule Name="MarkAssembliesWithClsCompliant" Enabled="True" />
+    <Rule Name="MarkAssembliesWithComVisible" Enabled="True" />
+    <Rule Name="MarkAttributesWithAttributeUsage" Enabled="True" />
+    <Rule Name="MarkEnumsWithFlags" Enabled="True" />
+    <Rule Name="MembersShouldNotExposeCertainConcreteTypes" Enabled="True" />
+    <Rule Name="MovePInvokesToNativeMethodsClass" Enabled="True" />
+    <Rule Name="NestedTypesShouldNotBeVisible" Enabled="True" />
+    <Rule Name="OverloadOperatorEqualsOnOverloadingAddAndSubtract" Enabled="True" />
+    <Rule Name="OverrideMethodsOnComparableTypes" Enabled="True" />
+    <Rule Name="PropertiesShouldNotBeWriteOnly" Enabled="True" />
+    <Rule Name="ProvideObsoleteAttributeMessage" Enabled="True" />
+    <Rule Name="ReplaceRepetitiveArgumentsWithParamsArray" Enabled="True" />
+    <Rule Name="StaticHolderTypesShouldBeSealed" Enabled="True" />
+    <Rule Name="StaticHolderTypesShouldNotHaveConstructors" Enabled="True" />
+    <Rule Name="StringUriOverloadsCallSystemUriOverloads" Enabled="True" />
+    <Rule Name="TypesShouldNotExtendCertainBaseTypes" Enabled="True" />
+    <Rule Name="TypesThatOwnDisposableFieldsShouldBeDisposable" Enabled="True" />
+    <Rule Name="TypesThatOwnNativeResourcesShouldBeDisposable" Enabled="True" />
+    <Rule Name="UriParametersShouldNotBeStrings" Enabled="True" />
+    <Rule Name="UriPropertiesShouldNotBeStrings" Enabled="True" />
+    <Rule Name="UriReturnValuesShouldNotBeStrings" Enabled="True" />
+    <Rule Name="UseEventsWhereAppropriate" Enabled="True" />
+    <Rule Name="UseGenericEventHandlerInstances" Enabled="True" />
+    <Rule Name="UseGenericsWhereAppropriate" Enabled="True" />
+    <Rule Name="UseIntegralOrStringArgumentForIndexers" Enabled="True" />
+    <Rule Name="UsePropertiesWhereAppropriate" Enabled="True" />
+   </RuleFile>
+   <RuleFile Name="$(FxCopDir)\Rules\GlobalizationRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\InteroperabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\MobilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\NamingRules.dll" Enabled="False" AllRulesEnabled="False" />
+   <RuleFile Name="$(FxCopDir)\Rules\PerformanceRules.dll" Enabled="True" AllRulesEnabled="False">
+    <Rule Name="AvoidExcessiveLocals" Enabled="True" />
+    <Rule Name="AvoidUncalledPrivateCode" Enabled="True" />
+    <Rule Name="AvoidUninstantiatedInternalClasses" Enabled="True" />
+    <Rule Name="AvoidUnsealedAttributes" Enabled="True" />
+    <Rule Name="AvoidUnusedPrivateFields" Enabled="True" />
+    <Rule Name="DoNotCastUnnecessarily" Enabled="True" />
+    <Rule Name="DoNotInitializeUnnecessarily" Enabled="True" />
+    <Rule Name="InitializeReferenceTypeStaticFieldsInline" Enabled="True" />
+    <Rule Name="MarkAssembliesWithNeutralResourcesLanguage" Enabled="True" />
+    <Rule Name="OverrideEqualsAndOperatorEqualsOnValueTypes" Enabled="True" />
+    <Rule Name="PreferJaggedArraysOverMultidimensional" Enabled="True" />
+    <Rule Name="PropertiesShouldNotReturnArrays" Enabled="True" />
+    <Rule Name="RemoveEmptyFinalizers" Enabled="True" />
+    <Rule Name="RemoveUnusedLocals" Enabled="True" />
+    <Rule Name="TestForEmptyStringsUsingStringLength" Enabled="True" />
+    <Rule Name="UseLiteralsWhereAppropriate" Enabled="True" />
+   </RuleFile>
+   <RuleFile Name="$(FxCopDir)\Rules\PortabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\SecurityRules.dll" Enabled="True" AllRulesEnabled="False">
+    <Rule Name="AptcaMethodsShouldOnlyCallAptcaMethods" Enabled="True" />
+    <Rule Name="AptcaTypesShouldOnlyExtendAptcaBaseTypes" Enabled="True" />
+    <Rule Name="ArrayFieldsShouldNotBeReadOnly" Enabled="True" />
+    <Rule Name="CallGCKeepAliveWhenUsingNativeResources" Enabled="True" />
+    <Rule Name="CatchNonClsCompliantExceptionsInGeneralHandlers" Enabled="True" />
+    <Rule Name="DoNotDeclareReadOnlyMutableReferenceTypes" Enabled="True" />
+    <Rule Name="MethodSecurityShouldBeASupersetOfType" Enabled="True" />
+    <Rule Name="OverrideLinkDemandsShouldBeIdenticalToBase" Enabled="True" />
+    <Rule Name="PointersShouldNotBeVisible" Enabled="True" />
+    <Rule Name="ReviewDeclarativeSecurityOnValueTypes" Enabled="True" />
+    <Rule Name="ReviewDenyAndPermitOnlyUsage" Enabled="True" />
+    <Rule Name="ReviewImperativeSecurity" Enabled="True" />
+    <Rule Name="ReviewSuppressUnmanagedCodeSecurityUsage" Enabled="True" />
+    <Rule Name="ReviewVisibleEventHandlers" Enabled="True" />
+    <Rule Name="SealMethodsThatSatisfyPrivateInterfaces" Enabled="True" />
+    <Rule Name="SecureAsserts" Enabled="True" />
+    <Rule Name="SecuredTypesShouldNotExposeFields" Enabled="True" />
+    <Rule Name="SecureSerializationConstructors" Enabled="True" />
+    <Rule Name="SecurityTransparentAssembliesShouldNotContainSecurityCriticalCode" Enabled="True" />
+    <Rule Name="SecurityTransparentCodeShouldNotAssert" Enabled="True" />
+    <Rule Name="SecurityTransparentCodeShouldNotReferenceNonpublicSecurityCriticalCode" Enabled="True" />
+    <Rule Name="StaticConstructorsShouldBePrivate" Enabled="True" />
+    <Rule Name="TypeLinkDemandsRequireInheritanceDemands" Enabled="True" />
+    <Rule Name="WrapVulnerableFinallyClausesInOuterTry" Enabled="True" />
+   </RuleFile>
+   <RuleFile Name="$(FxCopDir)\Rules\UsageRules.dll" Enabled="True" AllRulesEnabled="True" />
+  </RuleFiles>
+  <Groups />
+  <Settings />
+ </Rules>
+ <FxCopReport Version="1.36">
+  <Targets>
+   <Target Name="$(ProjectDir)/../SPSProfessional.SharePoint.Framework/bin/Debug/SPSProfessional.SharePoint.Framework.dll">
+    <Modules>
+     <Module Name="spsprofessional.sharepoint.framework.dll">
+      <Messages>
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2008-09-14 22:34:59Z">
+        <Issue>
+         <Item>'SPSProfessional.SharePoint.Framework.dll'</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="SPSProfessional.SharePoint.Framework.Comms">
+        <Types>
+         <Type Name="SPSDataValuesCollection">
+          <Messages>
+           <Message TypeName="ImplementSerializationConstructors" Category="Microsoft.Usage" CheckId="CA2229" Created="2008-09-14 22:34:59Z">
+            <Issue Name="MakeUnsealedMagicConstructorFamily">
+             <Item>'SPSDataValuesCollection'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="SPSSchemaBuilder">
+          <Members>
+           <Member Name="#GetDataView()">
+            <Messages>
+             <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Created="2008-09-14 22:34:59Z">
+              <Issue Certainty="50">
+               <Item>'SPSSchemaBuilder.GetDataView()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="SPSProfessional.SharePoint.Framework.Controls">
+        <Types>
+         <Type Name="SPSBranchItem">
+          <Members>
+           <Member Name="#ImageUrl">
+            <Messages>
+             <Message TypeName="UriPropertiesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1056" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSBranchItem.ImageUrl'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSCalendarItem">
+          <Members>
+           <Member Name="#DisplayFormUrl">
+            <Messages>
+             <Message TypeName="UriPropertiesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1056" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSCalendarItem.DisplayFormUrl'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSCalendarXML">
+          <Members>
+           <Member Name="#Fill(Microsoft.SharePoint.WebControls.SPCalendarView)">
+            <Messages>
+             <Message TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'calendarView'</Item>
+               <Item>'SPSCalendarXML.Fill(SPCalendarView)'</Item>
+               <Item>'SPCalendarView'</Item>
+               <Item>'BaseDataBoundControl'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Items">
+            <Messages>
+             <Message TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSCalendarXML.Items'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSDateControl">
+          <Members>
+           <Member Name="#OnPreRender(System.EventArgs)">
+            <Messages>
+             <Message TypeName="OverrideLinkDemandsShouldBeIdenticalToBase" Category="Microsoft.Security" CheckId="CA2123" Created="2008-09-14 22:34:59Z">
+              <Issue Name="BaseOnly">
+               <Item>'SPSDateControl.OnPreRender(EventArgs)'</Item>
+               <Item>'DateTimeControl.OnPreRender(EventArgs)'</Item>
+               <Item>[AspNetHostingPermission(SecurityAction.LinkDemand, Level = AspNetHostingPermissionLevel.Minimal)]</Item>
+              </Issue>
+              <Issue Name="BaseOnly">
+               <Item>'SPSDateControl.OnPreRender(EventArgs)'</Item>
+               <Item>'DateTimeControl.OnPreRender(EventArgs)'</Item>
+               <Item>[SharePointPermission(SecurityAction.LinkDemand, ObjectModel = true)]</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSECBMenu">
+          <Members>
+           <Member Name="#MenuItems">
+            <Messages>
+             <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'List&lt;SPSECBMenuItem&gt;'</Item>
+               <Item>'SPSECBMenu.MenuItems'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSECBMenuItem">
+          <Members>
+           <Member Name="#.ctor(System.String,System.String,System.String,System.String,Microsoft.SharePoint.SPBasePermissions,System.Int32)">
+            <Messages>
+             <Message Id="2#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'urlAction'</Item>
+               <Item>'SPSECBMenuItem.SPSECBMenuItem(string, string, string, string, SPBasePermissions, int)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#UrlAction">
+            <Messages>
+             <Message TypeName="UriPropertiesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1056" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSECBMenuItem.UrlAction'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#UrlActionProcessed(System.String)">
+            <Messages>
+             <Message Id="System.String.StartsWith(System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSECBMenuItem.UrlActionProcessed(string)'</Item>
+               <Item>'string.StartsWith(string)'</Item>
+               <Item>'string.StartsWith(string, StringComparison)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'SPSECBMenuItem.UrlActionProcessed(string)'</Item>
+               <Item>'string.StartsWith(string)'</Item>
+               <Item>'string.StartsWith(string, StringComparison)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSErrorBoxControl">
+          <Members>
+           <Member Name="#CustomError(System.String,System.Web.UI.HtmlTextWriter)">
+            <Messages>
+             <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'string.Format(string, object, object)'</Item>
+               <Item>'SPSErrorBoxControl.CustomError(string, HtmlTextWriter)'</Item>
+               <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSSPToolBarFactory">
+          <Messages>
+           <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Created="2008-09-14 22:34:59Z">
+            <Issue>
+             <Item>'SPSSPToolBarFactory'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#GetToolBar(System.Web.UI.Page)">
+            <Messages>
+             <Message TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'page'</Item>
+               <Item>'SPSSPToolBarFactory.GetToolBar(Page)'</Item>
+               <Item>'Page'</Item>
+               <Item>'TemplateControl'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetToolBarButton(System.Web.UI.Page)">
+            <Messages>
+             <Message TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'page'</Item>
+               <Item>'SPSSPToolBarFactory.GetToolBarButton(Page)'</Item>
+               <Item>'Page'</Item>
+               <Item>'TemplateControl'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSToolBarControl">
+          <Members>
+           <Member Name="#AddToolBarActionButton(System.String,System.String,System.String,System.String)">
+            <Messages>
+             <Message Id="System.String.Format(System.String,System.Object,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'string.Format(string, object, object, object)'</Item>
+               <Item>'SPSToolBarControl.AddToolBarActionButton(string, string, string, string)'</Item>
+               <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#AddToolBarActionButton(System.String,System.String,System.String,System.String,System.String)">
+            <Messages>
+             <Message Id="System.String.Format(System.String,System.Object[])" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'string.Format(string, params object[])'</Item>
+               <Item>'SPSToolBarControl.AddToolBarActionButton(string, string, string, string, string)'</Item>
+               <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#AddToolBarActionButton(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <Messages>
+             <Message Id="System.String.Format(System.String,System.Object[])" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'string.Format(string, params object[])'</Item>
+               <Item>'SPSToolBarControl.AddToolBarActionButton(string, string, string, string, string, string)'</Item>
+               <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#AddToolbarButton(System.String,System.String,System.String,System.String,System.String)">
+            <Messages>
+             <Message Id="System.String.Format(System.String,System.Object,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'string.Format(string, object, object, object)'</Item>
+               <Item>'SPSToolBarControl.AddToolbarButton(string, string, string, string, string)'</Item>
+               <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.String.Format(System.String,System.Object[])" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'string.Format(string, params object[])'</Item>
+               <Item>'SPSToolBarControl.AddToolbarButton(string, string, string, string, string)'</Item>
+               <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSTreeXML">
+          <Members>
+           <Member Name="#BranchItems">
+            <Messages>
+             <Message TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSTreeXML.BranchItems'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Fill(System.Web.UI.WebControls.TreeView,System.Data.DataView)">
+            <Messages>
+             <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'string.Format(string, object)'</Item>
+               <Item>'SPSTreeXML.Fill(TreeView, DataView)'</Item>
+               <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.String.StartsWith(System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSTreeXML.Fill(TreeView, DataView)'</Item>
+               <Item>'string.StartsWith(string)'</Item>
+               <Item>'string.StartsWith(string, StringComparison)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSWebPart">
+          <Members>
+           <Member Name="#EditorParts">
+            <Messages>
+             <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'List&lt;EditorPart&gt;'</Item>
+               <Item>'SPSWebPart.EditorParts'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#MissingConfiguration">
+            <Accessors>
+             <Accessor Name="#get_MissingConfiguration()">
+              <Messages>
+               <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+                <Issue>
+                 <Item>'string.Format(string, object)'</Item>
+                 <Item>'SPSWebPart.MissingConfiguration.get()'</Item>
+                 <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+                </Issue>
+               </Message>
+               <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+                <Issue>
+                 <Item>'string.Format(string, object, object)'</Item>
+                 <Item>'SPSWebPart.MissingConfiguration.get()'</Item>
+                 <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+                </Issue>
+               </Message>
+               <Message Id="System.String.Format(System.String,System.Object[])" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+                <Issue>
+                 <Item>'string.Format(string, params object[])'</Item>
+                 <Item>'SPSWebPart.MissingConfiguration.get()'</Item>
+                 <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+                </Issue>
+               </Message>
+              </Messages>
+             </Accessor>
+            </Accessors>
+           </Member>
+           <Member Name="#Render(System.Web.UI.HtmlTextWriter)">
+            <Messages>
+             <Message Id="System.String.Format(System.String,System.Object,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'string.Format(string, object, object, object)'</Item>
+               <Item>'SPSWebPart.Render(HtmlTextWriter)'</Item>
+               <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSXsltCalendarControl">
+          <Members>
+           <Member Name="#CreateChildControls()">
+            <Messages>
+             <Message Id="System.String.ToLower" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'string.ToLower()'</Item>
+               <Item>'SPSXsltCalendarControl.CreateChildControls()'</Item>
+               <Item>'string.ToLower(CultureInfo)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetCalendarXML()">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSXsltCalendarControl.GetCalendarXML()'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#OnPreRender(System.EventArgs)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSXsltCalendarControl.OnPreRender(EventArgs)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSXsltControl">
+          <Members>
+           <Member Name="#GetDesignTimeHtml()">
+            <Messages>
+             <Message Id="System.IO.StringWriter.#ctor" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'StringWriter.StringWriter()'</Item>
+               <Item>'SPSXsltControl.GetDesignTimeHtml()'</Item>
+               <Item>'StringWriter.StringWriter(IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#LastRow">
+            <Messages>
+             <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSXsltControl.LastRow'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSKeyValueList'</Item>
+               <Item>'SPSXsltControl.LastRow'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#RenderControl(System.Web.UI.HtmlTextWriter)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSXsltControl.RenderControl(HtmlTextWriter)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#RenderControlInternal(System.Web.UI.HtmlTextWriter)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSXsltControl.RenderControlInternal(HtmlTextWriter)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Transform()">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSXsltControl.Transform()'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.IO.StringWriter.#ctor" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'StringWriter.StringWriter()'</Item>
+               <Item>'SPSXsltControl.Transform()'</Item>
+               <Item>'StringWriter.StringWriter(IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="SPSProfessional.SharePoint.Framework.Error">
+        <Types>
+         <Type Name="ISPSErrorControl">
+          <Members>
+           <Member Name="#OnError" Kind="Event">
+            <Messages>
+             <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Created="2008-09-14 22:34:59Z">
+              <Issue Name="Second">
+               <Item>'SPSControlOnError'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSConfigError">
+          <Members>
+           <Member Name="#__Color">
+            <Messages>
+             <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSConfigError.__Color'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#__Match">
+            <Messages>
+             <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSConfigError.__Match'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#__Message">
+            <Messages>
+             <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSConfigError.__Message'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSConfigErrorCollection">
+          <Messages>
+           <Message TypeName="CollectionsShouldImplementGenericInterface" Category="Microsoft.Design" CheckId="CA1010" Created="2008-09-14 22:34:59Z">
+            <Issue>
+             <Item>'SPSConfigErrorCollection'</Item>
+             <Item>IList</Item>
+            </Issue>
+           </Message>
+           <Message TypeName="ICollectionImplementationsHaveStronglyTypedMembers" Category="Microsoft.Design" CheckId="CA1035" Created="2008-09-14 22:34:59Z">
+            <Issue>
+             <Item>'SPSConfigErrorCollection'</Item>
+            </Issue>
+           </Message>
+           <Message TypeName="ListsAreStronglyTyped" Category="Microsoft.Design" CheckId="CA1039" Created="2008-09-14 22:34:59Z">
+            <Issue>
+             <Item>'SPSConfigErrorCollection'</Item>
+             <Item>Contains</Item>
+            </Issue>
+            <Issue>
+             <Item>'SPSConfigErrorCollection'</Item>
+             <Item>IndexOf</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="SPSConfigErrors">
+          <Members>
+           <Member Name="#__ErrorCollection">
+            <Messages>
+             <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSConfigErrors.__ErrorCollection'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="SPSProfessional.SharePoint.Framework.Hierarchy">
+        <Types>
+         <Type Name="ISPSHierarchyNode">
+          <Members>
+           <Member Name="#ImageUrl">
+            <Messages>
+             <Message TypeName="UriPropertiesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1056" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'ISPSHierarchyNode.ImageUrl'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#NavigateUrl">
+            <Messages>
+             <Message TypeName="UriPropertiesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1056" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'ISPSHierarchyNode.NavigateUrl'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#UrlSegment">
+            <Messages>
+             <Message TypeName="UriPropertiesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1056" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'ISPSHierarchyNode.UrlSegment'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="ISPSTreeNode`1">
+          <Members>
+           <Member Name="#Children">
+            <Messages>
+             <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'List&lt;ISPSTreeNode&lt;T&gt;&gt;'</Item>
+               <Item>'ISPSTreeNode&lt;T&gt;.Children'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'ISPSTreeNode&lt;T&gt;.Children'</Item>
+               <Item>'List&lt;ISPSTreeNode&lt;T&gt;&gt;'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSHierarchyDataSource">
+          <Members>
+           <Member Name="#GetAll()">
+            <Messages>
+             <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Created="2008-09-14 22:34:59Z">
+              <Issue Certainty="50">
+               <Item>'SPSHierarchyDataSource.GetAll()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSHierarchyFactory">
+          <Members>
+           <Member Name="#MakeListTree(Microsoft.SharePoint.SPWeb)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSHierarchyFactory.MakeListTree(SPWeb)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSHierarchyFilter">
+          <Members>
+           <Member Name="#EnsureDispose(Microsoft.SharePoint.SPWeb)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSHierarchyFilter.EnsureDispose(SPWeb)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#OnFilter" Kind="Event">
+            <Messages>
+             <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Created="2008-09-14 22:34:59Z">
+              <Issue Name="Return">
+               <Item>'HierarchyFilterDelegate'</Item>
+              </Issue>
+              <Issue Name="Second">
+               <Item>'HierarchyFilterDelegate'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSHierarchyNode">
+          <Members>
+           <Member Name="#.ctor(SPSProfessional.SharePoint.Framework.Hierarchy.SPSHierarchyNodeType,System.Guid,System.Guid,System.Guid,System.Guid,System.String,System.String,System.String,System.String,System.String)">
+            <Messages>
+             <Message Id="6#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'urlSegment'</Item>
+               <Item>'SPSHierarchyNode.SPSHierarchyNode(SPSHierarchyNodeType, Guid, Guid, Guid, Guid, string, string, string, string, string)'</Item>
+              </Issue>
+             </Message>
+             <Message Id="7#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'navigateUrl'</Item>
+               <Item>'SPSHierarchyNode.SPSHierarchyNode(SPSHierarchyNodeType, Guid, Guid, Guid, Guid, string, string, string, string, string)'</Item>
+              </Issue>
+             </Message>
+             <Message Id="9#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'imageUrl'</Item>
+               <Item>'SPSHierarchyNode.SPSHierarchyNode(SPSHierarchyNodeType, Guid, Guid, Guid, Guid, string, string, string, string, string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#.ctor(SPSProfessional.SharePoint.Framework.Hierarchy.SPSHierarchyNodeType,System.Guid,System.Guid,System.Guid,System.String,System.String,System.String,System.String,System.String)">
+            <Messages>
+             <Message Id="5#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'urlSegment'</Item>
+               <Item>'SPSHierarchyNode.SPSHierarchyNode(SPSHierarchyNodeType, Guid, Guid, Guid, string, string, string, string, string)'</Item>
+              </Issue>
+             </Message>
+             <Message Id="6#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'navigateUrl'</Item>
+               <Item>'SPSHierarchyNode.SPSHierarchyNode(SPSHierarchyNodeType, Guid, Guid, Guid, string, string, string, string, string)'</Item>
+              </Issue>
+             </Message>
+             <Message Id="8#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'imageUrl'</Item>
+               <Item>'SPSHierarchyNode.SPSHierarchyNode(SPSHierarchyNodeType, Guid, Guid, Guid, string, string, string, string, string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#.ctor(SPSProfessional.SharePoint.Framework.Hierarchy.SPSHierarchyNodeType,System.Guid,System.Guid,System.String,System.String,System.String,System.String,System.String)">
+            <Messages>
+             <Message Id="4#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'urlSegment'</Item>
+               <Item>'SPSHierarchyNode.SPSHierarchyNode(SPSHierarchyNodeType, Guid, Guid, string, string, string, string, string)'</Item>
+              </Issue>
+             </Message>
+             <Message Id="5#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'navigateUrl'</Item>
+               <Item>'SPSHierarchyNode.SPSHierarchyNode(SPSHierarchyNodeType, Guid, Guid, string, string, string, string, string)'</Item>
+              </Issue>
+             </Message>
+             <Message Id="7#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'imageUrl'</Item>
+               <Item>'SPSHierarchyNode.SPSHierarchyNode(SPSHierarchyNodeType, Guid, Guid, string, string, string, string, string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSTreeNode`1">
+          <Members>
+           <Member Name="#Children">
+            <Messages>
+             <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'List&lt;ISPSTreeNode&lt;T&gt;&gt;'</Item>
+               <Item>'SPSTreeNode&lt;T&gt;.Children'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Display(System.Int32)">
+            <Messages>
+             <Message Id="indentation+1" TypeName="OperationsShouldNotOverflow" Category="Microsoft.Usage" CheckId="CA2233" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>indentation+1</Item>
+               <Item>'SPSTreeNode&lt;T&gt;.Display(int)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="SPSProfessional.SharePoint.Framework.Tools">
+        <Types>
+         <Type Name="CryptoString">
+          <Members>
+           <Member Name="#Decrypt(System.String)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'CryptoString.Decrypt(string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Encrypt(System.String)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'CryptoString.Encrypt(string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="DatosFile">
+          <Members>
+           <Member Name="#ClientName">
+            <Accessors>
+             <Accessor Name="#get_ClientName()">
+              <Messages>
+               <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Created="2008-09-14 22:34:59Z">
+                <Issue>
+                 <Item>'DatosFile.ClientName.get()'</Item>
+                </Issue>
+               </Message>
+              </Messages>
+             </Accessor>
+            </Accessors>
+           </Member>
+           <Member Name="#DaysToExpiration">
+            <Accessors>
+             <Accessor Name="#get_DaysToExpiration()">
+              <Messages>
+               <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Created="2008-09-14 22:34:59Z">
+                <Issue>
+                 <Item>'DatosFile.DaysToExpiration.get()'</Item>
+                </Issue>
+               </Message>
+              </Messages>
+             </Accessor>
+            </Accessors>
+           </Member>
+           <Member Name="#LicenseDate">
+            <Accessors>
+             <Accessor Name="#get_LicenseDate()">
+              <Messages>
+               <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Created="2008-09-14 22:34:59Z">
+                <Issue>
+                 <Item>'DatosFile.LicenseDate.get()'</Item>
+                </Issue>
+               </Message>
+              </Messages>
+             </Accessor>
+            </Accessors>
+           </Member>
+           <Member Name="#LicenseEngineVersion">
+            <Accessors>
+             <Accessor Name="#get_LicenseEngineVersion()">
+              <Messages>
+               <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Created="2008-09-14 22:34:59Z">
+                <Issue>
+                 <Item>'DatosFile.LicenseEngineVersion.get()'</Item>
+                </Issue>
+               </Message>
+              </Messages>
+             </Accessor>
+            </Accessors>
+           </Member>
+           <Member Name="#OtherInformation">
+            <Accessors>
+             <Accessor Name="#get_OtherInformation()">
+              <Messages>
+               <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Created="2008-09-14 22:34:59Z">
+                <Issue>
+                 <Item>'DatosFile.OtherInformation.get()'</Item>
+                </Issue>
+               </Message>
+              </Messages>
+             </Accessor>
+            </Accessors>
+           </Member>
+           <Member Name="#ProductName">
+            <Accessors>
+             <Accessor Name="#get_ProductName()">
+              <Messages>
+               <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Created="2008-09-14 22:34:59Z">
+                <Issue>
+                 <Item>'DatosFile.ProductName.get()'</Item>
+                </Issue>
+               </Message>
+              </Messages>
+             </Accessor>
+            </Accessors>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSControlar">
+          <Members>
+           <Member Name="#Aceptado()">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSControlar.Aceptado()'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.String.ToUpper" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'string.ToUpper()'</Item>
+               <Item>'SPSControlar.Aceptado()'</Item>
+               <Item>'string.ToUpper(CultureInfo)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ControlNombre(SPSProfessional.SharePoint.Framework.Tools.DatosFile)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSControlar.ControlNombre(DatosFile)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#DireccionesI()">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSControlar.DireccionesI()'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#DireccionesM()">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSControlar.DireccionesM()'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#FoundInList(System.Collections.Generic.IEnumerable`1&lt;System.String&gt;,System.String)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSControlar.FoundInList(IEnumerable&lt;string&gt;, string)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.String.ToLower" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'string.ToLower()'</Item>
+               <Item>'SPSControlar.FoundInList(IEnumerable&lt;string&gt;, string)'</Item>
+               <Item>'string.ToLower(CultureInfo)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'string.ToLower()'</Item>
+               <Item>'SPSControlar.FoundInList(IEnumerable&lt;string&gt;, string)'</Item>
+               <Item>'string.ToLower(CultureInfo)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#IsInsideTimeAbsolute(System.String)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSControlar.IsInsideTimeAbsolute(string)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#IsInsideTimeRelative(SPSProfessional.SharePoint.Framework.Tools.DatosFile)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSControlar.IsInsideTimeRelative(DatosFile)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.DateTime.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'DateTime.Parse(string)'</Item>
+               <Item>'SPSControlar.IsInsideTimeRelative(DatosFile)'</Item>
+               <Item>'DateTime.Parse(string, IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#LeerFile(System.IO.TextReader,SPSProfessional.SharePoint.Framework.Tools.DatosFile&amp;)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSControlar.LeerFile(TextReader, ref DatosFile)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.String.ToLower" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'string.ToLower()'</Item>
+               <Item>'SPSControlar.LeerFile(TextReader, ref DatosFile)'</Item>
+               <Item>'string.ToLower(CultureInfo)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ReadFromRegistry(System.String,System.String)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSControlar.ReadFromRegistry(string, string)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#WriteToRegistry(System.String,System.String,System.String)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSControlar.WriteToRegistry(string, string, string)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSDebug">
+          <Members>
+           <Member Name="#DumpException(System.String,System.Exception)">
+            <Messages>
+             <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'string.Format(string, object)'</Item>
+               <Item>'SPSDebug.DumpException(string, Exception)'</Item>
+               <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSEditorPartsTools">
+          <Members>
+           <Member Name="#CreateTextBoxAndBuilder(System.Web.UI.WebControls.TextBox)">
+            <Messages>
+             <Message TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'editor'</Item>
+               <Item>'SPSEditorPartsTools.CreateTextBoxAndBuilder(TextBox)'</Item>
+               <Item>'TextBox'</Item>
+               <Item>'WebControl'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.Web.UI.WebControls.Unit.#ctor(System.String)" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'Unit.Unit(string)'</Item>
+               <Item>'SPSEditorPartsTools.CreateTextBoxAndBuilder(TextBox)'</Item>
+               <Item>'Unit.Unit(string, CultureInfo)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#CreateTextBoxAndBuilderXml(System.Web.UI.WebControls.TextBox)">
+            <Messages>
+             <Message Id="System.Web.UI.WebControls.Unit.#ctor(System.String)" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'Unit.Unit(string)'</Item>
+               <Item>'SPSEditorPartsTools.CreateTextBoxAndBuilderXml(TextBox)'</Item>
+               <Item>'Unit.Unit(string, CultureInfo)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#DecorateControls(System.Web.UI.ControlCollection)">
+            <Messages>
+             <Message Id="System.Web.UI.WebControls.Unit.#ctor(System.String)" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'Unit.Unit(string)'</Item>
+               <Item>'SPSEditorPartsTools.DecorateControls(ControlCollection)'</Item>
+               <Item>'Unit.Unit(string, CultureInfo)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#FillWebParts(System.Web.HttpContext,System.Web.UI.WebControls.ListControl)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSEditorPartsTools.FillWebParts(HttpContext, ListControl)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#FillWebPartsForList(System.Web.HttpContext,System.String,System.Web.UI.WebControls.ListControl)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSEditorPartsTools.FillWebPartsForList(HttpContext, string, ListControl)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.String.ToUpper" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'string.ToUpper()'</Item>
+               <Item>'SPSEditorPartsTools.FillWebPartsForList(HttpContext, string, ListControl)'</Item>
+               <Item>'string.ToUpper(CultureInfo)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#IndentXml(System.String)">
+            <Messages>
+             <Message Id="System.IO.StringWriter.#ctor(System.Text.StringBuilder)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'StringWriter.StringWriter(StringBuilder)'</Item>
+               <Item>'SPSEditorPartsTools.IndentXml(string)'</Item>
+               <Item>'StringWriter.StringWriter(StringBuilder, IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSEvaluator">
+          <Members>
+           <Member Name="#GetDateCalcEvaluator(System.Text.RegularExpressions.Match)">
+            <Messages>
+             <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'int.Parse(string)'</Item>
+               <Item>'SPSEvaluator.GetDateCalcEvaluator(Match)'</Item>
+               <Item>'int.Parse(string, IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetDateCalcFormatEvaluator(System.Text.RegularExpressions.Match)">
+            <Messages>
+             <Message Id="System.DateTime.ToString(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'DateTime.ToString(string)'</Item>
+               <Item>'SPSEvaluator.GetDateCalcFormatEvaluator(Match)'</Item>
+               <Item>'DateTime.ToString(string, IFormatProvider)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'DateTime.ToString(string)'</Item>
+               <Item>'SPSEvaluator.GetDateCalcFormatEvaluator(Match)'</Item>
+               <Item>'DateTime.ToString(string, IFormatProvider)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'DateTime.ToString(string)'</Item>
+               <Item>'SPSEvaluator.GetDateCalcFormatEvaluator(Match)'</Item>
+               <Item>'DateTime.ToString(string, IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'int.Parse(string)'</Item>
+               <Item>'SPSEvaluator.GetDateCalcFormatEvaluator(Match)'</Item>
+               <Item>'int.Parse(string, IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetDateFormatEvaluator(System.Text.RegularExpressions.Match)">
+            <Messages>
+             <Message Id="System.DateTime.ToString(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'DateTime.ToString(string)'</Item>
+               <Item>'SPSEvaluator.GetDateFormatEvaluator(Match)'</Item>
+               <Item>'DateTime.ToString(string, IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#InternalEvaluator(System.String)">
+            <Messages>
+             <Message Id="System.DateTime.ToString(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'DateTime.ToString(string)'</Item>
+               <Item>'SPSEvaluator.InternalEvaluator(string)'</Item>
+               <Item>'DateTime.ToString(string, IFormatProvider)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'DateTime.ToString(string)'</Item>
+               <Item>'SPSEvaluator.InternalEvaluator(string)'</Item>
+               <Item>'DateTime.ToString(string, IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'int.ToString()'</Item>
+               <Item>'SPSEvaluator.InternalEvaluator(string)'</Item>
+               <Item>'int.ToString(IFormatProvider)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'int.ToString()'</Item>
+               <Item>'SPSEvaluator.InternalEvaluator(string)'</Item>
+               <Item>'int.ToString(IFormatProvider)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'int.ToString()'</Item>
+               <Item>'SPSEvaluator.InternalEvaluator(string)'</Item>
+               <Item>'int.ToString(IFormatProvider)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'int.ToString()'</Item>
+               <Item>'SPSEvaluator.InternalEvaluator(string)'</Item>
+               <Item>'int.ToString(IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.String.StartsWith(System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSEvaluator.InternalEvaluator(string)'</Item>
+               <Item>'string.StartsWith(string)'</Item>
+               <Item>'string.StartsWith(string, StringComparison)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'SPSEvaluator.InternalEvaluator(string)'</Item>
+               <Item>'string.StartsWith(string)'</Item>
+               <Item>'string.StartsWith(string, StringComparison)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'SPSEvaluator.InternalEvaluator(string)'</Item>
+               <Item>'string.StartsWith(string)'</Item>
+               <Item>'string.StartsWith(string, StringComparison)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'SPSEvaluator.InternalEvaluator(string)'</Item>
+               <Item>'string.StartsWith(string)'</Item>
+               <Item>'string.StartsWith(string, StringComparison)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'SPSEvaluator.InternalEvaluator(string)'</Item>
+               <Item>'string.StartsWith(string)'</Item>
+               <Item>'string.StartsWith(string, StringComparison)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'SPSEvaluator.InternalEvaluator(string)'</Item>
+               <Item>'string.StartsWith(string)'</Item>
+               <Item>'string.StartsWith(string, StringComparison)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSFeatureReceiverHelper">
+          <Members>
+           <Member Name="#GetFeatureResourcePath(System.String)">
+            <Messages>
+             <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'string.Format(string, object, object)'</Item>
+               <Item>'SPSFeatureReceiverHelper.GetFeatureResourcePath(string)'</Item>
+               <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSListTools">
+          <Messages>
+           <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Created="2008-09-14 22:34:59Z">
+            <Issue>
+             <Item>'SPSListTools'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#GetListGuidFromListViewGuid(System.Web.HttpContext,System.String)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSListTools.GetListGuidFromListViewGuid(HttpContext, string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSTools">
+          <Members>
+           <Member Name="#GetCurrentPageBaseUrl(System.Web.UI.Page)">
+            <Messages>
+             <Message TypeName="UriReturnValuesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1055" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSTools.GetCurrentPageBaseUrl(Page)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetCurrentUrl()">
+            <Messages>
+             <Message TypeName="UriReturnValuesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1055" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSTools.GetCurrentUrl()'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Created="2008-09-14 22:34:59Z">
+              <Issue Certainty="50">
+               <Item>'SPSTools.GetCurrentUrl()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#IsIE55Plus(System.Web.HttpContext)">
+            <Messages>
+             <Message Id="System.String.IndexOf(System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSTools.IsIE55Plus(HttpContext)'</Item>
+               <Item>'string.IndexOf(string)'</Item>
+               <Item>'string.IndexOf(string, StringComparison)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSTreeViewHelper+TreeBound">
+          <Messages>
+           <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Created="2008-09-14 22:34:59Z">
+            <Issue>
+             <Item>'SPSTreeViewHelper.TreeBound'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="SPSXsltExtension">
+          <Members>
+           <Member Name="#.ctor(System.Web.UI.Control,System.Web.UI.Page,SPSProfessional.SharePoint.Framework.Common.SPSKeyValueList)">
+            <Messages>
+             <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSKeyValueList'</Item>
+               <Item>'SPSXsltExtension.SPSXsltExtension(Control, Page, SPSKeyValueList)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#DateDiff(System.String,System.DateTime,System.DateTime)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSXsltExtension.DateDiff(string, DateTime, DateTime)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Event(System.String,System.String)">
+            <Messages>
+             <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'string.Format(string, object, object)'</Item>
+               <Item>'SPSXsltExtension.Event(string, string)'</Item>
+               <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#EventJS(System.String,System.String)">
+            <Messages>
+             <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'string.Format(string, object, object)'</Item>
+               <Item>'SPSXsltExtension.EventJS(string, string)'</Item>
+               <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#FormatDateTime(System.String,System.Int64,System.String)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSXsltExtension.FormatDateTime(string, long, string)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#FormatDateTime(System.String,System.String)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSXsltExtension.FormatDateTime(string, string)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#FormatIsoDateTime(System.String,System.Int64,System.String)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSXsltExtension.FormatIsoDateTime(string, long, string)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#FormatIsoDateTime(System.String,System.String)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSXsltExtension.FormatIsoDateTime(string, string)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetFileExtension(System.String)">
+            <Messages>
+             <Message Id="0#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'targetUrl'</Item>
+               <Item>'SPSXsltExtension.GetFileExtension(string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetStringBeforeSeparator(System.String)">
+            <Messages>
+             <Message Id="System.String.IndexOf(System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSXsltExtension.GetStringBeforeSeparator(string)'</Item>
+               <Item>'string.IndexOf(string)'</Item>
+               <Item>'string.IndexOf(string, StringComparison)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#IfNew(System.String)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSXsltExtension.IfNew(string)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#MapToIcon(System.String,System.String)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSXsltExtension.MapToIcon(string, string)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Max(System.Xml.XPath.XPathNodeIterator)">
+            <Messages>
+             <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'int.Parse(string)'</Item>
+               <Item>'SPSXsltExtension.Max(XPathNodeIterator)'</Item>
+               <Item>'int.Parse(string, IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Min(System.Xml.XPath.XPathNodeIterator)">
+            <Messages>
+             <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'int.Parse(string)'</Item>
+               <Item>'SPSXsltExtension.Min(XPathNodeIterator)'</Item>
+               <Item>'int.Parse(string, IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#UrlBaseName(System.String)">
+            <Messages>
+             <Message Id="0#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'targetUrl'</Item>
+               <Item>'SPSXsltExtension.UrlBaseName(string)'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="UriReturnValuesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1055" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSXsltExtension.UrlBaseName(string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#UrlDirName(System.String)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSXsltExtension.UrlDirName(string)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message Id="0#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'targetUrl'</Item>
+               <Item>'SPSXsltExtension.UrlDirName(string)'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="UriReturnValuesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1055" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSXsltExtension.UrlDirName(string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#UrlEncode(System.String)">
+            <Messages>
+             <Message TypeName="UriReturnValuesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1055" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSXsltExtension.UrlEncode(string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="SPSProfessional.SharePoint.Framework.WebPartCache">
+        <Types>
+         <Type Name="ISPSCacheManager">
+          <Members>
+           <Member Name="#Get`1(System.String)">
+            <Messages>
+             <Message TypeName="GenericMethodsShouldProvideTypeParameter" Category="Microsoft.Design" CheckId="CA1004" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'ISPSCacheManager.Get&lt;T&gt;(string)'</Item>
+               <Item>'T'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="IWebPartCache">
+          <Members>
+           <Member Name="#GetCacheService()">
+            <Messages>
+             <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Created="2008-09-14 22:34:59Z">
+              <Issue Certainty="50">
+               <Item>'IWebPartCache.GetCacheService()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSCacheEditorPart">
+          <Members>
+           <Member Name="#ApplyChanges()">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSCacheEditorPart.ApplyChanges()'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#CreateChildControls()">
+            <Messages>
+             <Message Id="System.Web.UI.WebControls.Unit.#ctor(System.String)" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'Unit.Unit(string)'</Item>
+               <Item>'SPSCacheEditorPart.CreateChildControls()'</Item>
+               <Item>'Unit.Unit(string, CultureInfo)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#SyncChanges()">
+            <Messages>
+             <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'int.ToString()'</Item>
+               <Item>'SPSCacheEditorPart.SyncChanges()'</Item>
+               <Item>'int.ToString(IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSCacheManager">
+          <Messages>
+           <Message TypeName="CollectionsShouldImplementGenericInterface" Category="Microsoft.Design" CheckId="CA1010" Created="2008-09-14 22:34:59Z">
+            <Issue Certainty="60">
+             <Item>'SPSCacheManager'</Item>
+             <Item>IEnumerable</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#Get`1(System.String)">
+            <Messages>
+             <Message TypeName="GenericMethodsShouldProvideTypeParameter" Category="Microsoft.Design" CheckId="CA1004" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSCacheManager.Get&lt;T&gt;(string)'</Item>
+               <Item>'T'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'string.Format(string, object)'</Item>
+               <Item>'SPSCacheManager.Get&lt;T&gt;(string)'</Item>
+               <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+              </Issue>
+              <Issue>
+               <Item>'string.Format(string, object)'</Item>
+               <Item>'SPSCacheManager.Get&lt;T&gt;(string)'</Item>
+               <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Get`1(System.String,SPSProfessional.SharePoint.Framework.Tools.Func`1&lt;!!0&gt;)">
+            <Messages>
+             <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'string.Format(string, object)'</Item>
+               <Item>'SPSCacheManager.Get&lt;T&gt;(string, Func&lt;T&gt;)'</Item>
+               <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.String.Format(System.String,System.Object[])" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'string.Format(string, params object[])'</Item>
+               <Item>'SPSCacheManager.Get&lt;T&gt;(string, Func&lt;T&gt;)'</Item>
+               <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Insert(System.String,System.Object)">
+            <Messages>
+             <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'string.Format(string, object)'</Item>
+               <Item>'SPSCacheManager.Insert(string, object)'</Item>
+               <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#RemoveCallback(System.String,System.Object,System.Web.Caching.CacheItemRemovedReason)">
+            <Messages>
+             <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'string.Format(string, object, object)'</Item>
+               <Item>'SPSCacheManager.RemoveCallback(string, object, CacheItemRemovedReason)'</Item>
+               <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SPSCacheService">
+          <Members>
+           <Member Name="#.ctor(System.Int32,System.String)">
+            <Messages>
+             <Message Id="System.String.Format(System.String,System.Object,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'string.Format(string, object, object)'</Item>
+               <Item>'SPSCacheService.SPSCacheService(int, string)'</Item>
+               <Item>'string.Format(IFormatProvider, string, params object[])'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#RemoveAll()">
+            <Messages>
+             <Message Id="System.String.StartsWith(System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Created="2008-09-14 22:34:59Z">
+              <Issue>
+               <Item>'SPSCacheService.RemoveAll()'</Item>
+               <Item>'string.StartsWith(string)'</Item>
+               <Item>'string.StartsWith(string, StringComparison)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+  </Targets>
+  <Rules>
+   <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+    <Resolution Name="Default">{0} appears to have no upstream public or protected callers.</Resolution>
+   </Rule>
+   <Rule TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227">
+    <Resolution Name="Default">Change {0} to be read-only by removing the property setter.</Resolution>
+   </Rule>
+   <Rule TypeName="CollectionsShouldImplementGenericInterface" Category="Microsoft.Design" CheckId="CA1010">
+    <Resolution Name="Default">{0} appears to be a non-generic, strongly typed collection. Add an implementation to the instance of {1}&lt;T&gt; where T is the underlying element type of {0}.</Resolution>
+   </Rule>
+   <Rule TypeName="ConsiderPassingBaseTypesAsParameters" Category="Microsoft.Design" CheckId="CA1011">
+    <Resolution Name="Default">Consider changing the type of parameter {0} in {1} from {2} to its base type {3}. This method appears to only require base class members in its implementation. Suppress this violation if there is a compelling reason to require the more derived type in the method signature.</Resolution>
+   </Rule>
+   <Rule TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009">
+    <Resolution Name="Return">Change {0} to return void.</Resolution>
+    <Resolution Name="Second">Declare the second parameter of {0} as an EventArgs, or an instance of a type that extends EventArgs, named 'e'.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+    <Resolution Name="Default">Modify {0} to catch a more specific exception than {1} or rethrow the exception.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051">
+    <Resolution Name="Default">Because field {0} is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002">
+    <Resolution Name="Default">Change {0} in {1} to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotNestGenericTypesInMemberSignatures" Category="Microsoft.Design" CheckId="CA1006">
+    <Resolution Name="Default">Consider a design where {0} doesn't nest generic type {1}.</Resolution>
+   </Rule>
+   <Rule TypeName="GenericMethodsShouldProvideTypeParameter" Category="Microsoft.Design" CheckId="CA1004">
+    <Resolution Name="Default">Consider a design where {0} doesn't require explicit type parameter {1} in any call to it.</Resolution>
+   </Rule>
+   <Rule TypeName="ICollectionImplementationsHaveStronglyTypedMembers" Category="Microsoft.Design" CheckId="CA1035">
+    <Resolution Name="Default">{0} should provide a strongly typed implementation of ICollection.CopyTo.</Resolution>
+   </Rule>
+   <Rule TypeName="ImplementSerializationConstructors" Category="Microsoft.Usage" CheckId="CA2229">
+    <Resolution Name="MakeUnsealedMagicConstructorFamily">Declare the serialization constructor of {0}, an unsealed type, as protected.</Resolution>
+   </Rule>
+   <Rule TypeName="ListsAreStronglyTyped" Category="Microsoft.Design" CheckId="CA1039">
+    <Resolution Name="Default">{0} should provide a strongly typed implementation of IList.{1}.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+    <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   </Rule>
+   <Rule TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034">
+    <Resolution Name="Default">Do not nest type {0}. Alternatively, change its accessibility so that it is not externally visible.</Resolution>
+   </Rule>
+   <Rule TypeName="OperationsShouldNotOverflow" Category="Microsoft.Usage" CheckId="CA2233">
+    <Resolution Name="Default">Correct the potential overflow in the operation '{0}' in {1}.</Resolution>
+   </Rule>
+   <Rule TypeName="OverrideLinkDemandsShouldBeIdenticalToBase" Category="Microsoft.Security" CheckId="CA2123">
+    <Resolution Name="BaseOnly">Add the following security attribute to {0} in order to match a LinkDemand on base method {1}:  {2}.</Resolution>
+   </Rule>
+   <Rule TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819">
+    <Resolution Name="Default">Change {0} to return a collection or make it a method.</Resolution>
+   </Rule>
+   <Rule TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304">
+    <Resolution Name="Default">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Resolution>
+   </Rule>
+   <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+    <Resolution Name="Default">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Resolution>
+   </Rule>
+   <Rule TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307">
+    <Resolution Name="Default">{0} makes a call to {1} that does not explicitly provide a StringComparison. This should be replaced with a call to {2}.</Resolution>
+   </Rule>
+   <Rule TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053">
+    <Resolution Name="Default">Remove the public constructors from {0}.</Resolution>
+   </Rule>
+   <Rule TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054">
+    <Resolution Name="Default">Change the type of parameter {0} of method {1} from string to System.Uri, or provide an overload of {1}, that allows {0} to be passed as a System.Uri object.</Resolution>
+   </Rule>
+   <Rule TypeName="UriPropertiesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1056">
+    <Resolution Name="Default">Change the type of property {0} from string to System.Uri.</Resolution>
+   </Rule>
+   <Rule TypeName="UriReturnValuesShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1055">
+    <Resolution Name="Default">Change the return type of {0} from string to System.Uri.</Resolution>
+   </Rule>
+   <Rule TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024">
+    <Resolution Name="Default">Change {0} to a property if appropriate.</Resolution>
+   </Rule>
+  </Rules>
+ </FxCopReport>
+</FxCopProject>

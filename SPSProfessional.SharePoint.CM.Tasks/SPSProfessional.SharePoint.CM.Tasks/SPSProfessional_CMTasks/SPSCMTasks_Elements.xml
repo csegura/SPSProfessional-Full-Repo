@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+      Id="C1F54BF7-65BC-4E81-AD2B-B71E59BCF276"
+      RegistrationType="ContentType"
+      RegistrationId="0x0108"
+      Location="EditControlBlock"
+      Title="Complete Tasks"
+      ImageUrl="/_layouts/images/urn-content-classes-spstextlisting16.gif">
+    <UrlAction 
+      Url="{SiteUrl}/_layouts/SPSProfessional_Tasks.aspx?OP=Complete&amp;LIST={ListId}&amp;ID={ItemId}"/>
+  </CustomAction> 
+</Elements> 

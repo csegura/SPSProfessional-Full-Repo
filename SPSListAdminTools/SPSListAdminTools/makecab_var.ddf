@@ -1,0 +1,41 @@
+.OPTION EXPLICIT     
+.Set CabinetNameTemplate=xSOLUTIONx.xDEPLOYx 
+.set DiskDirectoryTemplate=CDROM 
+.Set CompressionType=MSZIP
+.Set UniqueFiles="ON"
+.Set Cabinet=on
+.Set DiskDirectory1=_Build
+
+; Manifest
+manifest_xDEPLOYx.xml manifest.xml
+
+; Binary files
+xDIRxSPSProfessional.SharePoint.Admin.ListTools.dll SPSProfessional.SharePoint.Admin.ListTools.dll
+
+; Webparts
+; SPSWebPart.webpart SPSWebPart.webpart
+
+; Images
+Images\spsprofessionallogo.gif		spsprofessionallogo.gif
+Images\spsprofessionalactions.gif	IMAGES\spsprofessionalactions.gif
+
+; Other resources
+; Feature
+.Set DestinationDir="SPSProfessional_ListAdminTools\"
+SPSProfessional_ListAdminTools\Feature.xml
+SPSProfessional_ListAdminTools\SPS_AdminFormFields.xml
+SPSProfessional_ListAdminTools\SPS_AdminViews.xml
+SPSProfessional_ListAdminTools\SPS_CopyList.xml
+
+; Pages
+.Set DestinationDir="LAYOUTS\"
+LAYOUTS\SPSProfessional_AdminFormFields.aspx
+LAYOUTS\SPSProfessional_AdminViews.aspx
+LAYOUTS\SPSProfessional_CopyList.aspx
+LAYOUTS\SPSProfessional_ListAdminTools.js
+
+; Resources
+;.Set DestinationDir="SPSProfessional_SiteCreation\Resources"
+;Resources\SPSProfessional.SharePoint.Events.SiteCreation.en-US.resx 
+;Resources\SPSProfessional.SharePoint.Events.SiteCreation.es-ES.resx 
+;Resources\SPSProfessional.SharePoint.Events.SiteCreation.resx 

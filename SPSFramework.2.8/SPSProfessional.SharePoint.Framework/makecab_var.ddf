@@ -1,0 +1,35 @@
+.OPTION EXPLICIT     
+.Set CabinetNameTemplate=xSOLUTIONx.xDEPLOYx 
+.set DiskDirectoryTemplate=CDROM 
+.Set CompressionType=MSZIP
+.Set UniqueFiles="ON"
+.Set Cabinet=on
+.Set DiskDirectory1=_Build
+
+; Manifest
+manifest_xDEPLOYx.xml manifest.xml
+
+; Binary files
+xDIRxSPSProfessional.SharePoint.Framework.dll						SPSProfessional.SharePoint.Framework.dll
+
+; Resources
+Resources\SPSProfessional.SharePoint.Framework.resx					Resources\SPSProfessional.SharePoint.Framework.resx
+Resources\SPSProfessional.SharePoint.Framework.en-US.resx			Resources\SPSProfessional.SharePoint.Framework.en-US.resx
+Resources\SPSProfessional.SharePoint.Framework.es-ES.resx			Resources\SPSProfessional.SharePoint.Framework.es-ES.resx
+
+; Images for Right to Left Tree
+LAYOUTS\SPSProfessionalFW\TreeRTL\dash.gif			LAYOUTS\SPSProfessionalFW\TreeRTL\dash.gif
+LAYOUTS\SPSProfessionalFW\TreeRTL\dashminus.gif		LAYOUTS\SPSProfessionalFW\TreeRTL\dashminus.gif
+LAYOUTS\SPSProfessionalFW\TreeRTL\dashplus.gif		LAYOUTS\SPSProfessionalFW\TreeRTL\dashplus.gif
+LAYOUTS\SPSProfessionalFW\TreeRTL\i.gif				LAYOUTS\SPSProfessionalFW\TreeRTL\i.gif
+LAYOUTS\SPSProfessionalFW\TreeRTL\l.gif				LAYOUTS\SPSProfessionalFW\TreeRTL\l.gif
+LAYOUTS\SPSProfessionalFW\TreeRTL\lminus.gif		LAYOUTS\SPSProfessionalFW\TreeRTL\lminus.gif
+LAYOUTS\SPSProfessionalFW\TreeRTL\lplus.gif			LAYOUTS\SPSProfessionalFW\TreeRTL\lplus.gif
+LAYOUTS\SPSProfessionalFW\TreeRTL\minus.gif			LAYOUTS\SPSProfessionalFW\TreeRTL\minus.gif
+LAYOUTS\SPSProfessionalFW\TreeRTL\plus.gif			LAYOUTS\SPSProfessionalFW\TreeRTL\plus.gif
+LAYOUTS\SPSProfessionalFW\TreeRTL\r.gif				LAYOUTS\SPSProfessionalFW\TreeRTL\r.gif
+LAYOUTS\SPSProfessionalFW\TreeRTL\rminus.gif		LAYOUTS\SPSProfessionalFW\TreeRTL\rminus.gif
+LAYOUTS\SPSProfessionalFW\TreeRTL\rplus.gif			LAYOUTS\SPSProfessionalFW\TreeRTL\rplus.gif
+LAYOUTS\SPSProfessionalFW\TreeRTL\t.gif				LAYOUTS\SPSProfessionalFW\TreeRTL\t.gif
+LAYOUTS\SPSProfessionalFW\TreeRTL\tminus.gif		LAYOUTS\SPSProfessionalFW\TreeRTL\tminus.gif
+LAYOUTS\SPSProfessionalFW\TreeRTL\tplus.gif			LAYOUTS\SPSProfessionalFW\TreeRTL\tplus.gif

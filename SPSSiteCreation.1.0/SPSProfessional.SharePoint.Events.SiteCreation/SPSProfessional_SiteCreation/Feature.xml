@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Feature
+  	Id="028C003E-AAA0-4b7e-A67F-B8CF21289439"
+	  Title="SPSProfessional Site Creation Event Handler"
+	  Description="Adds a event handler that you can add to any list to create sites each time that a item is added."
+	  Version="1.0.0.0"
+  	Scope="Web"
+	  ImageUrl="spsprofessionalactions.gif"
+  	xmlns="http://schemas.microsoft.com/sharepoint/"
+    ReceiverAssembly="SPSProfessional.SharePoint.Events.SiteCreation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7"
+    ReceiverClass="SPSProfessional.SharePoint.Events.SiteCreation.SiteCreationFeatureReceiver">
+
+  <ElementManifests>
+    <ElementManifest Location="SPSProfessional_SiteCreation.xml" />    
+    <ElementFile Location="Resources\SPSProfessional.SharePoint.Events.SiteCreation.en-US.resx"/>
+    <ElementFile Location="Resources\SPSProfessional.SharePoint.Events.SiteCreation.es-ES.resx"/>
+    <ElementFile Location="Resources\SPSProfessional.SharePoint.Events.SiteCreation.resx"/>
+  </ElementManifests>
+</Feature>

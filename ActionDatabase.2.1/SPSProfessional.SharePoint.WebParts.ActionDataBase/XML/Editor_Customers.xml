@@ -1,0 +1,22 @@
+<SPSActionEditConfig>
+  <DataBase ConnectionString="Data Source=SRVDATOS;Initial Catalog=Northwind;User ID=sa;Password=sa">
+    <Table Name="Customers" IdentityField="CustomerID" />
+  </DataBase>
+  <Fields>
+    <Field Name="CompanyName" Title="Company" Type="string" Required="false" Validator="" DefaultValue="" New="true" Update="true">
+      <Lookup Show="CompanyName" Link="CustomerID" Table="TabelName" />
+      <Options Multiple="">
+        <Option Show="" Value="" />
+      </Options>
+    </Field>
+    <Field Name="ContactName" Title="Contact" Type="string" Required="false" Validator="" DefaultValue="" New="true" Update="true" />
+    <Field Name="ContactTitle" Title="Title" Type="string" Required="false" Validator="" DefaultValue="" New="true" Update="true" />
+    <Field Name="Address" Title="Address" Type="string" Required="false" Validator="" DefaultValue="" New="true" Update="true" />
+    <Field Name="City" Title="City" Type="string" Required="false" Validator="" DefaultValue="" New="true" Update="true" />
+    <Field Name="Region" Title="Region" Type="memo" Required="false" Validator="" DefaultValue="" New="true" Update="true" />
+    <Field Name="PostalCode" Title="Postal Code" Type="string" Required="false" Validator="" DefaultValue="" New="true" Update="true" />
+    <Field Name="Country" Title="Country" Type="string" Required="true" Validator="" DefaultValue="" New="true" Update="true" />
+    <Field Name="Phone" Title="Phone" Type="string" Required="false" Validator="" DefaultValue="" New="true" Update="true" />
+    <Field Name="Fax" Title="Fax" Type="string" Required="false" Validator="" DefaultValue="" New="true" Update="true" />
+  </Fields>
+</SPSActionEditConfig>

@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="chkOptAttachDeleteText" xml:space="preserve">
+    <value>¿Eliminar el sitio cuando se borre el item?</value>
+  </data>
+  <data name="chkOptForceCreationText" xml:space="preserve">
+    <value>Si ya exite un sitio con la misma URL, se añadira un número para distinguirlas.</value>
+  </data>
+  <data name="chkOptLogErrorText" xml:space="preserve">
+    <value>Dejar constancia del error en el campo de la URL</value>
+  </data>
+  <data name="chkOptOnQuickLaunchText" xml:space="preserve">
+    <value>¿Mostrar este sitio en la barra de acceso rápido del sitio padre?</value>
+  </data>
+  <data name="chkOptUniquePermissonsText" xml:space="preserve">
+    <value>permisos exclusivos</value>
+  </data>
+  <data name="chkOptUseSharedNavBarText" xml:space="preserve">
+    <value>Mostrar la misma barra de accesos rápidos que en el sitio padre.</value>
+  </data>
+  <data name="DeleteSite" xml:space="preserve">
+    <value>Borrar el Sitio</value>
+  </data>
+  <data name="DeleteSiteDescription" xml:space="preserve">
+    <value>Se adjuntará un evento que borrará el sitio cuando el item se borre.</value>
+  </data>
+  <data name="ErrorManagement" xml:space="preserve">
+    <value>Gestión de Errores</value>
+  </data>
+  <data name="ErrorManagementDescription" xml:space="preserve">
+    <value>Acciones que se realizarán cuando se produzca un error creando el sitio.</value>
+  </data>
+  <data name="Fields" xml:space="preserve">
+    <value>Campos</value>
+  </data>
+  <data name="FieldsDescription" xml:space="preserve">
+    <value>Seleccione los tres campos nescesarios para la personalización del evento.</value>
+  </data>
+  <data name="idAddKeyButtonText" xml:space="preserve">
+    <value>Añadir Lista</value>
+  </data>
+  <data name="idAddKeyButtonToolTip" xml:space="preserve">
+    <value>Añade el evento de creación de sitios a la lista seleccionada</value>
+  </data>
+  <data name="listID" xml:space="preserve">
+    <value>ID de la Lista</value>
+  </data>
+  <data name="listName" xml:space="preserve">
+    <value>Nombre de la Lista</value>
+  </data>
+  <data name="LogError" xml:space="preserve">
+    <value>Log Error</value>
+  </data>
+  <data name="NewSiteNavigation" xml:space="preserve">
+    <value>Navegación del nuevo sitio</value>
+  </data>
+  <data name="NewSiteNavigationDescription" xml:space="preserve">
+    <value>Si ya exite un sitio con la misma URL, se añadira un número para distinguirlas.</value>
+  </data>
+  <data name="NewSitePermissions" xml:space="preserve">
+    <value>Permisos del nuevo sitio</value>
+  </data>
+  <data name="NewSitePermissionsDescription" xml:space="preserve">
+    <value>Ud, pude crear un sitio con los mismos permisos que el sitio padre o un sitio con permisos unicos rompiendo la herencia. Adicionalmente pide especificar una lista de grupos a los que quiere conceder acceso. Use la siguiente sintaxis.
+
+ GRUPO:Descripción;OTROGRUPO:Descripción</value>
+  </data>
+  <data name="Permissions" xml:space="preserve">
+    <value>Permisos</value>
+  </data>
+  <data name="siteCreationPageDescription" xml:space="preserve">
+    <value>Use esta página para adjuntar el evento de SPSProfessional Site Creation a una lista.</value>
+  </data>
+  <data name="SiteNameField" xml:space="preserve">
+    <value>Campo que contendra el nombre del nuevo sitio</value>
+  </data>
+  <data name="SiteUrlField" xml:space="preserve">
+    <value>Campo que contendrá la URL del nuevo sitio</value>
+  </data>
+  <data name="TemplateField" xml:space="preserve">
+    <value>Campo que contiene la lista de plantillas</value>
+  </data>
+  <data name="Templates" xml:space="preserve">
+    <value>Plantillas</value>
+  </data>
+  <data name="TemplatesDescription" xml:space="preserve">
+    <value>Construya el mapa de plantillas, para cada opción de las presentadas aquí, seleccione la plantilla que se usará.</value>
+  </data>
+  <data name="txtOptNewPermissionsTitle" xml:space="preserve">
+    <value>Grupos a añadir al nuevo sitio</value>
+  </data>
+  <data name="BtnNextTitle" xml:space="preserve">
+    <value>Siguiente</value>
+  </data>
+  <data name="ForceCreation" xml:space="preserve">
+    <value>Forzar la creación del sitio</value>
+  </data>
+  <data name="List" xml:space="preserve">
+    <value>Lista</value>
+  </data>
+  <data name="ListDescription" xml:space="preserve">
+    <value>Selecciones una lista a la cual se adjuntara el evento de creación de sitios. La lista debe tener por lo menos tres campos; Un campo de texto para contener el nombre del sitio, un campo de enlaces donde se almacenará la url del sitio una vez creado y un campo de selección para seleccionar la plantilla que se aplicara al sitio nuevo una vez creado.</value>
+  </data>
+  <data name="SelectList" xml:space="preserve">
+    <value>Seleccione la lista</value>
+  </data>
+  <data name="ErrBadTemplateDefinition" xml:space="preserve">
+    <value>La plantilla no se encuentra.</value>
+  </data>
+  <data name="ErrSiteCantBeEmpty" xml:space="preserve">
+    <value>El nombre del sitio no puede quedar vacio.</value>
+  </data>
+  <data name="chkOptHideTemplateField" xml:space="preserve">
+    <value>Ocultar el campo de Plantillas</value>
+  </data>
+</root>

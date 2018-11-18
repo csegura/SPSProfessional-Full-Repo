@@ -1,0 +1,2033 @@
+﻿/* Azure */
+
+.SPSCal_Azure
+{
+background-color:#F0FFFF;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Azuresel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Beige */
+
+.SPSCal_Beige
+{
+background-color:#F5F5DC;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Beigesel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Bisque */
+
+.SPSCal_Bisque
+{
+background-color:#FFE4C4;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Bisquesel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Chartreuse */
+
+.SPSCal_Chartreuse
+{
+background-color:#7FFF00;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Chartreusesel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Brown */
+
+.SPSCal_Brown
+{
+background-color:	#A52A2A;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Brownsel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* BurlyWood */
+
+.SPSCal_BurlyWood
+{
+background-color:	#DEB887;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_BurlyWoodsel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* CadetBlue */
+
+.SPSCal_CadetBlue
+{
+background-color:#5F9EA0;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_CadetBluesel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Chocolate */
+
+.SPSCal_Chocolate
+{
+background-color:#D2691E;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Chocolatesel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* CornflowerBlue */
+
+.SPSCal_CornflowerBlue
+{
+background-color:#6495ED;
+	color:#FFFFFF;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_CornflowerBluesel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Crimson */
+
+.SPSCal_Crimson
+{
+background-color:#DC143C;
+	color:#FFFFFF;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Crimsonsel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* DarkBlue */
+
+.SPSCal_DarkBlue
+{
+background-color:#00008B;
+	color:#FFFFFF;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_DarkBluesel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* DarkCyan */
+
+.SPSCal_DarkCyan
+{
+background-color:#008B8B;
+	color:#FFFFFF;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_DarkCyansel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* DarkGreen */
+
+.SPSCal_DarkGreen
+{
+background-color:#006400;
+color:#FFFFFF;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_DarkGreensel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* DarkRed */
+
+.SPSCal_DarkRed
+{
+background-color:#8B0000;
+color:#FFFFFF;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_DarkRedsel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+
+/* DarkSalmon */
+
+.SPSCal_DarkSalmon
+{
+background-color:#E9967A;
+color:#FFFFFF;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_DarkSalmonsel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* DarkSlateBlue */
+
+.SPSCal_DarkSlateBlue
+{
+background-color:#483D8B;
+color:#FFFFFF;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_DarkSlateBluesel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+
+
+/* DarkSlateGray */
+
+.SPSCal_DarkSlateGray
+{
+background-color:#2F4F4F;
+color:#FFFFFF;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_DarkSlateGraysel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* FireBrick */
+
+.SPSCal_FireBrick
+{
+background-color:#B22222;
+color:#FFFFFF;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_FireBricksel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+
+/* Red */
+
+.SPSCal_Red
+{
+background-color:red;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Redsel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+
+
+/* 
+SPSCal Colors
+
+Ivory
+Beige
+Wheat
+Tan
+Khaki
+Silver
+Gray
+Charcoal
+NavyBlue
+RoyalBlue
+MediumBlue
+Azure
+Cyan
+Aquamarine
+Teal
+ForestGreen
+Olive
+Chartreuse
+Lime
+Golden
+Goldenrod
+Coral
+Salmon
+HotPink
+Fuchsia
+Puce
+Mauve
+Lavender
+Plum
+Indigo
+Maroon
+Crimson
+*/
+
+/* Ivory */
+
+.SPSCal_Ivory
+{
+background-color:#FFFFF0;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Ivorysel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+
+/* Beige */
+
+.SPSCal_Beige
+{
+background-color:#F5F5DC;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Beigesel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Wheat */
+
+.SPSCal_Wheat
+{
+background-color:#F5DEB3;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Wheatsel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Tan */
+
+.SPSCal_Tan
+{
+background-color:#D2B48C;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Tansel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}        	
+
+/* Khaki */
+
+.SPSCal_Khaki
+{
+background-color:#C3B091;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Khakisel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+ 
+/* Silver */
+
+.SPSCal_Silver
+{
+background-color:#C0C0C0;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Silversel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}	           	
+
+
+/* Gray */
+
+.SPSCal_Gray
+{
+background-color:#808080;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Graysel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+} 
+
+/* Charcoal */
+
+.SPSCal_Charcoal
+{
+background-color:#464646;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Charcoalsel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+	           	
+/* NavyBlue */
+
+.SPSCal_NavyBlue
+{
+background-color:#000080;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_NavyBluesel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* RoyalBlue */
+
+.SPSCal_RoyalBlue
+{
+background-color:#084C9E;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_RoyalBluesel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+	           	
+
+/* MediumBlue */
+
+.SPSCal_MediumBlue
+{
+background-color:#0000CD;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_MediumBluesel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+
+/* Azure */
+
+.SPSCal_Azure
+{
+background-color:#007FFF;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Azuresel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}	           	
+
+
+/* Cyan */
+
+.SPSCal_Cyan
+{
+background-color:#00FFFF;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Cyansel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+ 
+/* Aquamarine */
+
+.SPSCal_Aquamarine
+{
+background-color:#7FFFD4;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Aquamarinesel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}	           	
+
+
+/* Teal */
+
+.SPSCal_Teal
+{
+background-color:#008080;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Tealsel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+} 
+
+
+/* ForestGreen */
+
+.SPSCal_ForestGreen
+{
+background-color:#228B22;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_ForestGreensel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}	           	
+
+/* Olive */
+
+.SPSCal_Olive
+{
+background-color:#808000;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Olivesel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+ 
+/* Chartreuse */
+
+.SPSCal_Chartreuse
+{
+background-color:#7FFF00;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Chartreusesel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}	           	
+
+/* Lime */
+
+.SPSCal_Lime
+{
+background-color:#BFFF00;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Limesel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Golden */
+
+.SPSCal_Golden
+{
+background-color:#FFD700;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Goldensel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}        	
+
+
+/* Goldenrod */
+
+.SPSCal_Goldenrod
+{
+background-color:#DAA520;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Goldenrodsel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+
+/* Coral */
+
+.SPSCal_Coral
+{
+background-color:#FF7F50;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Coralsel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}       	
+
+/* Salmon */
+
+.SPSCal_Salmon
+{
+background-color:#FA8072;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Salmonsel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+ 
+
+/* HotPink */
+
+.SPSCal_HotPink
+{
+background-color:#FC0FC0;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_HotPinksel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}           	
+
+/* Fuchsia */
+
+.SPSCal_Fuchsia
+{
+background-color:#FF77FF;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Fuchsiasel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Puce */
+
+.SPSCal_Puce
+{
+background-color:#CC8899;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Pucesel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}	           	
+
+/* Mauve */
+
+.SPSCal_Mauve
+{
+background-color:#E0B0FF;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Mauvesel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Lavender */
+
+.SPSCal_Lavender
+{
+background-color:#B57EDC;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Lavendersel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}	           	
+
+/* Plum */
+
+.SPSCal_Plum
+{
+background-color:#843179;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Plumsel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+ 
+
+/* Indigo */
+
+.SPSCal_Indigo
+{
+background-color:#4B0082;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Indigosel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}          	
+
+/* Maroon */
+
+.SPSCal_Maroon
+{
+background-color:#800000;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Maroonsel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Crimson */
+
+.SPSCal_Crimson
+{
+background-color:#DC143C;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Crimsonsel
+{
+background-color:white;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}    	
+
+
+
+
+/* LIMPIEZA */
+
+
+/* 
+SPSCal Colors
+
+Ivory
+Beige
+Wheat
+Tan
+Khaki
+Silver
+Gray
+Charcoal
+NavyBlue
+RoyalBlue
+MediumBlue
+Azure
+Cyan
+Aquamarine
+Teal
+ForestGreen
+Olive
+Chartreuse
+Lime
+Golden
+Goldenrod
+Coral
+Salmon
+HotPink
+Fuchsia
+Puce
+Mauve
+Lavender
+Plum
+Indigo
+Maroon
+Crimson
+*/
+
+/* Ivory */
+
+.SPSCal_Ivory
+{
+background-color:#FFFFF0;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Ivorysel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+
+/* Beige */
+
+.SPSCal_Beige
+{
+background-color:#F5F5DC;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Beigesel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Wheat */
+
+.SPSCal_Wheat
+{
+background-color:#F5DEB3;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Wheatsel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Tan */
+
+.SPSCal_Tan
+{
+background-color:#D2B48C;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Tansel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}        	
+
+/* Khaki */
+
+.SPSCal_Khaki
+{
+background-color:#C3B091;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Khakisel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+ 
+/* Silver */
+
+.SPSCal_Silver
+{
+background-color:#C0C0C0;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Silversel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}	           	
+
+
+
+/* Gray */
+
+.SPSCal_Gray
+{
+background-color:#808080;
+color:White;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Graysel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+} 
+
+/* Charcoal */
+
+.SPSCal_Charcoal
+{
+background-color:#464646;
+text-align:center;
+text-overflow:ellipsis;
+}
+
+.SPSCal_Charcoal a:link,
+.SPSCal_Charcoal a:visited
+{
+	color:White;
+	font-weight:lighter;
+}
+
+.SPSCal_Charcoalsel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+}
+	           	
+/* NavyBlue */
+
+.SPSCal_NavyBlue
+{
+background-color:#000080;
+color:White;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_NavyBluesel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* RoyalBlue */
+
+.SPSCal_RoyalBlue
+{
+background-color:#084C9E;
+color:White;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_RoyalBluesel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+	           	
+
+/* MediumBlue */
+
+.SPSCal_MediumBlue
+{
+background-color:#0000CD;
+color:White;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_MediumBluesel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+
+/* Azure */
+
+.SPSCal_Azure
+{
+background-color:#007FFF;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Azuresel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}	           	
+
+
+/* Cyan */
+
+.SPSCal_Cyan
+{
+background-color:#00FFFF;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Cyansel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+ 
+/* Aquamarine */
+
+.SPSCal_Aquamarine
+{
+background-color:#7FFFD4;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Aquamarinesel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}	           	
+
+
+/* Teal */
+
+.SPSCal_Teal
+{
+background-color:#008080;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Tealsel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+} 
+
+
+/* ForestGreen */
+
+.SPSCal_ForestGreen
+{
+background-color:#228B22;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_ForestGreensel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}	           	
+
+/* Olive */
+
+.SPSCal_Olive
+{
+background-color:#808000;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Olivesel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+ 
+/* Chartreuse */
+
+.SPSCal_Chartreuse
+{
+background-color:#7FFF00;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Chartreusesel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}	           	
+
+/* Lime */
+
+.SPSCal_Lime
+{
+background-color:#BFFF00;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Limesel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Golden */
+
+.SPSCal_Golden
+{
+background-color:#FFD700;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Goldensel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}        	
+
+
+/* Goldenrod */
+
+.SPSCal_Goldenrod
+{
+background-color:#DAA520;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Goldenrodsel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+
+/* Coral */
+
+.SPSCal_Coral
+{
+background-color:#FF7F50;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Coralsel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}       	
+
+/* Salmon */
+
+.SPSCal_Salmon
+{
+background-color:#FA8072;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Salmonsel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+ 
+
+/* HotPink */
+
+.SPSCal_HotPink
+{
+background-color:#FC0FC0;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_HotPinksel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}           	
+
+/* Fuchsia */
+
+.SPSCal_Fuchsia
+{
+background-color:#FF77FF;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Fuchsiasel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Puce */
+
+.SPSCal_Puce
+{
+background-color:#CC8899;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Pucesel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}	           	
+
+/* Mauve */
+
+.SPSCal_Mauve
+{
+background-color:#E0B0FF;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Mauvesel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Lavender */
+
+.SPSCal_Lavender
+{
+background-color:#B57EDC;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Lavendersel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}	           	
+
+/* Plum */
+
+.SPSCal_Plum
+{
+background-color:#843179;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Plumsel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+ 
+
+/* Indigo */
+
+.SPSCal_Indigo
+{
+background-color:#4B0082;
+color:White;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Indigosel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}          	
+
+/* Maroon */
+
+.SPSCal_Maroon
+{
+background-color:#800000;
+color:White;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Maroonsel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+
+/* Crimson */
+
+.SPSCal_Crimson
+{
+background-color:#DC143C;
+color:White;
+text-align:center;
+font-weight:lighter;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+cursor:pointer;
+}
+
+.SPSCal_Crimsonsel
+{
+background-color:white;
+font-weight:lighter;
+text-align:center;
+text-overflow:ellipsis;
+padding:2px 0px 2px 0px;
+text-decoration:none;
+cursor:pointer;
+}  

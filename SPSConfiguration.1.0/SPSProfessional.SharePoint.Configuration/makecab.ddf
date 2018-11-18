@@ -1,0 +1,27 @@
+﻿.OPTION EXPLICIT     
+.Set CabinetNameTemplate=SPSProfessional.SharePoint.Configuration.1.0.wsp 
+.set DiskDirectoryTemplate=CDROM 
+.Set CompressionType=MSZIP
+.Set UniqueFiles="ON"
+.Set Cabinet=on
+.Set DiskDirectory1=_Build
+
+; Manifest
+manifest_wsp.xml manifest.xml
+
+; Binary files
+bin\Release\SPSProfessional.SharePoint.Configuration.dll	SPSProfessional.SharePoint.Configuration.dll
+
+; Images
+IMAGES\spsprofessionallogo.gif						spsprofessionallogo.gif
+IMAGES\spsprofessionalactions.gif					IMAGES\spsprofessionalactions.gif
+
+; Other resources
+SPSProfessional_ConfigurationManager\feature.xml							SPSProfessional_ConfigurationManager\feature.xml
+SPSProfessional_ConfigurationManager\SPSConfigurationManager_Elements.xml   SPSProfessional_ConfigurationManager\SPSConfigurationManager_Elements.xml 
+SPSProfessional_ConfigurationManager\ConfigurationManagerList\AllItems.aspx	SPSProfessional_ConfigurationManager\ConfigurationManagerList\AllItems.aspx
+SPSProfessional_ConfigurationManager\ConfigurationManagerList\DispForm.aspx	SPSProfessional_ConfigurationManager\ConfigurationManagerList\DispForm.aspx
+SPSProfessional_ConfigurationManager\ConfigurationManagerList\EditForm.aspx	SPSProfessional_ConfigurationManager\ConfigurationManagerList\EditForm.aspx
+SPSProfessional_ConfigurationManager\ConfigurationManagerList\NewForm.aspx	SPSProfessional_ConfigurationManager\ConfigurationManagerList\NewForm.aspx
+SPSProfessional_ConfigurationManager\ConfigurationManagerList\schema.xml	SPSProfessional_ConfigurationManager\ConfigurationManagerList\schema.xml
+

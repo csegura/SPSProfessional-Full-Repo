@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <!-- columns -->
+  <Field ID="{94D9F966-E18F-4DB8-A981-65F71DC51ABD}"
+    Name="Category"
+    StaticName="Category"
+    Group="SPSProfessional Configuration Manager"
+    Type="Text"
+    DisplayName="Category"
+    SourceID="http://schemas.microsoft.com/sharepoint/v3/fields"
+    Sealed="TRUE"
+    AllowDeletion="TRUE"
+    ShowInFileDlg="FALSE"/>
+
+  <Field ID="{4B9BD42C-075A-4799-A947-6AD9884837A0}"
+    Name="Value"
+    StaticName="Value"
+    Group="SPSProfessional Configuration Manager"
+    Type="Note"
+    DisplayName="Value"
+    SourceID="http://schemas.microsoft.com/sharepoint/v3/fields"
+    Sealed="TRUE"
+    AllowDeletion="TRUE"
+    ShowInFileDlg="FALSE"/>
+
+  <Field ID="{02E99321-B903-422A-933D-ED1D3404F0A8}"
+    Name="Description"
+    StaticName="Description"
+    Group="SPSProfessional Configuration Manager"
+    Type="Note"
+    DisplayName="Description"
+    SourceID="http://schemas.microsoft.com/sharepoint/v3/fields"
+    Sealed="TRUE"
+    AllowDeletion="TRUE"
+    ShowInFileDlg="FALSE"/>
+
+  <!-- ConfigItem content type -->
+  <ContentType ID="0x010097010D581319496BB599D8CBE416F274"
+               Name="SPSProfessional Configuration Manager"
+               Group="SPSProfessional Configuration Manager"
+               Description="Represents an configuration element."
+               Version="0"
+               FeatureId="{41D7B08A-F8D3-4285-A619-5DF37DF707A2}">
+    <FieldRefs>
+      <FieldRef ID="{94D9F966-E18F-4DB8-A981-65F71DC51ABD}" Name="Category" Required="TRUE" />
+      <FieldRef ID="{4B9BD42C-075A-4799-A947-6AD9884837A0}" Name="Value" Required="TRUE" />
+      <FieldRef ID="{02E99321-B903-422A-933D-ED1D3404F0A8}" Name="Description" />
+    </FieldRefs>
+  </ContentType>
+
+  <!-- list template -->
+  <ListTemplate
+    Name="ConfigurationManagerList"
+    Type="10999"
+    BaseType="0"
+    OnQuickLaunch="FALSE"
+    SecurityBits="11"
+    Sequence="360"
+    DisplayName="SPSProfessional Configuration Manager"
+    Description="Creates a list to store values for SPSProfessional Solutions"
+    Image="/_layouts/images/itgen.gif"
+    Hidden="TRUE"
+    FeatureId="{41D7B08A-F8D3-4285-A619-5DF37DF707A2}"/>
+
+  <ListInstance
+    FeatureId="41D7B08A-F8D3-4285-A619-5DF37DF707A2"
+    RootWebOnly="False"
+    TemplateType="10999"
+    Title="SPSProfessional Configuration Manager"
+    Description="Creates a list to store values for SPSProfessional Solutions"
+    Url="Lists/SPSProfessional Configuration Manager">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Key">SampleKey</Field>
+          <Field Name="Category">Remove</Field>
+          <Field Name="Value">TEST VALUE</Field>
+          <Field Name="Description">An example.</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+
+  <CustomAction
+  Id="SPSProfessional.ConfigurationManager"
+  Location="Microsoft.SharePoint.SiteSettings"
+  GroupId="SiteCollectionAdmin"
+  Title="SPSProfessional Configuration Manager"
+  Sequence="1001"
+  Rights="ManageWeb"
+  Description="Access to Configuration Manager list"
+  ImageUrl="~sitecollection/_layouts/images/lg_ICCONFIG.gif">
+    <UrlAction Url ="~sitecollection/Lists/SPSProfessional Configuration Manager/AllItems.aspx"/>
+  </CustomAction>
+</Elements>

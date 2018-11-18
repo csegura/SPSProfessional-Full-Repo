@@ -1,0 +1,45 @@
+﻿<?xml version="1.0"?>
+<Solution SolutionId="{336C4D96-11AA-4021-880F-C255D720AB28}"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <Assemblies>
+    <Assembly DeploymentTarget="GlobalAssemblyCache" 
+              Location="SPSProfessional.SharePoint.Framework.dll">      
+      <SafeControls>
+        <SafeControl
+         Assembly="SPSProfessional.SharePoint.Framework, Version=2.8.0.0, Culture=neutral,  PublicKeyToken=4031063ddba1c7c7"
+         Namespace="SPSProfessional.SharePoint.Framework"
+         TypeName="*"
+        />       
+      </SafeControls>
+    </Assembly>    
+  </Assemblies>
+
+  <TemplateFiles>
+    <TemplateFile Location="LAYOUTS\SPSProfessionalFW\TreeRTL\dash.gif" />
+    <TemplateFile Location="LAYOUTS\SPSProfessionalFW\TreeRTL\dashminus.gif" />
+    <TemplateFile Location="LAYOUTS\SPSProfessionalFW\TreeRTL\dashplus.gif" />
+    <TemplateFile Location="LAYOUTS\SPSProfessionalFW\TreeRTL\i.gif" />
+    <TemplateFile Location="LAYOUTS\SPSProfessionalFW\TreeRTL\l.gif" />
+    <TemplateFile Location="LAYOUTS\SPSProfessionalFW\TreeRTL\lminus.gif" />
+    <TemplateFile Location="LAYOUTS\SPSProfessionalFW\TreeRTL\lplus.gif" />
+    <TemplateFile Location="LAYOUTS\SPSProfessionalFW\TreeRTL\minus.gif" />
+    <TemplateFile Location="LAYOUTS\SPSProfessionalFW\TreeRTL\plus.gif" />
+    <TemplateFile Location="LAYOUTS\SPSProfessionalFW\TreeRTL\r.gif" />
+    <TemplateFile Location="LAYOUTS\SPSProfessionalFW\TreeRTL\rminus.gif" />
+    <TemplateFile Location="LAYOUTS\SPSProfessionalFW\TreeRTL\rplus.gif" />
+    <TemplateFile Location="LAYOUTS\SPSProfessionalFW\TreeRTL\t.gif" />
+    <TemplateFile Location="LAYOUTS\SPSProfessionalFW\TreeRTL\tminus.gif" />
+    <TemplateFile Location="LAYOUTS\SPSProfessionalFW\TreeRTL\tplus.gif" />
+  </TemplateFiles>
+
+    <RootFiles>
+    <RootFile Location="Resources\SPSProfessional.SharePoint.Framework.resx" />
+    <RootFile Location="Resources\SPSProfessional.SharePoint.Framework.en-US.resx" />
+    <RootFile Location="Resources\SPSProfessional.SharePoint.Framework.es-ES.resx" />
+  </RootFiles>
+  
+</Solution>
+
+
+

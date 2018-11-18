@@ -1,0 +1,33 @@
+﻿<?xml version="1.0"?>
+<Solution SolutionId="{17CD2538-A49D-41ea-A51A-73B475439aaa}"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <Assemblies>
+    <Assembly DeploymentTarget="GlobalAssemblyCache"
+              Location="SPSProfessional.SharePoint.Events.SiteCreation.dll">
+      <ClassResources>
+        <ClassResource Location="spsprofessionallogo.gif"/>
+      </ClassResources>
+      <SafeControls>        
+        <SafeControl
+          Assembly="SPSProfessional.SharePoint.Events.SiteCreation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7"
+          Namespace="SPSProfessional.SharePoint.Events.SiteCreation"
+          TypeName="*"
+        />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+
+  <FeatureManifests>
+    <FeatureManifest Location="SPSProfessional_SiteCreation\Feature.xml"/>
+  </FeatureManifests>
+
+  <TemplateFiles>
+    <TemplateFile Location="IMAGES\spsprofessionalactions.gif"/>
+    <TemplateFile Location="LAYOUTS\SPSProfessional_SiteCreation.aspx"/>
+    <TemplateFile Location="LAYOUTS\SPSProfessional_SiteCreationAdd.aspx"/>
+    <TemplateFile Location="LAYOUTS\SPSProfessional_SiteCreationEdit.aspx"/>
+    <TemplateFile Location="LAYOUTS\SPSProfessional_SiteCreationEdit.aspx"/>
+  </TemplateFiles>
+      
+</Solution>

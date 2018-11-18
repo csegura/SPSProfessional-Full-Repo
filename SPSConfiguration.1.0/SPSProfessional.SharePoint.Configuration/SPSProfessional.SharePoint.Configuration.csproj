@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BAAF3373-3BC2-4F1C-A88A-D17E6768B854}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SPSProfessional.SharePoint.Configuration</RootNamespace>
+    <AssemblyName>SPSProfessional.SharePoint.Configuration</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>spsprofessional.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="SPSProfessional.SharePoint.Framework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SPSProfessional.SharePoint.Framework\SPSProfessional.SharePoint.Framework\bin\Release\SPSProfessional.SharePoint.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SPSConfigurationManagerFeatureReceiver.cs" />
+    <Compile Include="SPSConfigurationManagerListEventReceiver.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="spsprofessional.snk" />
+    <None Include="makecab_var.ddf" />
+    <None Include="_build\BuildCab.Bat" />
+    <None Include="_build\buildcab.msbuild" />
+    <None Include="_build\Copy of BuildCab.Bat" />
+    <None Include="_build\xenocode.postbuild" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\spsprofessionalactions.gif" />
+    <Content Include="Images\spsprofessionallogo.gif" />
+    <Content Include="manifest_cab.xml" />
+    <Content Include="manifest_wsp.xml" />
+    <Content Include="SPSProfessional_ConfigurationManager\ConfigurationManagerList\AllItems.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="SPSProfessional_ConfigurationManager\ConfigurationManagerList\DispForm.aspx" />
+    <Content Include="SPSProfessional_ConfigurationManager\ConfigurationManagerList\EditForm.aspx" />
+    <Content Include="SPSProfessional_ConfigurationManager\ConfigurationManagerList\NewForm.aspx" />
+    <Content Include="SPSProfessional_ConfigurationManager\ConfigurationManagerList\schema.xml" />
+    <Content Include="SPSProfessional_ConfigurationManager\feature.xml" />
+    <Content Include="SPSProfessional_ConfigurationManager\SPSConfigurationManager_Elements.xml" />
+    <Content Include="_build\replace.vbs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>echo on
+cd "$(ProjectDir)"
+cscript _build\replace.vbs "$(ProjectDir)makecab_var.ddf" "$(ProjectDir)makecab.ddf" "xDIRx" "$(OutDir)" "xDEPLOYx" "cab"</PreBuildEvent>
+    <PostBuildEvent>echo on
+cd "$(ProjectDir)"
+makecab.exe /F makecab.ddf
+cd _Builder
+stsadm.exe -o addwppack -filename _build\$(TargetName).cab -globalinstall -force
+iisapp /a "SharePoint - 80" /r</PostBuildEvent>
+  </PropertyGroup>
+</Project>

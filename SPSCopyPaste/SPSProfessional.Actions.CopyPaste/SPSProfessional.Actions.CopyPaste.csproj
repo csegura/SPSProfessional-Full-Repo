@@ -1,0 +1,174 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4BBFC3C1-19D5-4E96-A766-1EBC6BD0043D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SPSProfessional.Actions.CopyPaste</RootNamespace>
+    <AssemblyName>SPSProfessional.Actions.CopyPaste</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>spsprofessional.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>http://localhost/SPSProParts.SharePoint.Actions.CopyPaste/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PasteActionPic.cs" />
+    <Compile Include="PastePic.cs" />
+    <Compile Include="Paste.cs">
+    </Compile>
+    <Compile Include="PasteAction.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\SPSProfessional.Actions.CopyPaste.es-ES.Designer.cs">
+      <DependentUpon>SPSProfessional.Actions.CopyPaste.es-ES.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </None>
+    <None Include="Resources\SPSProfessional.Actions.CopyPaste.en-US.Designer.cs">
+      <DependentUpon>SPSProfessional.Actions.CopyPaste.en-US.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </None>
+    <None Include="Resources\SPSProfessional.Actions.CopyPaste.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPSProfessional.Actions.CopyPaste.resx</DependentUpon>
+    </None>
+    <Compile Include="SPSControlar.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="spsprofessional.gif" />
+    <Content Include="SPSProfessional_CopyPaste_WS\SPSProfessional_Actions_CopyPaste_WS.xml" />
+    <Content Include="SPSProfessional_CopyPaste\Copy of SPSProfessional_Actions_CopyPaste.xml" />
+    <Content Include="SPSProfessional_CopyPaste\spsprofessional_actions.gif" />
+    <Content Include="SPSProfessional_CopyPaste\spspro_paste.png" />
+    <Content Include="manifest_cab.xml" />
+    <Content Include="manifest_wsp.xml" />
+    <Content Include="Recortes.txt" />
+    <Content Include="SPSProfessional_CopyPaste\Feature.xml" />
+    <Content Include="SPSProfessional_CopyPaste\SPSProfessional_Actions_CopyPaste.xml" />
+    <Content Include="SPSProfessional_CopyPaste\spspro_copy.gif" />
+    <Content Include="SPSProfessional_CopyPaste\spspro_cut.gif" />
+    <Content Include="SPSProfessional_CopyPaste_Pic\spspro_paste.png" />
+    <Content Include="SPSProfessional_CopyPaste_Pic\spspro_pic_clear.png" />
+    <Content Include="SPSProfessional_CopyPaste_Pic\spspro_pic_copy.png" />
+    <Content Include="SPSProfessional_CopyPaste_Pic\spspro_pic_cut.png" />
+    <Content Include="SPSProfessional_CopyPaste_Pic\Feature.xml" />
+    <Content Include="SPSProfessional_CopyPaste_Pic\spsprofessional_actions.gif" />
+    <Content Include="SPSProfessional_CopyPaste_Pic\SPSProfessional_Actions_CopyPaste.xml" />
+    <Content Include="SPSProfessional_CopyPaste_WS\Feature.xml" />
+    <Content Include="SPSProfessional_CopyPaste_WS\spsprofessional_actions.gif" />
+    <Content Include="SPSProfessional_CopyPaste_WS\spspro_copy.gif" />
+    <Content Include="SPSProfessional_CopyPaste_WS\spspro_cut.gif" />
+    <Content Include="SPSProfessional_CopyPaste_WS\spspro_paste.png" />
+    <Content Include="_build\replace.vbs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="spsprofessional.snk" />
+    <None Include="_build\buildcab.msbuild" />
+    <None Include="_build\Copy of BuildCab.Bat" />
+    <None Include="_build\xenocode.postbuild" />
+    <None Include="makecab_var.ddf" />
+    <None Include="Package\reinstallsolution.bat" />
+    <None Include="Package\xenocode.postbuild" />
+    <None Include="_build\BuildCab.Bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPSProfessional.Actions.CopyPaste.es-ES.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SPSProfessional.Actions.CopyPaste.es-ES.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\SPSProfessional.Actions.CopyPaste.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SPSProfessional.Actions.CopyPaste.en-US.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\SPSProfessional.Actions.CopyPaste.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SPSProfessional.Actions.CopyPaste.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>echo on
+cd "$(ProjectDir)"
+makecab.exe /F makecab.ddf
+cd _Build
+BuildCab.bat Deploy
+</PostBuildEvent>
+    <PreBuildEvent>cd "$(ProjectDir)"
+cscript _build\replace.vbs "$(ProjectDir)makecab_var.ddf" "$(ProjectDir)makecab.ddf" "xDIRx" "$(OutDir)" "xDEPLOYx" "wsp"</PreBuildEvent>
+  </PropertyGroup>
+</Project>

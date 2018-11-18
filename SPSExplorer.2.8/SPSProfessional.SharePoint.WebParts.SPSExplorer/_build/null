@@ -1,0 +1,242 @@
+
+Command line error.
+
+
+Usage:
+           stsadm.exe -o <operation> [<parameters>]
+           stsadm.exe -help [<operation>]
+
+Operations:
+
+
+           activatefeature
+           activateformtemplate
+           addalternatedomain
+           addcontentdb
+           adddataconnectionfile
+           add-ecsfiletrustedlocation
+           add-ecssafedataprovider
+           add-ecstrusteddataconnectionlibrary
+           add-ecsuserdefinedfunction
+           addexemptuseragent
+           addpath
+           addpermissionpolicy
+           addsolution
+           addtemplate
+           adduser
+           addwppack
+           addzoneurl
+           allowuserformwebserviceproxy
+           allowwebserviceproxy
+           associatewebapp
+           authentication
+           backup
+           backuphistory
+           binddrservice
+           blockedfilelist
+           canceldeployment
+           changepermissionpolicy
+           copyappbincontent
+           createadminvs
+           createcmsmigrationprofile
+           creategroup
+           createsite
+           createsiteinnewdb
+           createssp
+           createweb
+           databaserepair
+           deactivatefeature
+           deactivateformtemplate
+           deleteadminvs
+           deletealternatedomain
+           deletecmsmigrationprofile
+           deleteconfigdb
+           deletecontentdb
+           deletegroup
+           deletepath
+           deletepermissionpolicy
+           deletesite
+           deletesolution
+           deletessp
+           deletessptimerjob
+           deletetemplate
+           deleteuser
+           deleteweb
+           deletewppack
+           deletezoneurl
+           deploysolution
+           deploywppack
+           disablessc
+           displaysolution
+           editcmsmigrationprofile
+           editcontentdeploymentpath
+           editssp
+           email
+           enablecmsurlredirect
+           enablessc
+           enumallwebs
+           enumalternatedomains
+           enumcontentdbs
+           enumdataconnectionfiledependants
+           enumdataconnectionfiles
+           enumdeployments
+           enumexemptuseragents
+           enumformtemplates
+           enumgroups
+           enumroles
+           enumservices
+           enumsites
+           enumsolutions
+           enumssp
+           enumssptimerjobs
+           enumsubwebs
+           enumtemplates
+           enumusers
+           enumwppacks
+           enumzoneurls
+           execadmsvcjobs
+           export
+           exportipfsadminobjects
+           extendvs
+           extendvsinwebfarm
+           forcedeletelist
+           formtemplatequiescestatus
+           getadminport
+           getdataconnectionfileproperty
+           getformsserviceproperty
+           getformtemplateproperty
+           getproperty
+           getsitedirectoryscanschedule
+           getsitelock
+           getsiteuseraccountdirectorypath
+           geturlzone
+           grantiis7permission
+           import
+           installfeature
+           listlogginglevels
+           listqueryprocessoroptions
+           listregisteredsecuritytrimmers
+           localupgradestatus
+           managepermissionpolicylevel
+           mergecontentdbs
+           migrateuser
+           mysite
+           osearch
+           osearchdiacriticsensitive
+           preparetomove
+           preupgradecheck
+           profilechangelog
+           profiledeletehandler
+           provisionservice
+           quiescefarm
+           quiescefarmstatus
+           quiesceformtemplate
+           reconvertallformtemplates
+           refreshdms
+           refreshsitedms
+           registersecuritytrimmer
+           registerwsswriter
+           removedataconnectionfile
+           removedrservice
+           remove-ecsfiletrustedlocation
+           remove-ecssafedataprovider
+           remove-ecstrusteddataconnectionlibrary
+           remove-ecsuserdefinedfunction
+           removeexemptuseragent
+           removeformtemplate
+           removesolutiondeploymentlock
+           renameserver
+           renamesite
+           renameweb
+           restore
+           restoressp
+           retractsolution
+           retractwppack
+           runcmsmigrationprofile
+           runcontentdeploymentjob
+           scanforfeatures
+           setadminport
+           setapppassword
+           setbulkworkflowtaskprocessingschedule
+           setconfigdb
+           setcontentdeploymentjobschedule
+           setdataconnectionfileproperty
+           setdefaultssp
+           set-ecsexternaldata
+           set-ecsloadbalancing
+           set-ecsmemoryutilization
+           set-ecssecurity
+           set-ecssessionmanagement
+           set-ecsworkbookcache
+           setformsserviceproperty
+           setformtemplateproperty
+           setholdschedule
+           setlogginglevel
+           setpolicyschedule
+           setproperty
+           setqueryprocessoroptions
+           setrecordsrepositoryschedule
+           setsearchandprocessschedule
+           setsharedwebserviceauthn
+           setsitedirectoryscanschedule
+           setsitelock
+           setsiteuseraccountdirectorypath
+           setsspport
+           setworkflowconfig
+           siteowner
+           spsearch
+           spsearchdiacriticsensitive
+           sync
+           syncsolution
+           trimauditlog
+           unextendvs
+           uninstallfeature
+           unquiescefarm
+           unquiesceformtemplate
+           unregistersecuritytrimmer
+           unregisterwsswriter
+           updateaccountpassword
+           updatealerttemplates
+           updatefarmcredentials
+           upgrade
+           upgradeformtemplate
+           upgradesolution
+           upgradetargetwebapplication
+           uploadformtemplate
+           userrole
+           variationsfixuptool
+           verifyformtemplate
+
+Examples:
+stsadm.exe -o addpath -url http://server/sites -type wildcardinclusion
+stsadm.exe -o adduser 
+           -url http://server/site 
+           -userlogin DOMAIN\name
+           -useremail someone@example.com
+           -role reader
+           -username "Your Name"
+           -siteadmin
+stsadm.exe -o backup -url http://server/site -filename backup.dat -overwrite
+stsadm.exe -o backup -directory c:\backup -backupmethod full
+stsadm.exe -o createsite -url http://server/site 
+           -ownerlogin DOMAIN\name
+           -owneremail someone@example.com 
+stsadm.exe -o createweb -url http://server/site/web
+stsadm.exe -o deletesite -url http://server/site
+stsadm.exe -o deleteweb -url http://server/site/web
+stsadm.exe -o enumsites -url http://server
+stsadm.exe -o enumsubwebs -url http://server/site/web
+stsadm.exe -o enumusers -url http://server/site/web
+stsadm.exe -o extendvs -url http://server:80
+           -ownerlogin DOMAIN\name
+           -owneremail someone@example.com
+stsadm.exe -o renameweb -url http://server/site/web1 -newname web2
+stsadm.exe -o restore -url http://server/site -filename backup.dat
+stsadm.exe -o restore -directory c:\backup -restoremethod overwrite
+stsadm.exe -o setconfigdb -databaseserver server 
+stsadm.exe -o unextendvs -url http://server
+
+For information about other operations and parameters, 
+use "stsadm.exe -help" or "stsadm.exe -help <operation>"
+
+

@@ -1,0 +1,34 @@
+﻿.OPTION EXPLICIT     
+.Set CabinetNameTemplate=SPSProfessional.SharePoint.WebParts.MailToList.1.0.wsp 
+.set DiskDirectoryTemplate=CDROM 
+.Set CompressionType=MSZIP
+.Set UniqueFiles="ON"
+.Set Cabinet=on
+.Set DiskDirectory1=_Build
+
+; Manifest
+manifest_wsp.xml manifest.xml
+
+; Binary files
+_build\SPSProfessional.SharePoint.WebParts.MailToList.dll	SPSProfessional.SharePoint.WebParts.MailToList.dll
+; _build\MailBee.NET.dll									MailBee.NET.dll
+
+; Webparts
+SPSMailToList.webpart									SPSMailToList.webpart 
+
+; Images
+Images\spsprofessionallogo.gif							spsprofessionallogo.gif
+Images\spsprofessionalactions.gif						IMAGES\spsprofessionalactions.gif
+
+; Resources
+; Resources
+Resources\SPSProfessional.SharePoint.WebParts.MailToList.resx			Resources\SPSProfessional.SharePoint.WebParts.MailToList.resx
+Resources\SPSProfessional.SharePoint.WebParts.MailToList.en-US.resx	    Resources\SPSProfessional.SharePoint.WebParts.MailToList.en-US.resx
+
+SPSProfessional_MailToList\feature.xml						SPSProfessional_MailToList\feature.xml
+SPSProfessional_MailToList\SPSMailToList_Elements.xml		SPSProfessional_MailToList\SPSMailToList_Elements.xml 
+SPSProfessional_MailToList\SPSMailStore\AllItems.aspx		SPSProfessional_MailToList\SPSMailStore\AllItems.aspx
+SPSProfessional_MailToList\SPSMailStore\DispForm.aspx		SPSProfessional_MailToList\SPSMailStore\DispForm.aspx
+SPSProfessional_MailToList\SPSMailStore\EditForm.aspx		SPSProfessional_MailToList\SPSMailStore\EditForm.aspx
+SPSProfessional_MailToList\SPSMailStore\NewForm.aspx		SPSProfessional_MailToList\SPSMailStore\NewForm.aspx
+SPSProfessional_MailToList\SPSMailStore\schema.xml			SPSProfessional_MailToList\SPSMailStore\schema.xml

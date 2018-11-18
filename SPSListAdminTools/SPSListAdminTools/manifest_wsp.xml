@@ -1,0 +1,33 @@
+﻿<?xml version="1.0"?>
+<Solution SolutionId="{0F6393FF-232B-491C-8747-03C49C0C8B10}"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <Assemblies>
+    <Assembly DeploymentTarget="GlobalAssemblyCache"
+              Location="SPSProfessional.SharePoint.Admin.ListTools.dll">
+      <ClassResources>
+        <ClassResource Location="spsprofessionallogo.gif"/>
+      </ClassResources>
+      <SafeControls>        
+        <SafeControl
+          Assembly="SPSProfessional.SharePoint.Admin.ListTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7"
+          Namespace="SPSProfessional.SharePoint.Admin.ListTools"
+          TypeName="*"
+        />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+
+  <FeatureManifests>
+    <FeatureManifest Location="SPSProfessional_ListAdminTools\Feature.xml"/>
+  </FeatureManifests>
+
+  <TemplateFiles>
+    <TemplateFile Location="IMAGES\spsprofessionalactions.gif"/>
+    <TemplateFile Location="LAYOUTS\SPSProfessional_AdminFormFields.aspx"/>
+    <TemplateFile Location="LAYOUTS\SPSProfessional_AdminViews.aspx"/>
+    <TemplateFile Location="LAYOUTS\SPSProfessional_CopyList.aspx"/>
+    <TemplateFile Location="LAYOUTS\SPSProfessional_ListAdminTools.js"/>
+  </TemplateFiles>
+      
+</Solution>

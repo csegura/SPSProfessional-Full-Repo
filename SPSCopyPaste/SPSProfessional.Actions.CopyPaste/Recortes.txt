@@ -1,0 +1,61 @@
+<!--<CustomAction Id="SPSProParts.Actions.CopyPaste"
+      RegistrationType="List"
+      RegistrationId="101"               
+	    Location="EditControlBlock"
+	    ControlAssembly="SPSProParts.SharePoint.Actions.CopyPaste, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0a1ca88129d2b88d"
+      ControlClass="SPSProParts.SharePoint.Actions.CopyPaste.CopyPaste">
+  </CustomAction>-->
+  <!--<CustomAction Id="SPSProParts.Actions.PasteAction"
+     RegistrationType="List"
+    RegistrationId="101"
+    GroupId="ActionsMenu"
+    Location="Microsoft.SharePoint.StandardMenu"
+	  Sequence="1010"
+	  Title="Paste"
+	  ImageUrl="{SiteUrl}/_layouts/images/copy.gif"
+	  Description="Paste document.">
+    <UrlAction Url="javascript:test(window.clipboardData.getData('Text'));"/>
+  </CustomAction>-->
+  
+  <!--<CustomAction Id="SPSProParts.Actions.PasteAction"
+   RegistrationType="List"
+   RegistrationId="101"
+   GroupId="ActionsMenu"
+   Location="Microsoft.SharePoint.StandardMenu"
+    Title="Paste"
+    Description="Paste document."
+    Sequence="1000"
+    ImageUrl="_layouts/images/paste.gif">
+    <UrlAction Url="?xxx"/>
+  </CustomAction>-->
+  
+  <!--<CustomAction Id="SPSProParts.Actions.Paste"
+	  RegistrationType="List"
+	  RegistrationId="101"
+	  Location="EditControlBlock"
+	  Sequence="1020"
+	  Title="Paste"
+	  ImageUrl="{SiteUrl}/_layouts/images/cut.gif"
+	  Description="Cut document.">
+    <UrlAction Url="&amp;item={ItemUrl}&amp;site={SiteUrl}"/>
+  </CustomAction>-->
+  
+  
+  <Solution xmlns='http://schemas.microsoft.com/sharepoint/' SolutionId='5A4B604E-BD2D-4504-ADD5-196AFF90B66B'>
+    <Assemblies>
+        <Assembly DeploymentTarget='GlobalAssemblyCache' Location='GAC\WebsioCopy.dll'>
+<SafeControls>
+	<SafeControl Assembly="WebsioCopy, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b53260305f33423e" Namespace="Websio.SPS2007.WebControls" TypeName="*" Safe="True" />
+</SafeControls>
+        </Assembly>
+    </Assemblies>
+
+    <TemplateFiles>
+        <TemplateFile Location='IMAGES\wscopy.gif' />
+        <TemplateFile Location='IMAGES\wscut.gif' />
+        <TemplateFile Location='LAYOUTS\websiocopy.aspx' />
+    </TemplateFiles>
+    <FeatureManifests>
+        <FeatureManifest Location='WebsioCopy\feature.xml' />
+    </FeatureManifests>
+</Solution>

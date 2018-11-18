@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="C666790A-C9F8-4601-8474-F37CBBA7A0BA"
+		RegistrationType="List"
+		RegistrationId="100"
+		Location="EditControlBlock"
+		Sequence="1010"
+		Title="Deploy"
+		ImageUrl="{SiteUrl}/_layouts/images/FPHTML16.GIF"
+		Description="Copy List Items">
+    <UrlAction Url="{SiteUrl}/_layouts/SPSProfessional_CopyList.aspx?ItemId={ItemId}&amp;ListId={ListId}"/>
+  </CustomAction>
+  <CustomAction Id="C666790A-C9F8-4601-8474-F37CBBA7AAAB"
+		RegistrationType="List"
+		RegistrationId="104"
+		Location="EditControlBlock"
+		Sequence="1010"
+		Title="Deploy"
+		ImageUrl="{SiteUrl}/_layouts/images/FPHTML16.GIF"
+		Description="Copy List Items">
+    <UrlAction Url="{SiteUrl}/_layouts/SPSProfessional_CopyList.aspx?ItemId={ItemId}&amp;ListId={ListId}"/>
+  </CustomAction>
+  <CustomAction Id="C666790A-C9F8-4601-8474-F37CBBA7AAAA"
+		RegistrationType="List"
+		RegistrationId="105"
+		Location="EditControlBlock"
+		Sequence="1010"
+		Title="Deploy"
+		ImageUrl="{SiteUrl}/_layouts/images/FPHTML16.GIF"
+		Description="Copy List Items">
+    <UrlAction Url="{SiteUrl}/_layouts/SPSProfessional_CopyList.aspx?ItemId={ItemId}&amp;ListId={ListId}"/>
+  </CustomAction>
+  <CustomAction Id="C666790A-C9F8-4601-8474-F37CBBA7AAAC"
+		RegistrationType="List"
+		RegistrationId="106"
+		Location="EditControlBlock"
+		Sequence="1010"
+		Title="Deploy"
+		ImageUrl="{SiteUrl}/_layouts/images/FPHTML16.GIF"
+		Description="Copy List Items">
+    <UrlAction Url="{SiteUrl}/_layouts/SPSProfessional_CopyList.aspx?ItemId={ItemId}&amp;ListId={ListId}"/>
+  </CustomAction>
+  <CustomAction Id="C666790A-C9F8-4601-8474-F37CBBA7AAAD"
+		RegistrationType="List"
+		RegistrationId="107"
+		Location="EditControlBlock"
+		Sequence="1010"
+		Title="Deploy"
+		ImageUrl="{SiteUrl}/_layouts/images/FPHTML16.GIF"
+		Description="Copy List Items">
+    <UrlAction Url="{SiteUrl}/_layouts/SPSProfessional_CopyList.aspx?ItemId={ItemId}&amp;ListId={ListId}"/>
+  </CustomAction>
+  <CustomAction Id="C666790A-C9F8-4601-8474-F37CBBA7AAAE"
+  RegistrationType="List"
+  RegistrationId="1100"
+  Location="EditControlBlock"
+  Sequence="1010"
+  Title="Deploy"
+  ImageUrl="{SiteUrl}/_layouts/images/FPHTML16.GIF"
+		Description="Copy List Items">
+    <UrlAction Url="{SiteUrl}/_layouts/SPSProfessional_CopyList.aspx?ItemId={ItemId}&amp;ListId={ListId}"/>
+  </CustomAction>
+</Elements>

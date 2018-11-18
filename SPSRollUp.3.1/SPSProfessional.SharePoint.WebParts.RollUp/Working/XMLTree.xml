@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SPSRollUpTree>
+  <SPSBranchItem FieldName="Status" />
+  <SPSBranchItem FieldName="Title" />
+  <SPSLeafItem FieldName="DueDate" />    
+</SPSRollUpTree>

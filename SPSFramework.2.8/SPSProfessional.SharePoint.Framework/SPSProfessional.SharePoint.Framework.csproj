@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7018F40A-262B-4606-A3B5-FE6B27D25574}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SPSProfessional.SharePoint.Framework</RootNamespace>
+    <AssemblyName>SPSProfessional.SharePoint.Framework</AssemblyName>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>spsprofessional.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\SPSKeyValueList.cs" />
+    <Compile Include="Common\SPSKeyValuePair.cs" />
+    <Compile Include="Comms\SPSDataValues.cs" />
+    <Compile Include="Comms\SPSParametersProvider.cs" />
+    <Compile Include="Comms\SPSRowProvider.cs" />
+    <Compile Include="Comms\SPSSchema.cs" />
+    <Compile Include="Comms\SPSSchemaBuilder.cs" />
+    <Compile Include="Comms\SPSSchemaValue.cs" />
+    <Compile Include="Error\ISPSErrorPool.cs" />
+    <Compile Include="Controls\SPSErrorBoxControl.cs" />
+    <None Include="Controls\_SPSGridView.cs" />
+    <Compile Include="Controls\SPSToolBarControl.cs" />
+    <Compile Include="Controls\SPSWebPart.cs" />
+    <Compile Include="Error\ISPSErrorControl.cs" />
+    <Compile Include="Error\SPSErrorArgs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\SPSControlar.cs" />
+    <Compile Include="Tools\SPSEditorPartsTools.cs" />
+    <Compile Include="Tools\SPSAboutEditor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Comms\Diag_Comms.cd" />
+    <None Include="FxCop.FxCop" />
+    <None Include="makecab_var.ddf" />
+    <None Include="spsprofessional.snk" />
+    <Compile Include="Controls\ISPSViewCommandParameters.cs" />
+    <Compile Include="Controls\SPSErrorControl.cs" />
+    <Compile Include="Controls\SPSSPToolBarFactory.cs" />
+    <None Include="HierarchyOnDemand\SPSHierarchyIterator.cs" />
+    <Compile Include="Controls\SPSXsltCommandControl.cs" />
+    <Compile Include="HierarchyOnDemand\SPSHierarchyODDataSource.cs" />
+    <Compile Include="HierarchyOnDemand\SPSHierarchyODFactory.cs" />
+    <Compile Include="HierarchyOnDemand\SPSHierarchyODIterator.cs" />
+    <Compile Include="Hierarchy\ISPSSPReference.cs" />
+    <Compile Include="Hierarchy\SPSHierarchyIterator.cs" />
+    <Compile Include="Hierarchy\SPSSPProxy.cs" />
+    <None Include="Resources\SPSProfessional.SharePoint.Framework.es-ES.Designer.cs">
+      <DependentUpon>SPSProfessional.SharePoint.Framework.es-ES.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </None>
+    <None Include="Resources\SPSProfessional.SharePoint.Framework.en-US.Designer.cs">
+      <DependentUpon>SPSProfessional.SharePoint.Framework.en-US.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </None>
+    <None Include="Resources\SPSProfessional.SharePoint.Framework.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPSProfessional.SharePoint.Framework.resx</DependentUpon>
+    </None>
+    <Compile Include="Tools\SPSFeatureReceiverHelper.cs" />
+    <Compile Include="Tools\SPSLocalization.cs" />
+    <Compile Include="Tools\SPSLog.cs" />
+    <Compile Include="Tools\SPSPersist.cs" />
+    <Compile Include="WebPartCache\ISPSCacheService.cs" />
+    <Compile Include="WebPartCache\IWebPartCache.cs" />
+    <Compile Include="WebPartCache\SPSCacheEditorPart.cs" />
+    <Compile Include="WebPartCache\SPSCacheService.cs" />
+    <Compile Include="ConfigurationManager\SPSConfigurationManager.cs" />
+    <Compile Include="ConfigurationManager\SPSConfigurationManagerException.cs" />
+    <Compile Include="ConfigurationManager\SPSConfigurationManagerIdentifier.cs" />
+    <Compile Include="Controls\ISPSXsltChartControl.cs" />
+    <None Include="Controls\ISPSXsltControl.cs" />
+    <None Include="_build\BuildCab.Bat" />
+    <None Include="_build\buildcab.msbuild" />
+    <None Include="_build\Copy of BuildCab.Bat" />
+    <None Include="_build\xenocode.postbuild" />
+    <Compile Include="Controls\SPSBranchItem.cs" />
+    <Compile Include="Controls\SPSCalendarItem.cs" />
+    <Compile Include="Controls\SPSCalendarXML.cs" />
+    <Compile Include="Controls\SPSDateControl.cs" />
+    <Compile Include="Controls\SPSECBMenu.cs" />
+    <Compile Include="Controls\SPSECBMenuItem.cs" />
+    <Compile Include="Controls\SPSTreeXML.cs" />
+    <Compile Include="Controls\SPSXsltCalendarControl.cs" />
+    <Compile Include="Controls\SPSXsltChartControl.cs" />
+    <Compile Include="Controls\SPSXsltControl.cs" />
+    <Compile Include="Error\SPSException.cs" />
+    <Compile Include="Error\SPSStackErrors.cs" />
+    <Compile Include="Hierarchy\ISPSHierarchyNode.cs" />
+    <Compile Include="Hierarchy\ISPSNode.cs" />
+    <Compile Include="Hierarchy\SPSHierarchyDataSource.cs" />
+    <Compile Include="Hierarchy\SPSHierarchyFactory.cs" />
+    <Compile Include="Hierarchy\SPSHierarchyFilter.cs" />
+    <Compile Include="Hierarchy\SPSHierarchyFilterArgs.cs" />
+    <Compile Include="Hierarchy\SPSHierarchyNode.cs" />
+    <Compile Include="Hierarchy\SPSHierarchyNodeType.cs" />
+    <Compile Include="Hierarchy\SPSNodeFactory.cs" />
+    <Compile Include="Hierarchy\SPSTreeNode.cs" />
+    <Compile Include="Hierarchy\ISPSTreeNode.cs" />
+    <Compile Include="WebPartCache\ISPSCacheManager.cs" />
+    <Compile Include="Tools\SPSFunc.cs" />
+    <Compile Include="WebPartCache\SPSCacheManager.cs" />
+    <Compile Include="Tools\SPSDebug.cs" />
+    <Compile Include="Tools\SPSListTools.cs" />
+    <Compile Include="Tools\SPSTools.cs" />
+    <Compile Include="Tools\SPSTreeViewHelper.cs" />
+    <Compile Include="Tools\SPSXsltExtension.cs" />
+    <Compile Include="Error\SPSConfigError.cs" />
+    <Compile Include="Error\SPSConfigErrors.cs" />
+    <Compile Include="Error\SPSConfigErrorCollection.cs" />
+    <Compile Include="Tools\SPSEvaluator.cs" />
+    <Compile Include="Common\SPSSerialization.cs" />
+    <Compile Include="Tools\SPSEvaluatorException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LAYOUTS\SPSProfessionalFW\TreeRTL\dash.gif" />
+    <Content Include="LAYOUTS\SPSProfessionalFW\TreeRTL\dashminus.gif" />
+    <Content Include="LAYOUTS\SPSProfessionalFW\TreeRTL\dashplus.gif" />
+    <Content Include="LAYOUTS\SPSProfessionalFW\TreeRTL\i.gif" />
+    <Content Include="LAYOUTS\SPSProfessionalFW\TreeRTL\l.gif" />
+    <Content Include="LAYOUTS\SPSProfessionalFW\TreeRTL\lminus.gif" />
+    <Content Include="LAYOUTS\SPSProfessionalFW\TreeRTL\lplus.gif" />
+    <Content Include="LAYOUTS\SPSProfessionalFW\TreeRTL\minus.gif" />
+    <Content Include="LAYOUTS\SPSProfessionalFW\TreeRTL\plus.gif" />
+    <Content Include="LAYOUTS\SPSProfessionalFW\TreeRTL\r.gif" />
+    <Content Include="LAYOUTS\SPSProfessionalFW\TreeRTL\rminus.gif" />
+    <Content Include="LAYOUTS\SPSProfessionalFW\TreeRTL\rplus.gif" />
+    <Content Include="LAYOUTS\SPSProfessionalFW\TreeRTL\t.gif" />
+    <Content Include="LAYOUTS\SPSProfessionalFW\TreeRTL\tminus.gif" />
+    <Content Include="LAYOUTS\SPSProfessionalFW\TreeRTL\tplus.gif" />
+    <Content Include="manifest_wsp.xml" />
+    <Content Include="_build\replace.vbs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\SPSProfessional.SharePoint.Framework.es-ES.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SPSProfessional.SharePoint.Framework.es-ES.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\SPSProfessional.SharePoint.Framework.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SPSProfessional.SharePoint.Framework.en-US.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\SPSProfessional.SharePoint.Framework.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SPSProfessional.SharePoint.Framework.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

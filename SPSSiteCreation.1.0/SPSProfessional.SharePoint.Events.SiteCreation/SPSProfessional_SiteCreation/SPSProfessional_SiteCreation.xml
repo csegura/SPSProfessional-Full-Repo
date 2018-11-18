@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <CustomAction
+    Id="SPSProfessional.SiteCreation"
+    Location="Microsoft.SharePoint.SiteSettings"
+    GroupId="SiteAdministration"
+    Title="SPSProfessional Site Creation Event Handler"
+    Sequence="1001"
+    Rights="ManageWeb"
+    RequireSiteAdministrator="True"
+    Description="Administration page permits add an event handler to a list for authomatic site creation"
+    ImageUrl="~sitecollection/_layouts/images/lg_ICCONFIG.gif">
+    <UrlAction Url ="~site/_layouts/SPSProfessional_SiteCreation.aspx"/>
+  </CustomAction>
+
+</Elements>

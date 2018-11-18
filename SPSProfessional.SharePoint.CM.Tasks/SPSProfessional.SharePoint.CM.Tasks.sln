@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPSProfessional.SharePoint.CM.Tasks", "SPSProfessional.SharePoint.CM.Tasks\SPSProfessional.SharePoint.CM.Tasks.csproj", "{F830056A-343C-4328-9BD3-B0AA49AB9CD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F830056A-343C-4328-9BD3-B0AA49AB9CD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F830056A-343C-4328-9BD3-B0AA49AB9CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F830056A-343C-4328-9BD3-B0AA49AB9CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F830056A-343C-4328-9BD3-B0AA49AB9CD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

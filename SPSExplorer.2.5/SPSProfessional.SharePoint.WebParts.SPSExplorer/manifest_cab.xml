@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<WebPartManifest xmlns="http://schemas.microsoft.com/WebPart/v2/Manifest">
+  <Assemblies>
+    <Assembly DeploymentTarget="GlobalAssemblyCache" 
+              FileName="SPSProfessional.SharePoint.SPSExplorer.dll">
+      <ClassResources>
+        <ClassResource Location="wpresources" FileName="spsprofessionallogo.gif"/>
+      </ClassResources>
+      <SafeControls>
+        <SafeControl
+         Assembly="SPSProfessional.SharePoint.Framework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7"
+         Namespace="SPSProfessional.SharePoint.Framework"
+         TypeName="*"
+        />
+        <SafeControl
+          Assembly="SPSProfessional.SharePoint.SPSExplorer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7"
+          Namespace="SPSProfessional.SharePoint.SPSExplorer"
+          TypeName="*"
+        />
+        <!--
+        <SafeControl
+        Assembly="SPSProfessional.SharePoint.WebParts.REPLACETHIS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7"
+        Namespace="SPSProfessional.SharePoint.WebParts.REPLACETHIS.Controls"
+        TypeName="*"
+        />
+        -->
+      </SafeControls>
+    </Assembly>
+    <Assembly DeploymentTarget="GlobalAssemblyCache" FileName="SPSProfessional.SharePoint.Framework.dll" />
+  </Assemblies>
+  <DwpFiles>
+    <DwpFile FileName="SPSWebPart.webpart" />
+  </DwpFiles>
+</WebPartManifest>

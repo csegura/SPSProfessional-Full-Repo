@@ -1,0 +1,49 @@
+﻿.OPTION EXPLICIT     
+.Set CabinetNameTemplate=SPSProfessional.SharePoint.WebParts.RollUp.3.1.wsp 
+.set DiskDirectoryTemplate=CDROM 
+.Set CompressionType=MSZIP
+.Set UniqueFiles="ON"
+.Set Cabinet=on
+.Set DiskDirectory1=_Build
+
+; Manifest
+manifest_wsp.xml manifest.xml
+
+; Binary files
+_build\SPSProfessional.SharePoint.WebParts.RollUp.dll SPSProfessional.SharePoint.WebParts.RollUp.dll
+;_build\SPSProfessional.SharePoint.Framework.dll SPSProfessional.SharePoint.Framework.dll
+
+; Webparts
+RollUp.webpart					RollUp.webpart
+;RollUp3.webpart					RollUp3.webpart
+RollUpChart.webpart				RollUpChart.webpart
+RollUpCalendar.webpart			RollUpCalendar.webpart
+RollUpTree.webpart				RollUpTree.webpart
+;SPSListEdit.webpart			SPSListEdit.webpart
+
+; Images
+Images\spsprofessionallogo.gif				spsprofessionallogo.gif
+Images\spsprofessionallogo.gif				LAYOUTS\SPSRollUp\spsprofessionallogo.gif
+
+; Other resources
+FusionCharts\FCF_Area2D.swf					LAYOUTS\FusionCharts\FCF_Area2D.swf
+FusionCharts\FCF_Bar2D.swf				    LAYOUTS\FusionCharts\FCF_Bar2D.swf
+FusionCharts\FCF_Column2D.swf				LAYOUTS\FusionCharts\FCF_Column2D.swf
+FusionCharts\FCF_Column3D.swf				LAYOUTS\FusionCharts\FCF_Column3D.swf
+FusionCharts\FCF_Line.swf					LAYOUTS\FusionCharts\FCF_Line.swf
+FusionCharts\FCF_MSColumn3D.swf				LAYOUTS\FusionCharts\FCF_MSColumn3D.swf
+FusionCharts\FCF_MSColumn3DLineDY.swf		LAYOUTS\FusionCharts\FCF_MSColumn3DLineDY.swf
+FusionCharts\FCF_Pie3D.swf					LAYOUTS\FusionCharts\FCF_Pie3D.swf
+FusionCharts\FCF_StackedColumn3D.swf		LAYOUTS\FusionCharts\FCF_StackedColumn3D.swf
+FusionCharts\FusionCharts.js				LAYOUTS\FusionCharts\FusionCharts.js
+Layouts\SPSCalendar.css						LAYOUTS\SPSRollUp\SPSCalendar.css
+Layouts\SPSRollUp.css						LAYOUTS\SPSRollUp\SPSRollUp.css
+
+; Resources
+Resources\SPSProfessional.SharePoint.WebParts.RollUp.resx			Resources\SPSProfessional.SharePoint.WebParts.RollUp.resx
+Resources\SPSProfessional.SharePoint.WebParts.RollUp.en-US.resx		Resources\SPSProfessional.SharePoint.WebParts.RollUp.en-US.resx
+Resources\SPSProfessional.SharePoint.WebParts.RollUp.es-ES.resx		Resources\SPSProfessional.SharePoint.WebParts.RollUp.es-ES.resx
+
+; layouts
+FieldInfo\SPSProfessional_FieldInfo.aspx	LAYOUTS\SPSProfessional_FieldInfo.aspx
+ListInfo\SPSProfessional_ListInfo.aspx		LAYOUTS\SPSProfessional_ListInfo.aspx

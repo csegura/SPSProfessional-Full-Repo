@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{60330ED0-2896-4DF7-B497-628A50CA89AF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SPSProfessional.SharePoint.Admin.ListTools</RootNamespace>
+    <AssemblyName>SPSProfessional.SharePoint.Admin.ListTools</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>spsprofessional.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="SPSProfessional.SharePoint.Framework, Version=2.8.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SPSFramework.2.8\SPSProfessional.SharePoint.Framework\bin\Release\SPSProfessional.SharePoint.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminListFeatureReceiver.cs" />
+    <Compile Include="AdminFormFieldsPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminFormFieldsIterator.cs" />
+    <Compile Include="SPSWebPropertiesHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SPSTemplateManager.cs" />
+    <Compile Include="AdminViewsPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminViewSelectorMenu.cs" />
+    <Compile Include="ViewPermissionUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\spsprofessionalactions.gif" />
+    <Content Include="Images\spsprofessionallogo.gif" />
+    <Content Include="LAYOUTS\SPSProfessional_CopyList.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="LAYOUTS\SPSProfessional_ListAdminTools.js" />
+    <Content Include="LAYOUTS\SPSProfessional_AdminViews.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="manifest_cab.xml" />
+    <Content Include="manifest_wsp.xml" />
+    <Content Include="SPSProfessional_ListAdminTools\SPS_AdminFormFields.xml" />
+    <Content Include="SPSProfessional_ListAdminTools\feature.xml" />
+    <Content Include="LAYOUTS\SPSProfessional_AdminFormFields.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="SPSProfessional_ListAdminTools\SPS_AdminViews.xml" />
+    <Content Include="SPSProfessional_ListAdminTools\SPS_CopyList.xml" />
+    <Content Include="_build\replace.vbs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\.svn\entries" />
+    <None Include="Images\.svn\prop-base\spsprofessionalactions.gif.svn-base" />
+    <None Include="Images\.svn\prop-base\spsprofessionallogo.gif.svn-base" />
+    <None Include="Images\.svn\text-base\spsprofessionalactions.gif.svn-base" />
+    <None Include="Images\.svn\text-base\spsprofessionallogo.gif.svn-base" />
+    <None Include="makecab_var.ddf" />
+    <None Include="spsprofessional.snk" />
+    <None Include="_build\.svn\all-wcprops" />
+    <None Include="_build\.svn\entries" />
+    <None Include="_build\.svn\prop-base\xenocode.postbuild.svn-base" />
+    <None Include="_build\.svn\text-base\BuildCab.Bat.svn-base" />
+    <None Include="_build\.svn\text-base\buildcab.msbuild.svn-base" />
+    <None Include="_build\.svn\text-base\Copy of BuildCab.Bat.svn-base" />
+    <None Include="_build\.svn\text-base\replace.vbs.svn-base" />
+    <None Include="_build\.svn\text-base\xenocode.postbuild.svn-base" />
+    <None Include="_build\.svn\tmp\buildcab.msbuild.tmp" />
+    <None Include="_build\buildcab.msbuild" />
+    <None Include="_build\xenocode.postbuild" />
+    <None Include="_build\xenocode.xcmap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\.svn\props\" />
+    <Folder Include="Images\.svn\tmp\prop-base\" />
+    <Folder Include="Images\.svn\tmp\props\" />
+    <Folder Include="Images\.svn\tmp\text-base\" />
+    <Folder Include="SPSProfessional_ListAdminTools\AdminFormFields\" />
+    <Folder Include="_build\.svn\props\" />
+    <Folder Include="_build\.svn\tmp\prop-base\" />
+    <Folder Include="_build\.svn\tmp\props\" />
+    <Folder Include="_build\.svn\tmp\text-base\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

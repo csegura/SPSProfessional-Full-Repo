@@ -1,0 +1,29 @@
+.OPTION EXPLICIT     
+.Set CabinetNameTemplate=xSOLUTIONx.xDEPLOYx 
+.set DiskDirectoryTemplate=CDROM 
+.Set CompressionType=MSZIP
+.Set UniqueFiles="ON"
+.Set Cabinet=on
+.Set DiskDirectory1=_Build
+
+; Manifest
+manifest_xDEPLOYx.xml manifest.xml
+
+; Binary files
+xDIRxSPSProfessional.SharePoint.CM.Tasks.dll	SPSProfessional.SharePoint.CM.Tasks.dll
+
+; Images
+Images\spsprofessionallogo.gif							spsprofessionallogo.gif
+Images\spsprofessionalactions.gif						IMAGES\spsprofessionalactions.gif
+
+; Resources
+; Resources
+;Resources\SPSProfessional.SharePoint.WebParts.CMTasks.resx			Resources\SPSProfessional.SharePoint.WebParts.CMTasks.resx
+;Resources\SPSProfessional.SharePoint.WebParts.CMTasks.en-US.resx	Resources\SPSProfessional.SharePoint.WebParts.CMTasks.en-US.resx
+
+SPSProfessional_CMTasks\feature.xml						SPSProfessional_CMTasks\feature.xml
+SPSProfessional_CMTasks\SPSCMTasks_Elements.xml			SPSProfessional_CMTasks\SPSCMTasks_Elements.xml 
+
+; Pages
+.Set DestinationDir="LAYOUTS\"
+PAGES\SPSProfessional_Tasks.aspx

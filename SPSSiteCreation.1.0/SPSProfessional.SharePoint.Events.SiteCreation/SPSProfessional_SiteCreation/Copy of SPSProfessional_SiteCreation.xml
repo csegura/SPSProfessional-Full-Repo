@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{9efcfb6d-138c-4e53-a5b1-8c05a59f0251}"              
+         Name="WebTemplate"              
+         Group="SPSProfessional"              
+         Type="Choice"              
+         DisplayName="Web Template"              
+         SourceID="http://schemas.microsoft.com/sharepoint/v3/fields"              
+         StaticName="WebTemplate"              
+         Description=""              
+         Sealed="False"              
+         Required="TRUE"         
+         AllowDeletion="False"              
+         FillInChoice="FALSE"
+         ColName="nvarchar4"
+         RowOrdinal="0">
+    <CHOICES>
+      <CHOICE>Sitio en blanco</CHOICE>
+      <CHOICE>Sitio de grupo</CHOICE>
+    </CHOICES>
+    <MAPPINGS>
+      <MAPPING Value="STS#1">Sitio en blanco</MAPPING>
+      <MAPPING Value="STS#0">Sitio de grupo</MAPPING>
+    </MAPPINGS>
+    <Default>Sitio en blanco</Default>
+  </Field>
+  <Field ID="{9efcfb6d-138c-4e53-a5b1-8c05a59f0252}"
+       Name="WebUrl"
+       Group="SPSProfessional"
+       Type="Text"
+       DisplayName="Web Url"
+       SourceID="http://schemas.microsoft.com/sharepoint/v3/fields"
+       StaticName="WebUrl"
+       Description=""
+       Sealed="TRUE"
+       Required="FALSE"
+       ShowInEditForm="FALSE"
+       ShowInNewForm="FALSE"
+       AllowDeletion="FALSE">    
+  </Field>
+  <ContentType ID="0x0100c07095261b4f48408d60ad8654b69ddd" 
+               Name="SPSSiteCreation" 
+               Group="SPSProfessional" 
+               Description="Site creation content type" 
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{0c177b88-bf35-4692-8456-cc14aaabe0c0}"
+                Name="SPSSiteCreation" />
+      <FieldRef ID="{9efcfb6d-138c-4e53-a5b1-8c05a59f0251}"
+                Name="Template" 
+                ShowInEditForm="FALSE" />
+      <FieldRef ID="{9efcfb6d-138c-4e53-a5b1-8c05a59f0252}"
+                Name="Url" 
+                ShowInEditForm="FALSE"  
+                ShowInNewForm="FALSE"/>
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/events">
+        <spe:Receivers xmlns:spe="http://schemas.microsoft.com/sharepoint/events">
+          <Receiver>
+            <Name>ItemAdded</Name>
+            <Type>ItemAdded</Type>
+            <SequenceNumber>1</SequenceNumber>
+            <Assembly>SPSProfessional.SharePoint.Events.SiteCreation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4031063ddba1c7c7</Assembly>
+            <Class>SPSProfessional.SharePoint.Events.SiteCreation.SiteCreation</Class>
+            <Data>
+            </Data>
+            <Filter>
+            </Filter>
+          </Receiver>
+          <!--<Receiver>
+            <Name>ItemAdding</Name>
+            <Type>ItemAdding</Type>
+            <SequenceNumber>2</SequenceNumber>
+            <Assembly>AssemblyName, Version=1.0.0.0, Culture=neutral, PublicKeyToken=TokenNumber</Assembly>
+            <Class>Namespace.ClassName</Class>
+            <Data>
+            </Data>
+            <Filter>
+            </Filter>
+          </Receiver>-->
+        </spe:Receivers>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>
+</Elements>
