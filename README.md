@@ -4,22 +4,22 @@
 
 This is the SPSProfessional full repo of solutions
 
--    SPSMailToList WebPart v1.5
- -       Outlook AddIn
--    Navigation Web Parts v2.8
- -       Folder BreadCrumb
- -       Folder Explorer
- -       Web Explorer
- -       Folder Explorer Feature
--    SPSExplorer WebParts v2.9
--    Cut Copy / Paste v2.8c
--    SPSRollUp WebPart v3.1
- -       SPSRollUpCalendar
- -       SPSRollUpTree
- -       SPSTagging soon!!
--    SPSRollUpChart WebPart v3.1
--    SPSSite Creation Event v1.8
--    ActionDataBase
+- SPSMailToList WebPart v1.5
+..- Outlook AddIn
+- Navigation Web Parts v2.8
+..- Folder BreadCrumb
+..- Folder Explorer
+..- Web Explorer
+..- Folder Explorer Feature
+- SPSExplorer WebParts v2.9
+- Cut Copy / Paste v2.8c
+- SPSRollUp WebPart v3.1
+..- SPSRollUpCalendar
+..- SPSRollUpTree
+..- SPSTagging soon!!
+- SPSRollUpChart WebPart v3.1
+- SPSSite Creation Event v1.8
+- ActionDataBase
 
 Released new versions – Using our new framework 2.8 - New MailToList WebPart
 Cut Copy Paste Feature - Version 2.8b
@@ -36,11 +36,11 @@ Navigation WebParts
 
 A complete set of WebParts to put users in control. This package contains four webparts and a feature to help you obtain a better navigation and improved user experience.
 
-    FolderBreadCrumb WebPart
-    FolderExplorer WebPart
-    WebExplorer WebPart
-    Folder Explorer Feature
-    Site Collection Explorer
+* FolderBreadCrumb WebPart
+* FolderExplorer WebPart
+* WebExplorer WebPart
+* Folder Explorer Feature
+* Site Collection Explorer
 
 ## SPSRollUp WebPart - Version 3.1
 
